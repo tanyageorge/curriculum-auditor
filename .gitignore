@@ -1,0 +1,15 @@
+# Datasets are downloaded separately (see README) and not redistributed here
+data/
+
+# Secrets and local environment
+.env
+.venv/
+
+# Python / OS noise
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Raw model outputs from eval runs (summaries are committed)
+results/raw/
