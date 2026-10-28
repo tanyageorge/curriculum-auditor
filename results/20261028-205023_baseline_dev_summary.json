@@ -1,0 +1,46 @@
+{
+  "run": "20261028-205023_baseline_dev",
+  "parser": "baseline",
+  "split": "dev",
+  "reference": "silver (Mendeley parses)",
+  "n": 300,
+  "wall_s": 0.0,
+  "scores": {
+    "all": {
+      "n": 300,
+      "structure_exact": 0.8467,
+      "full_exact": 0.79,
+      "course_precision": 0.948,
+      "course_recall": 0.9591,
+      "flag_rate": 0.0,
+      "structure_exact_unflagged": 0.8467
+    },
+    "hard": {
+      "n": 100,
+      "structure_exact": 0.72,
+      "full_exact": 0.64,
+      "course_precision": 0.9053,
+      "course_recall": 0.9847,
+      "flag_rate": 0.0,
+      "structure_exact_unflagged": 0.72
+    },
+    "moderate": {
+      "n": 100,
+      "structure_exact": 0.82,
+      "full_exact": 0.73,
+      "course_precision": 1.0,
+      "course_recall": 0.8874,
+      "flag_rate": 0.0,
+      "structure_exact_unflagged": 0.82
+    },
+    "simple": {
+      "n": 100,
+      "structure_exact": 1.0,
+      "full_exact": 1.0,
+      "course_precision": 1.0,
+      "course_recall": 1.0,
+      "flag_rate": 0.0,
+      "structure_exact_unflagged": 1.0
+    }
+  }
+}

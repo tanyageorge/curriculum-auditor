@@ -21,9 +21,14 @@ Updated as the build progresses. Only what is listed under "Done" exists.
 - Data loaders for the Mendeley corpus and the UIUC catalog (`src/auditor/data.py`)
 - Frozen dev/test split and a 150-course gold-label sheet (`scripts/make_splits.py`)
 - Muse Spark API client and smoke test (`src/auditor/llm.py`, `scripts/smoke_test_api.py`)
+- Parser agent on Muse Spark with strict JSON-schema output (`src/auditor/parser.py`)
+- Guardrails in code: every course in the output must appear in the input text; on failure the
+  model gets the specific problem back for one retry, then the course is flagged for review
+  (`src/auditor/guardrails.py`)
+- Result caching, a regex baseline parser, and an eval runner with per-tier metrics, cost and
+  latency (`src/auditor/baseline.py`, `src/auditor/metrics.py`, `scripts/run_eval.py`)
 
 **Planned**
-- Parser agent (Muse Spark) with schema validation and grounding checks
 - Independent second parser on Muse Spark Open (Baseten); disagreement → human review
 - Prerequisite graph and audit checks (missing courses, cycles, renumbered courses, path length)
 - Report agent, web app, and evaluation results
@@ -37,6 +42,21 @@ Updated as the build progresses. Only what is listed under "Done" exists.
 - **Silver reference:** the Mendeley corpus's own parses for ~11,000 courses. Most were produced
   with LLM assistance by the dataset authors, so agreement with them is reported as agreement,
   not accuracy.
+
+## Results so far (dev split, 300 courses, silver reference)
+
+Agreement with the Mendeley parses, which contain known errors, so these numbers are a lower
+bound; gold-set accuracy will be reported once the test set is hand-labeled.
+
+| Parser | Agreement | Moderate tier, unflagged | $/course | Median latency |
+|---|---|---|---|---|
+| Regex baseline | 84.7% | 82.0% | 0 | – |
+| Muse Spark 1.3, prompt v2, `minimal` reasoning | 87.3% | 98.6% | 0.0022 | 1.0 s |
+
+Most remaining disagreements were traced to the reference: it omits corequisites, flattens
+explicit AND/OR structure for one institution, and in some catalogs counts the next course's
+heading (extracted onto the end of the prerequisite text) as a prerequisite.
+Summaries of every run are in `results/`.
 
 ## Data
 
