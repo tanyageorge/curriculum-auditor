@@ -27,6 +27,7 @@ Updated as the build progresses. Only what is listed under "Done" exists.
   (`src/auditor/guardrails.py`)
 - Result caching, a regex baseline parser, and an eval runner with per-tier metrics, cost and
   latency (`src/auditor/baseline.py`, `src/auditor/metrics.py`, `scripts/run_eval.py`)
+- 150-course gold test set, hand-labeled with a terminal labeling tool (`scripts/label_gold.py`)
 
 **Planned**
 - Independent second parser on Muse Spark Open (Baseten); disagreement → human review
@@ -38,7 +39,9 @@ Updated as the build progresses. Only what is listed under "Done" exists.
 - **Split:** one row per course identity (latest edition), hashed 80/20 into dev and test, so
   the same course never appears in both.
 - **Gold labels:** 150 test courses hand-labeled (oversampling hard cases; 20 from Caltech,
-  labeled from scratch). These are the headline accuracy numbers.
+  labeled from scratch). These are the headline accuracy numbers. Of the 130 gold courses that
+  have a Mendeley parse, that parse was fully correct for 110 (85%); 5 texts were judged
+  genuinely ambiguous.
 - **Silver reference:** the Mendeley corpus's own parses for ~11,000 courses. Most were produced
   with LLM assistance by the dataset authors, so agreement with them is reported as agreement,
   not accuracy.
