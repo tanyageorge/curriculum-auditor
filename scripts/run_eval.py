@@ -3,7 +3,9 @@
 Examples
   python scripts/run_eval.py --parser baseline --split dev --n 300
   python scripts/run_eval.py --parser muse --split dev --n 300 --effort low
-  python scripts/run_eval.py --parser muse --split gold --confirm-test     # test set: run rarely
+  python scripts/run_eval.py --parser open --split dev --n 300                  # Muse Spark Open (Baseten)
+  python scripts/run_eval.py --parser ensemble --split dev --n 300              # both; disagreement -> review
+  python scripts/run_eval.py --parser ensemble --split gold --confirm-test     # test set: run rarely
 
 Writes results/<run>_summary.json (commit it) and results/raw/<run>.jsonl
 (per-course detail, ignored by git).
@@ -54,7 +56,7 @@ def fmt(v) -> str:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--parser", choices=["muse", "baseline"], required=True)
+    ap.add_argument("--parser", choices=["muse", "open", "ensemble", "baseline"], required=True)
     ap.add_argument("--split", choices=["dev", "gold"], default="dev")
     ap.add_argument("--n", type=int, default=300, help="dev sample size (split evenly across tiers)")
     ap.add_argument("--effort", default="minimal", help="reasoning effort for muse: minimal|low|medium|high")
@@ -69,24 +71,34 @@ def main() -> None:
     courses = all_courses[~all_courses.ambiguous_id].set_index("course_id")
     items = dev_items(args.n, all_courses) if args.split == "dev" else gold_items()
 
-    mp = None
-    if args.parser == "muse":
+    mp = op = None
+    if args.parser in ("muse", "ensemble"):
         from auditor.parser import MuseParser
         mp = MuseParser(reasoning_effort=args.effort)
-        label = f"muse-{mp.model}-{args.effort}"
-    else:
-        label = "baseline"
+    if args.parser in ("open", "ensemble"):
+        from auditor.parser import open_weights_parser
+        op = open_weights_parser()
+    label = {"muse": f"muse-{args.effort}", "open": "muse-spark-open",
+             "ensemble": f"ensemble-muse-{args.effort}+open", "baseline": "baseline"}[args.parser]
 
     def work(item):
         cid, tier, ref = item
         row = courses.loc[cid]
         prereq, coreq = row.prerequisites_raw, row.corequisites_raw
-        res = None
-        if mp is None:
+        res = res2 = None
+        disagreed = False
+        if args.parser == "baseline":
             pred = baseline.parse(prereq, coreq)
-        else:
+        elif args.parser == "muse":
             res = mp.parse(prereq, coreq)
             pred = res.parsed
+        elif args.parser == "open":
+            res = op.parse(prereq, coreq)
+            pred = res.parsed
+        else:
+            from auditor.ensemble import combine
+            res, res2 = mp.parse(prereq, coreq), op.parse(prereq, coreq)
+            pred, disagreed = combine(res.parsed, res2.parsed)
         row_out = {
             "id": cid, "tier": tier, "prerequisites_raw": prereq, "corequisites_raw": coreq,
             "pred": to_text(pred) if pred else None, "ref": to_text(ref),
@@ -94,9 +106,16 @@ def main() -> None:
             **compare(pred, ref),
         }
         if res is not None:
-            row_out.update(attempts=res.attempts, issues=res.issues, error=res.error, cached=res.cached,
-                           input_tokens=res.input_tokens, output_tokens=res.output_tokens,
-                           reasoning_tokens=res.reasoning_tokens, latency_s=res.latency_s)
+            rs = [x for x in (res, res2) if x is not None]
+            row_out.update(attempts=max(x.attempts for x in rs), issues=sum((x.issues for x in rs), []),
+                           error="; ".join(x.error for x in rs if x.error) or None,
+                           cached=all(x.cached for x in rs),
+                           input_tokens=sum(x.input_tokens for x in rs),
+                           output_tokens=sum(x.output_tokens for x in rs),
+                           reasoning_tokens=sum(x.reasoning_tokens for x in rs),
+                           latency_s=max(x.latency_s for x in rs), disagreed=int(disagreed))
+            if res2 is not None:
+                row_out["second_pred"] = to_text(res2.parsed) if res2.parsed else None
         return row_out
 
     t0 = time.time()
@@ -113,7 +132,7 @@ def main() -> None:
         "wall_s": round(wall, 1),
         "scores": summarize(rows, by="tier"),
     }
-    if mp is not None:
+    if args.parser != "baseline":
         fresh = [r for r in rows if not r["cached"]]
         tin = sum(r["input_tokens"] for r in rows)
         tout = sum(r["output_tokens"] for r in rows)
@@ -127,6 +146,15 @@ def main() -> None:
             "guardrail_failures": sum(bool(r["issues"]) for r in rows),
             "api_errors": sum(bool(r["error"]) for r in rows),
             "cached": len(rows) - len(fresh),
+            "note": "token cost uses Meta list prices; Baseten pricing differs" if op else None,
+        }
+    if args.parser == "ensemble":
+        agreed = [r for r in rows if not r["disagreed"]]
+        dis = [r for r in rows if r["disagreed"]]
+        summary["ensemble"] = {
+            "disagreement_rate": round(len(dis) / len(rows), 4),
+            "accuracy_when_parsers_agree": round(sum(r["structure_exact"] for r in agreed) / len(agreed), 4) if agreed else None,
+            "accuracy_when_parsers_disagree": round(sum(r["structure_exact"] for r in dis) / len(dis), 4) if dis else None,
         }
 
     out = ROOT / "results"
@@ -149,6 +177,8 @@ def main() -> None:
                   f"{fmt(s['structure_exact_unflagged']):>10}")
     if "cost" in summary:
         print("cost:", summary["cost"])
+    if "ensemble" in summary:
+        print("ensemble:", summary["ensemble"])
     print(f"\nsaved results/{summary['run']}_summary.json")
 
 

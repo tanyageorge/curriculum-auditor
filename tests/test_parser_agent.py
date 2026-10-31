@@ -128,3 +128,25 @@ def test_parser_records_api_error_without_caching(tmp_path):
     r = mp.parse("CSC 210")
     assert r.error and r.parse is None
     assert not (tmp_path / "cache.jsonl").exists()      # failures are retried next run, not cached
+
+
+# --------------------------------------------------------------------------- ensemble
+
+def test_ensemble_agree_and_disagree():
+    from auditor.ensemble import combine
+    a = from_text("CSC 210 AND (MATH 243 OR MATH 223)")
+    same = from_text("(MATH 223 OR MATH 243) AND CSC 210")
+    other = from_text("CSC 210 OR MATH 243 OR MATH 223")
+    final, dis = combine(a, same)
+    assert not dis and not final.needs_review
+    final, dis = combine(a, other)
+    assert dis and final.needs_review and "second reading" in final.review_reason
+    assert structure(final) == structure(a)            # primary's answer kept, only flagged
+    assert combine(None, a) == (a, False)
+
+
+def test_parser_omits_reasoning_effort_when_none(tmp_path):
+    client = FakeClient([answer("CSC 210")])
+    mp = MuseParser(model="open", reasoning_effort=None, client=client, cache_path=tmp_path / "c.jsonl")
+    mp.parse("CSC 210")
+    assert "reasoning_effort" not in client.calls[0]

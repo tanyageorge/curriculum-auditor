@@ -1,0 +1,62 @@
+{
+  "run": "20261030-201827_ensemble-muse-minimal+open_dev",
+  "parser": "ensemble-muse-minimal+open",
+  "split": "dev",
+  "reference": "silver (Mendeley parses)",
+  "n": 150,
+  "wall_s": 75.9,
+  "scores": {
+    "all": {
+      "n": 150,
+      "structure_exact": 0.88,
+      "full_exact": 0.8533,
+      "course_precision": 0.9425,
+      "course_recall": 0.9685,
+      "flag_rate": 0.1,
+      "structure_exact_unflagged": 0.9259
+    },
+    "hard": {
+      "n": 50,
+      "structure_exact": 0.78,
+      "full_exact": 0.72,
+      "course_precision": 0.9306,
+      "course_recall": 0.9926,
+      "flag_rate": 0.06,
+      "structure_exact_unflagged": 0.7872
+    },
+    "moderate": {
+      "n": 50,
+      "structure_exact": 0.86,
+      "full_exact": 0.84,
+      "course_precision": 0.9254,
+      "course_recall": 0.8986,
+      "flag_rate": 0.24,
+      "structure_exact_unflagged": 1.0
+    },
+    "simple": {
+      "n": 50,
+      "structure_exact": 1.0,
+      "full_exact": 1.0,
+      "course_precision": 1.0,
+      "course_recall": 1.0,
+      "flag_rate": 0.0,
+      "structure_exact_unflagged": 1.0
+    }
+  },
+  "cost": {
+    "usd_per_course": 0.00865,
+    "usd_this_run": 1.0183,
+    "reasoning_share_of_output": 0.888,
+    "median_latency_s": 4.205,
+    "retried": 0,
+    "guardrail_failures": 0,
+    "api_errors": 0,
+    "cached": 32,
+    "note": "token cost uses Meta list prices; Baseten pricing differs"
+  },
+  "ensemble": {
+    "disagreement_rate": 0.02,
+    "accuracy_when_parsers_agree": 0.8912,
+    "accuracy_when_parsers_disagree": 0.3333
+  }
+}

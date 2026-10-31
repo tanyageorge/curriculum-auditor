@@ -11,6 +11,16 @@ from pydantic import BaseModel
 from .data import ROOT
 
 META_BASE_URL = "https://api.meta.ai/v1"
+BASETEN_BASE_URL = "https://inference.baseten.co/v1"
+# Muse Spark Open (open weights) served by Baseten. The participant guide names
+# "meta-models/muse-spark-open-1026"; accounts without the hackathon grant list the slug below.
+# Override with OPEN_MODEL in .env.
+OPEN_MODEL_DEFAULT = "meta-models/muse-spark-open"
+
+
+def open_model() -> str:
+    load_dotenv(ROOT / ".env")
+    return os.environ.get("OPEN_MODEL", OPEN_MODEL_DEFAULT)
 
 
 def get_client() -> OpenAI:
@@ -19,6 +29,14 @@ def get_client() -> OpenAI:
     if not key:
         raise RuntimeError("MODEL_API_KEY is not set. Copy .env.example to .env and add your key.")
     return OpenAI(base_url=META_BASE_URL, api_key=key)
+
+
+def get_baseten_client() -> OpenAI:
+    load_dotenv(ROOT / ".env")
+    key = os.environ.get("BASETEN_API_KEY")
+    if not key:
+        raise RuntimeError("BASETEN_API_KEY is not set. Add it to .env.")
+    return OpenAI(base_url=BASETEN_BASE_URL, api_key=key)
 
 
 def default_model() -> str:

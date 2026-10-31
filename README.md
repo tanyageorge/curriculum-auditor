@@ -28,9 +28,10 @@ Updated as the build progresses. Only what is listed under "Done" exists.
 - Result caching, a regex baseline parser, and an eval runner with per-tier metrics, cost and
   latency (`src/auditor/baseline.py`, `src/auditor/metrics.py`, `scripts/run_eval.py`)
 - 150-course gold test set, hand-labeled with a terminal labeling tool (`scripts/label_gold.py`)
+- Second, independent parser on **Muse Spark Open** (open weights, served by Baseten); when the two
+  parsers' structures differ, the course is flagged for human review (`src/auditor/ensemble.py`)
 
 **Planned**
-- Independent second parser on Muse Spark Open (Baseten); disagreement → human review
 - Prerequisite graph and audit checks (missing courses, cycles, renumbered courses, path length)
 - Report agent, web app, and evaluation results
 
@@ -59,6 +60,13 @@ bound; gold-set accuracy will be reported once the test set is hand-labeled.
 Most remaining disagreements were traced to the reference: it omits corequisites, flattens
 explicit AND/OR structure for one institution, and in some catalogs counts the next course's
 heading (extracted onto the end of the prerequisite text) as a prerequisite.
+**Second parser (Muse Spark Open), 150 dev courses:** on its own it scores 88.0%, the same as
+Muse Spark. The two disagreed on only 3 courses (2%), all garbled catalog rows Muse Spark already
+flagged, so the second opinion caught no new errors here, at about 4x the tokens and +4 s per course.
+Muse Spark Open is the open-weights release of the same model family, and the two largely fail on the
+same inputs; an independent check needs a verifier that fails differently. The deterministic
+guardrails remain the main safety net.
+
 Summaries of every run are in `results/`.
 
 ## Data

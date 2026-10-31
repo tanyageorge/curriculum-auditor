@@ -90,13 +90,22 @@ def format_input(prereq: str, coreq: str = "") -> str:
     return text
 
 
+def open_weights_parser(**kwargs) -> "MuseParser":
+    """Muse Spark Open served by Baseten: same prompt, schema and guardrails, different model."""
+    from .llm import get_baseten_client, open_model
+    kwargs.setdefault("reasoning_effort", None)   # use the provider's default reasoning setting
+    return MuseParser(model=open_model(), client_factory=get_baseten_client, **kwargs)
+
+
 class MuseParser:
-    def __init__(self, model: Optional[str] = None, reasoning_effort: str = "minimal",
-                 max_attempts: int = 2, cache_path: Optional[Path] = None, client=None):
+    def __init__(self, model: Optional[str] = None, reasoning_effort: Optional[str] = "minimal",
+                 max_attempts: int = 2, cache_path: Optional[Path] = None, client=None,
+                 client_factory=None):
         self.model = model or default_model()
         self.effort = reasoning_effort
         self.max_attempts = max_attempts
         self.client = client
+        self.client_factory = client_factory or get_client
         self.cache_path = cache_path or ROOT / "results" / "raw" / "parse_cache.jsonl"
         self._lock = threading.Lock()
         self._cache = self._load_cache()
@@ -128,7 +137,7 @@ class MuseParser:
         if key in self._cache:
             return ParseResult(**{**self._cache[key], "cached": True})
 
-        client = self.client or get_client()
+        client = self.client or self.client_factory()
         source_text = f"{prereq} {coreq}"
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -139,11 +148,12 @@ class MuseParser:
         for attempt in range(1, self.max_attempts + 1):
             result.attempts = attempt
             try:
+                extra = {"reasoning_effort": self.effort} if self.effort else {}
                 resp = client.chat.completions.create(
                     model=self.model,
                     messages=messages,
                     response_format=response_format(PrereqParse, "prereq_parse"),
-                    reasoning_effort=self.effort,
+                    **extra,
                 )
             except Exception as exc:  # network / API errors: record and stop
                 result.error = f"{type(exc).__name__}: {exc}"
