@@ -1,0 +1,1168 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "AERO200",
+  "detail": "PHYS191 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PHYS121 or PHYS191",
+  "severity": "warning",
+  "related": [
+   "PHYS191"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "AERO335",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "AERO215 AND (MATH231 OR MATH212)",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "AERO415",
+  "detail": "AERO220 (one of several alternatives) does not exist in this catalog",
+  "evidence": "AERO225 AND (AERO220 OR AERO320)",
+  "severity": "warning",
+  "related": [
+   "AERO220"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "AERO431",
+  "detail": "AERO331 (one of several alternatives) does not exist in this catalog",
+  "evidence": "AERO331 OR AERO336",
+  "severity": "warning",
+  "related": [
+   "AERO331"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "AERO441",
+  "detail": "AERO340 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO240 OR MECH240) AND (AERO340 OR MECH340) OR MEEN240",
+  "severity": "warning",
+  "related": [
+   "AERO340"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "AERO450",
+  "detail": "AERO330 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO330 AND AERO351) OR (AERO335 AND AERO350)",
+  "severity": "warning",
+  "related": [
+   "AERO330"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "AERO450",
+  "detail": "AERO330 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO330 AND AERO351) OR (AERO335 AND AERO350)",
+  "severity": "warning",
+  "related": [
+   "AERO330"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "AERO450",
+  "detail": "AERO351 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO330 AND AERO351) OR (AERO335 AND AERO350)",
+  "severity": "warning",
+  "related": [
+   "AERO351"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "AERO450",
+  "detail": "AERO351 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO330 AND AERO351) OR (AERO335 AND AERO350)",
+  "severity": "warning",
+  "related": [
+   "AERO351"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "AERO470",
+  "detail": "AERO330 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO225 OR AERO320 OR MECH225 OR MEEN325 OR CIVE225) AND (AERO335 OR AERO330 AND AERO331) AND (AERO350 OR MECH350)",
+  "severity": "warning",
+  "related": [
+   "AERO330"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "AERO470",
+  "detail": "AERO331 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(AERO225 OR AERO320 OR MECH225 OR MEEN325 OR CIVE225) AND (AERO335 OR AERO330 AND AERO331) AND (AERO350 OR MECH350)",
+  "severity": "warning",
+  "related": [
+   "AERO331"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "renumbered",
+  "course": "BIOL112",
+  "detail": "BIOL101 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "BIOL111 OR BIOL101",
+  "severity": "warning",
+  "related": [
+   "BIOL101"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "renumbered",
+  "course": "BIOL211",
+  "detail": "BIOL101 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "BIOL111 OR BIOL101 OR BIOL101",
+  "severity": "warning",
+  "related": [
+   "BIOL101"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "renumbered",
+  "course": "BIOL321",
+  "detail": "BIOL101 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "BIOL111 OR BIOL101",
+  "severity": "warning",
+  "related": [
+   "BIOL101"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "renumbered",
+  "course": "BIOL411",
+  "detail": "BIOL221 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now BIOL321)",
+  "evidence": "BIOL301 AND (BIOL221 OR BIOL321)",
+  "severity": "warning",
+  "related": [
+   "BIOL221"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "renumbered",
+  "course": "BUSS361",
+  "detail": "ENGL112 is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL112",
+  "severity": "blocking",
+  "related": [
+   "ENGL112"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "CCEN481",
+  "detail": "CCEN315 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ECCE316 OR CCEN315) AND (CCEN302 OR ECCE302)",
+  "severity": "warning",
+  "related": [
+   "CCEN315"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "CHEG352",
+  "detail": "AERO220 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEG350 OR MEEN225 OR AERO320 OR AERO220",
+  "severity": "warning",
+  "related": [
+   "AERO220"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "missing_course",
+  "course": "CHEM351",
+  "detail": "CHEM106 does not exist in this catalog",
+  "evidence": "CHEM106 AND CHEM116",
+  "severity": "blocking",
+  "related": [
+   "CHEM106"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "CIVE335",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PHYS121 AND (MATH231 OR MATH212)",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "CIVE336",
+  "detail": "CHEM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(CHEM115 OR CHEM101) AND (CIVE225 OR MECH225 OR AERO225 OR MECH320) OR AERO320",
+  "severity": "warning",
+  "related": [
+   "CHEM101"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "renumbered",
+  "course": "ENGL102",
+  "detail": "ENGL111 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL101 OR ENGL111",
+  "severity": "warning",
+  "related": [
+   "ENGL111"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "renumbered",
+  "course": "EPSS222",
+  "detail": "BIOL101 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "(EPSS200 OR PGEG221) AND (BIOL111 OR BIOL101)",
+  "severity": "warning",
+  "related": [
+   "BIOL101"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "missing_course",
+  "course": "EPSS321",
+  "detail": "PGEG120 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(EPSS200 OR PGEG221) AND (EPSS230 OR PGEG120) AND PHYS121",
+  "severity": "warning",
+  "related": [
+   "PGEG120"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "missing_course",
+  "course": "ESMA422",
+  "detail": "ESMA344 does not exist in this catalog",
+  "evidence": "ESMA344",
+  "severity": "blocking",
+  "related": [
+   "ESMA344"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "missing_course",
+  "course": "ESMA485",
+  "detail": "ESMA331 does not exist in this catalog",
+  "evidence": "ESMA331",
+  "severity": "blocking",
+  "related": [
+   "ESMA331"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "renumbered",
+  "course": "HUMA102",
+  "detail": "ENGL112 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL102 OR ENGL112",
+  "severity": "warning",
+  "related": [
+   "ENGL112"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "renumbered",
+  "course": "HUMA105",
+  "detail": "ENGL111 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL101 OR ENGL111",
+  "severity": "warning",
+  "related": [
+   "ENGL111"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "renumbered",
+  "course": "HUMA140",
+  "detail": "ENGL111 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL111 OR ENGL101 OR COMM101",
+  "severity": "warning",
+  "related": [
+   "ENGL111"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "renumbered",
+  "course": "HUMA141",
+  "detail": "ENGL112 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL112 OR ENGL102 OR COMM151",
+  "severity": "warning",
+  "related": [
+   "ENGL112"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "renumbered",
+  "course": "HUMA277",
+  "detail": "ENGL112 (one of several alternatives) is not in this edition; it last appeared in the 2023-2024 catalog",
+  "evidence": "ENGL112 OR ENGL102 OR COMM151",
+  "severity": "warning",
+  "related": [
+   "ENGL112"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "missing_course",
+  "course": "ISYE251",
+  "detail": "MATH461 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH211 OR MATH204 OR MATH461 OR MATH461",
+  "severity": "warning",
+  "related": [
+   "MATH461"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "missing_course",
+  "course": "ISYE311",
+  "detail": "MATH223 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH242 OR MATH21 OR MATH223",
+  "severity": "warning",
+  "related": [
+   "MATH223"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "missing_course",
+  "course": "ISYE341",
+  "detail": "MATH213 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ENGR112 OR COSC114 OR ENGR114 OR ENGR113) AND ISYE201 AND (MATH242 OR MATH213)",
+  "severity": "warning",
+  "related": [
+   "MATH213"
+  ]
+ },
+ {
+  "id": "F0035",
+  "check": "missing_course",
+  "course": "ISYE351",
+  "detail": "MATH213 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ISYE251 OR MATH251) AND (MATH242 OR MATH213 OR MATH223 OR MATH215)",
+  "severity": "warning",
+  "related": [
+   "MATH213"
+  ]
+ },
+ {
+  "id": "F0036",
+  "check": "missing_course",
+  "course": "ISYE351",
+  "detail": "MATH223 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ISYE251 OR MATH251) AND (MATH242 OR MATH213 OR MATH223 OR MATH215)",
+  "severity": "warning",
+  "related": [
+   "MATH223"
+  ]
+ },
+ {
+  "id": "F0037",
+  "check": "missing_course",
+  "course": "ISYE351",
+  "detail": "MATH215 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ISYE251 OR MATH251) AND (MATH242 OR MATH213 OR MATH223 OR MATH215)",
+  "severity": "warning",
+  "related": [
+   "MATH215"
+  ]
+ },
+ {
+  "id": "F0038",
+  "check": "missing_course",
+  "course": "ISYE422",
+  "detail": "ISYE321 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ISYE321 OR ISYE311",
+  "severity": "warning",
+  "related": [
+   "ISYE321"
+  ]
+ },
+ {
+  "id": "F0039",
+  "check": "missing_course",
+  "course": "ISYE431",
+  "detail": "MATH213 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH242 OR MATH213)",
+  "severity": "warning",
+  "related": [
+   "MATH213"
+  ]
+ },
+ {
+  "id": "F0040",
+  "check": "missing_course",
+  "course": "ISYE445",
+  "detail": "MATH223 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ISYE311 AND ISYE352 OR MATH223",
+  "severity": "warning",
+  "related": [
+   "MATH223"
+  ]
+ },
+ {
+  "id": "F0041",
+  "check": "missing_course",
+  "course": "ISYE480",
+  "detail": "MATH213 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ISYE251 AND (MATH242 OR MATH213 OR MATH215)",
+  "severity": "warning",
+  "related": [
+   "MATH213"
+  ]
+ },
+ {
+  "id": "F0042",
+  "check": "missing_course",
+  "course": "ISYE480",
+  "detail": "MATH215 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ISYE251 AND (MATH242 OR MATH213 OR MATH215)",
+  "severity": "warning",
+  "related": [
+   "MATH215"
+  ]
+ },
+ {
+  "id": "F0043",
+  "check": "missing_course",
+  "course": "ISYE497",
+  "detail": "ISYE321 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ENGR111 OR GENS101) AND ISYE341 AND (ISYE311 OR ISYE321)",
+  "severity": "warning",
+  "related": [
+   "ISYE321"
+  ]
+ },
+ {
+  "id": "F0044",
+  "check": "missing_course",
+  "course": "MATH112",
+  "detail": "MATH105 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( MATH105, or MATH111, or MATH111)",
+  "severity": "warning",
+  "related": [
+   "MATH105"
+  ]
+ },
+ {
+  "id": "F0045",
+  "check": "missing_course",
+  "course": "MATH204",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH106, or MATH112, or MATH161, or MATH212",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0046",
+  "check": "missing_course",
+  "course": "MATH204",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH106, or MATH112, or MATH161, or MATH212",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0047",
+  "check": "missing_course",
+  "course": "MATH204",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH106, or MATH112, or MATH161, or MATH212",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0048",
+  "check": "missing_course",
+  "course": "MATH206",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH106, or MATH112, or MATH161, or MATH212",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0049",
+  "check": "missing_course",
+  "course": "MATH206",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH106, or MATH112, or MATH161, or MATH212",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0050",
+  "check": "missing_course",
+  "course": "MATH206",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH106, or MATH112, or MATH161, or MATH212",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0051",
+  "check": "missing_course",
+  "course": "MATH231",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0052",
+  "check": "missing_course",
+  "course": "MATH232",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0053",
+  "check": "missing_course",
+  "course": "MATH232",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0054",
+  "check": "missing_course",
+  "course": "MATH234",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0055",
+  "check": "missing_course",
+  "course": "MATH234",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0056",
+  "check": "missing_course",
+  "course": "MATH242",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0057",
+  "check": "missing_course",
+  "course": "MATH242",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0058",
+  "check": "missing_course",
+  "course": "MATH243",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0059",
+  "check": "missing_course",
+  "course": "MATH243",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH112, or MATH106, or MATH161",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0060",
+  "check": "missing_course",
+  "course": "MATH244",
+  "detail": "MATH106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH101,( MATH112, or MATH106, or MATH161)",
+  "severity": "warning",
+  "related": [
+   "MATH106"
+  ]
+ },
+ {
+  "id": "F0061",
+  "check": "missing_course",
+  "course": "MATH244",
+  "detail": "MATH161 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH101,( MATH112, or MATH106, or MATH161)",
+  "severity": "warning",
+  "related": [
+   "MATH161"
+  ]
+ },
+ {
+  "id": "F0062",
+  "check": "renumbered",
+  "course": "MATH316",
+  "detail": "MATH324 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog",
+  "evidence": "( MATH211,( or MATH206, MATH204), ),( MATH324, or MATH224)",
+  "severity": "warning",
+  "related": [
+   "MATH324"
+  ]
+ },
+ {
+  "id": "F0063",
+  "check": "renumbered",
+  "course": "MATH317",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( MATH214, or MATH346),( MATH245, or MATH345)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0064",
+  "check": "renumbered",
+  "course": "MATH317",
+  "detail": "MATH245 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "( MATH214, or MATH346),( MATH245, or MATH345)",
+  "severity": "warning",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0065",
+  "check": "renumbered",
+  "course": "MATH318",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( MATH214, or MATH346), MATH231,( MATH245, or MATH345)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0066",
+  "check": "renumbered",
+  "course": "MATH318",
+  "detail": "MATH245 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "( MATH214, or MATH346), MATH231,( MATH245, or MATH345)",
+  "severity": "warning",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0067",
+  "check": "renumbered",
+  "course": "MATH319",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( MATH214, or MATH346, or COSC114),( MATH211,( or MATH206, MATH204), )",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0068",
+  "check": "renumbered",
+  "course": "MATH331",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( MATH204, or MATH211),( MATH242, or MATH243, or MATH244),( MATH346, or MATH214, or ISYE341, or ESMA341, or COSC101)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0069",
+  "check": "renumbered",
+  "course": "MATH410",
+  "detail": "MATH324 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog",
+  "evidence": "MATH231,( MATH324, or MATH224)",
+  "severity": "warning",
+  "related": [
+   "MATH324"
+  ]
+ },
+ {
+  "id": "F0070",
+  "check": "renumbered",
+  "course": "MATH411",
+  "detail": "MATH324 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog",
+  "evidence": "MATH315, or MATH324, or MATH224",
+  "severity": "warning",
+  "related": [
+   "MATH324"
+  ]
+ },
+ {
+  "id": "F0071",
+  "check": "missing_course",
+  "course": "MATH412",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( MATH204, or MATH211),( MATH231, or MATH212)",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0072",
+  "check": "missing_course",
+  "course": "MATH415",
+  "detail": "ISYE321 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH318, or ISYE311, or ISYE321",
+  "severity": "warning",
+  "related": [
+   "ISYE321"
+  ]
+ },
+ {
+  "id": "F0073",
+  "check": "renumbered",
+  "course": "MATH416",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( MATH214, or MATH346),( MATH245, or MATH345), MATH245 | Corequisite: MATH318",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0074",
+  "check": "renumbered",
+  "course": "MATH416",
+  "detail": "MATH245 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "( MATH214, or MATH346),( MATH245, or MATH345), MATH245 | Corequisite: MATH318",
+  "severity": "warning",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0075",
+  "check": "renumbered",
+  "course": "MATH416",
+  "detail": "MATH245 is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "( MATH214, or MATH346),( MATH245, or MATH345), MATH245 | Corequisite: MATH318",
+  "severity": "blocking",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0076",
+  "check": "renumbered",
+  "course": "MATH417",
+  "detail": "MATH324 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog",
+  "evidence": "MATH244,( MATH224, or MATH324)",
+  "severity": "warning",
+  "related": [
+   "MATH324"
+  ]
+ },
+ {
+  "id": "F0077",
+  "check": "renumbered",
+  "course": "MATH424",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "MATH316, MATH412,( MATH346, or MATH214)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0078",
+  "check": "renumbered",
+  "course": "MATH425",
+  "detail": "MATH245 is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "MATH245, MATH412",
+  "severity": "blocking",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0079",
+  "check": "renumbered",
+  "course": "MATH426",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( MATH346, or MATH214),( MATH231, or MATH212),( MATH243, or MATH245, or MATH345, or MATH242)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0080",
+  "check": "missing_course",
+  "course": "MATH426",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( MATH346, or MATH214),( MATH231, or MATH212),( MATH243, or MATH245, or MATH345, or MATH242)",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0081",
+  "check": "renumbered",
+  "course": "MATH426",
+  "detail": "MATH245 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "( MATH346, or MATH214),( MATH231, or MATH212),( MATH243, or MATH245, or MATH345, or MATH242)",
+  "severity": "warning",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0082",
+  "check": "renumbered",
+  "course": "MATH431",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( ENGR114, or ENGR113, or ENGR112, or MATH214, or MATH346, or COSC114),( MATH206, or MATH211),( MATH242, or MATH243, or MATH245, or MATH345)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0083",
+  "check": "renumbered",
+  "course": "MATH431",
+  "detail": "MATH245 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH345)",
+  "evidence": "( ENGR114, or ENGR113, or ENGR112, or MATH214, or MATH346, or COSC114),( MATH206, or MATH211),( MATH242, or MATH243, or MATH245, or MATH345)",
+  "severity": "warning",
+  "related": [
+   "MATH245"
+  ]
+ },
+ {
+  "id": "F0084",
+  "check": "renumbered",
+  "course": "MATH432",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "MATH231,( MATH206, or MATH211),( MATH346, or MATH214)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0085",
+  "check": "renumbered",
+  "course": "MATH435",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( COSC114, or ENGR114, or ENGR113, or ENGR112, or MATH346, or MATH214),( MATH204, or MATH211),( MATH242, or MATH243, or MATH244)",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0086",
+  "check": "renumbered",
+  "course": "MATH468",
+  "detail": "MATH467 is not in this edition; it last appeared in the 2024-2025 catalog",
+  "evidence": "MATH467",
+  "severity": "blocking",
+  "related": [
+   "MATH467"
+  ]
+ },
+ {
+  "id": "F0087",
+  "check": "renumbered",
+  "course": "MATH475",
+  "detail": "MATH214 (one of several alternatives) is not in this edition; it last appeared in the 2024-2025 catalog (now MATH346)",
+  "evidence": "( ENGR114, or COSC114, or MATH214),( MATH204, or MATH211),( MATH242, or MATH243),( or MATH244, MATH319),( ENGR114",
+  "severity": "warning",
+  "related": [
+   "MATH214"
+  ]
+ },
+ {
+  "id": "F0088",
+  "check": "missing_course",
+  "course": "MEEN335",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( MATH231, or MATH212), or MECH240) | Corequisite: ( MEEN240",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0089",
+  "check": "missing_course",
+  "course": "MEEN343",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( MATH231, or MATH212),( MEEN240, or AERO240, or MECH240), or MECH335, or MEEG354) | Corequisite: ( MEEN335",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0090",
+  "check": "missing_course",
+  "course": "MEEN420",
+  "detail": "AERO220 (one of several alternatives) does not exist in this catalog",
+  "evidence": "AERO220, or MEEN225, or AERO320, or MECH220",
+  "severity": "warning",
+  "related": [
+   "AERO220"
+  ]
+ },
+ {
+  "id": "F0091",
+  "check": "missing_course",
+  "course": "PEEG314",
+  "detail": "PEEG214 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PEEG218 OR PEEG214) AND (PHYS122 OR PHYS241) | Corequisite: ( PEEG322, or PEEG321)",
+  "severity": "warning",
+  "related": [
+   "PEEG214"
+  ]
+ },
+ {
+  "id": "F0092",
+  "check": "missing_course",
+  "course": "PEEG314",
+  "detail": "PHYS241 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PEEG218 OR PEEG214) AND (PHYS122 OR PHYS241) | Corequisite: ( PEEG322, or PEEG321)",
+  "severity": "warning",
+  "related": [
+   "PHYS241"
+  ]
+ },
+ {
+  "id": "F0093",
+  "check": "missing_course",
+  "course": "PEEG341",
+  "detail": "PEEG321 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PEEG321, or PEEG322",
+  "severity": "warning",
+  "related": [
+   "PEEG321"
+  ]
+ },
+ {
+  "id": "F0094",
+  "check": "missing_course",
+  "course": "PEEG360",
+  "detail": "HUMA150 (one of several alternatives) does not exist in this catalog",
+  "evidence": "HUMA150, or BUSS150",
+  "severity": "warning",
+  "related": [
+   "HUMA150"
+  ]
+ },
+ {
+  "id": "F0095",
+  "check": "missing_course",
+  "course": "PEEG436",
+  "detail": "MATH261 does not exist in this catalog",
+  "evidence": "MATH 206, MATH 261, PEEG 314, PEEG 331",
+  "severity": "blocking",
+  "related": [
+   "MATH261"
+  ]
+ },
+ {
+  "id": "F0096",
+  "check": "missing_course",
+  "course": "PGEG312",
+  "detail": "PHYS241 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PGEG221,( PHYS122, or PHYS241),( MATH231, or MATH212)",
+  "severity": "warning",
+  "related": [
+   "PHYS241"
+  ]
+ },
+ {
+  "id": "F0097",
+  "check": "missing_course",
+  "course": "PGEG312",
+  "detail": "MATH212 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PGEG221,( PHYS122, or PHYS241),( MATH231, or MATH212)",
+  "severity": "warning",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0098",
+  "check": "missing_course",
+  "course": "PGEG321",
+  "detail": "PGEG121 does not exist in this catalog",
+  "evidence": "PGEG 121, PGEG 221, PGEG 230, PHYS 121, PHYS 191",
+  "severity": "blocking",
+  "related": [
+   "PGEG121"
+  ]
+ },
+ {
+  "id": "F0099",
+  "check": "missing_course",
+  "course": "PGEG321",
+  "detail": "PHYS191 does not exist in this catalog",
+  "evidence": "PGEG 121, PGEG 221, PGEG 230, PHYS 121, PHYS 191",
+  "severity": "blocking",
+  "related": [
+   "PHYS191"
+  ]
+ },
+ {
+  "id": "F0100",
+  "check": "missing_course",
+  "course": "PGEG324",
+  "detail": "MATH212 does not exist in this catalog",
+  "evidence": "ENGR 150, MATH 212, PHYS 241",
+  "severity": "blocking",
+  "related": [
+   "MATH212"
+  ]
+ },
+ {
+  "id": "F0101",
+  "check": "missing_course",
+  "course": "PGEG324",
+  "detail": "PHYS241 does not exist in this catalog",
+  "evidence": "ENGR 150, MATH 212, PHYS 241",
+  "severity": "blocking",
+  "related": [
+   "PHYS241"
+  ]
+ },
+ {
+  "id": "F0102",
+  "check": "missing_course",
+  "course": "PGEG398",
+  "detail": "PGEG411 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( PGEG312, or PGEG411), PGEG351, PGEG361, SDAS300",
+  "severity": "warning",
+  "related": [
+   "PGEG411"
+  ]
+ },
+ {
+  "id": "F0103",
+  "check": "missing_course",
+  "course": "PGEG400",
+  "detail": "MATH261 does not exist in this catalog",
+  "evidence": "MATH 206, MATH 261, PGEG 300, PGEG 312, PGEG 411",
+  "severity": "blocking",
+  "related": [
+   "MATH261"
+  ]
+ },
+ {
+  "id": "F0104",
+  "check": "missing_course",
+  "course": "PGEG400",
+  "detail": "PGEG411 does not exist in this catalog",
+  "evidence": "MATH 206, MATH 261, PGEG 300, PGEG 312, PGEG 411",
+  "severity": "blocking",
+  "related": [
+   "PGEG411"
+  ]
+ },
+ {
+  "id": "F0105",
+  "check": "missing_course",
+  "course": "PHYS471",
+  "detail": "PHYS372 does not exist in this catalog",
+  "evidence": "PHYS372",
+  "severity": "blocking",
+  "related": [
+   "PHYS372"
+  ]
+ },
+ {
+  "id": "F0106",
+  "check": "missing_course",
+  "course": "PHYS474",
+  "detail": "PHYS372 does not exist in this catalog",
+  "evidence": "PHYS372",
+  "severity": "blocking",
+  "related": [
+   "PHYS372"
+  ]
+ }
+]

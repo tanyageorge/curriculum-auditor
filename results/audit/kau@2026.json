@@ -1,0 +1,613 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "AREN470",
+  "detail": "IEN255 does not exist in this catalog",
+  "evidence": "IEN 255",
+  "severity": "blocking",
+  "related": [
+   "IEN255"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "BIO430",
+  "detail": "BIO230 does not exist in this catalog",
+  "evidence": "Bio 230 + BIO 231",
+  "severity": "blocking",
+  "related": [
+   "BIO230"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "BIO432",
+  "detail": "BIO232 does not exist in this catalog",
+  "evidence": "BIO 232",
+  "severity": "blocking",
+  "related": [
+   "BIO232"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "CE201",
+  "detail": "PHY281 does not exist in this catalog",
+  "evidence": "IE 200, PHY 281",
+  "severity": "blocking",
+  "related": [
+   "PHY281"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "CEN221",
+  "detail": "IEN255 does not exist in this catalog",
+  "evidence": "IEN 255",
+  "severity": "blocking",
+  "related": [
+   "IEN255"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "CS341",
+  "detail": "CS351 does not exist in this catalog",
+  "evidence": "CS 351",
+  "severity": "blocking",
+  "related": [
+   "CS351"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "ECON-300",
+  "detail": "ECON205 does not exist in this catalog",
+  "evidence": "ECON 205",
+  "severity": "blocking",
+  "related": [
+   "ECON205"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "ECON-306",
+  "detail": "ECON205 does not exist in this catalog",
+  "evidence": "ECON 205 . ECON 207 . ECON 304",
+  "severity": "blocking",
+  "related": [
+   "ECON205"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "EEG200",
+  "detail": "EEG220 does not exist in this catalog",
+  "evidence": "EEG220",
+  "severity": "blocking",
+  "related": [
+   "EEG220"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "EEN271",
+  "detail": "RSMA204 does not exist in this catalog",
+  "evidence": "EEN 170 . RSMA204",
+  "severity": "blocking",
+  "related": [
+   "RSMA204"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "EEN304",
+  "detail": "RSMA204 does not exist in this catalog",
+  "evidence": "EEN 201 . RSMA204",
+  "severity": "blocking",
+  "related": [
+   "RSMA204"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "missing_course",
+  "course": "EGP471",
+  "detail": "EGP211 does not exist in this catalog",
+  "evidence": "EGP 211, ESR 314",
+  "severity": "blocking",
+  "related": [
+   "EGP211"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "missing_course",
+  "course": "EGP499",
+  "detail": "EGP399 does not exist in this catalog",
+  "evidence": "EGP399",
+  "severity": "blocking",
+  "related": [
+   "EGP399"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "EGT431",
+  "detail": "EGT320 does not exist in this catalog",
+  "evidence": "EGT 320 EMR 322",
+  "severity": "blocking",
+  "related": [
+   "EGT320"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "EHG313",
+  "detail": "EHG211 does not exist in this catalog",
+  "evidence": "EHG 211",
+  "severity": "blocking",
+  "related": [
+   "EHG211"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "ENS407",
+  "detail": "ENS362 does not exist in this catalog",
+  "evidence": "ENS 309 ENS 311 ENS 362",
+  "severity": "blocking",
+  "related": [
+   "ENS362"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "ENS464",
+  "detail": "ENS362 does not exist in this catalog",
+  "evidence": "ENS 362",
+  "severity": "blocking",
+  "related": [
+   "ENS362"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "ENS465",
+  "detail": "ENS362 does not exist in this catalog",
+  "evidence": "ENS 362",
+  "severity": "blocking",
+  "related": [
+   "ENS362"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "self_reference",
+  "course": "ID142",
+  "detail": "ID142 lists itself as a prerequisite",
+  "evidence": "ID 142",
+  "severity": "blocking",
+  "related": []
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "ID324",
+  "detail": "ID123 does not exist in this catalog",
+  "evidence": "ID 123 ID 218",
+  "severity": "blocking",
+  "related": [
+   "ID123"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "ID454",
+  "detail": "ID251 does not exist in this catalog",
+  "evidence": "ID 251",
+  "severity": "blocking",
+  "related": [
+   "ID251"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "missing_course",
+  "course": "IEN200",
+  "detail": "IEN101 does not exist in this catalog",
+  "evidence": "IEN 101",
+  "severity": "blocking",
+  "related": [
+   "IEN101"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "missing_course",
+  "course": "IEN481",
+  "detail": "IEN202 does not exist in this catalog",
+  "evidence": "IEN 202",
+  "severity": "blocking",
+  "related": [
+   "IEN202"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "self_reference",
+  "course": "ILS241",
+  "detail": "ILS241 lists itself as a prerequisite",
+  "evidence": "ILS 241",
+  "severity": "blocking",
+  "related": []
+ },
+ {
+  "id": "F0025",
+  "check": "missing_course",
+  "course": "IT361",
+  "detail": "IT211 does not exist in this catalog",
+  "evidence": "IT 211 + IT 203",
+  "severity": "blocking",
+  "related": [
+   "IT211"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "missing_course",
+  "course": "IT361",
+  "detail": "IT203 does not exist in this catalog",
+  "evidence": "IT 211 + IT 203",
+  "severity": "blocking",
+  "related": [
+   "IT203"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "missing_course",
+  "course": "JCOM311",
+  "detail": "MRKC213 does not exist in this catalog",
+  "evidence": "MRKC 213",
+  "severity": "blocking",
+  "related": [
+   "MRKC213"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "missing_course",
+  "course": "JCOM321",
+  "detail": "AVP202 does not exist in this catalog",
+  "evidence": "AVP 202",
+  "severity": "blocking",
+  "related": [
+   "AVP202"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "missing_course",
+  "course": "JCOM342",
+  "detail": "JCOM121 does not exist in this catalog",
+  "evidence": "JCOM 121",
+  "severity": "blocking",
+  "related": [
+   "JCOM121"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "missing_course",
+  "course": "JCOM343",
+  "detail": "JCOM211 does not exist in this catalog",
+  "evidence": "JCOM 211",
+  "severity": "blocking",
+  "related": [
+   "JCOM211"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "missing_course",
+  "course": "LA245",
+  "detail": "LA251 does not exist in this catalog",
+  "evidence": "LA251",
+  "severity": "blocking",
+  "related": [
+   "LA251"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "missing_course",
+  "course": "LAWG432",
+  "detail": "LAWG271 does not exist in this catalog",
+  "evidence": "LAWG 231 - LAWG 271",
+  "severity": "blocking",
+  "related": [
+   "LAWG271"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "missing_course",
+  "course": "MC447",
+  "detail": "MSC341 does not exist in this catalog",
+  "evidence": "MSC 341",
+  "severity": "blocking",
+  "related": [
+   "MSC341"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "missing_course",
+  "course": "MET424",
+  "detail": "MET322 does not exist in this catalog",
+  "evidence": "MET 322",
+  "severity": "blocking",
+  "related": [
+   "MET322"
+  ]
+ },
+ {
+  "id": "F0035",
+  "check": "missing_course",
+  "course": "MINE301",
+  "detail": "EMR201 does not exist in this catalog",
+  "evidence": "EMR 201",
+  "severity": "blocking",
+  "related": [
+   "EMR201"
+  ]
+ },
+ {
+  "id": "F0036",
+  "check": "missing_course",
+  "course": "MSE471",
+  "detail": "CHEM332 does not exist in this catalog",
+  "evidence": "CHEM 332",
+  "severity": "blocking",
+  "related": [
+   "CHEM332"
+  ]
+ },
+ {
+  "id": "F0037",
+  "check": "missing_course",
+  "course": "PR322",
+  "detail": "PR211 does not exist in this catalog",
+  "evidence": "PR 211",
+  "severity": "blocking",
+  "related": [
+   "PR211"
+  ]
+ },
+ {
+  "id": "F0038",
+  "check": "missing_course",
+  "course": "PR331",
+  "detail": "JCOM211 does not exist in this catalog",
+  "evidence": "JCOM 211",
+  "severity": "blocking",
+  "related": [
+   "JCOM211"
+  ]
+ },
+ {
+  "id": "F0039",
+  "check": "missing_course",
+  "course": "PR432",
+  "detail": "MRKC213 does not exist in this catalog",
+  "evidence": "MRKC 213",
+  "severity": "blocking",
+  "related": [
+   "MRKC213"
+  ]
+ },
+ {
+  "id": "F0040",
+  "check": "missing_course",
+  "course": "RSBI210",
+  "detail": "RSBI201 (one of several alternatives) does not exist in this catalog",
+  "evidence": "RSBI 201 OR BIO 202",
+  "severity": "warning",
+  "related": [
+   "RSBI201"
+  ]
+ },
+ {
+  "id": "F0041",
+  "check": "missing_course",
+  "course": "RSBI220",
+  "detail": "RSBI201 (one of several alternatives) does not exist in this catalog",
+  "evidence": "RSBI 201 OR BIO 202",
+  "severity": "warning",
+  "related": [
+   "RSBI201"
+  ]
+ },
+ {
+  "id": "F0042",
+  "check": "missing_course",
+  "course": "RSBI240",
+  "detail": "RSBI201 (one of several alternatives) does not exist in this catalog",
+  "evidence": "RSBI 201 OR BIO 202",
+  "severity": "warning",
+  "related": [
+   "RSBI201"
+  ]
+ },
+ {
+  "id": "F0043",
+  "check": "missing_course",
+  "course": "RSBI456",
+  "detail": "RSBI303 does not exist in this catalog",
+  "evidence": "RSBI 303",
+  "severity": "blocking",
+  "related": [
+   "RSBI303"
+  ]
+ },
+ {
+  "id": "F0044",
+  "check": "missing_course",
+  "course": "RSPH252",
+  "detail": "RSPH101 does not exist in this catalog",
+  "evidence": "RSPH 101",
+  "severity": "blocking",
+  "related": [
+   "RSPH101"
+  ]
+ },
+ {
+  "id": "F0045",
+  "check": "missing_course",
+  "course": "SEC342",
+  "detail": "CS121 does not exist in this catalog",
+  "evidence": "CS 121, SEC 211",
+  "severity": "blocking",
+  "related": [
+   "CS121"
+  ]
+ },
+ {
+  "id": "F0046",
+  "check": "missing_course",
+  "course": "URP204",
+  "detail": "URP233 does not exist in this catalog",
+  "evidence": "URP 233",
+  "severity": "blocking",
+  "related": [
+   "URP233"
+  ]
+ },
+ {
+  "id": "F0047",
+  "check": "missing_course",
+  "course": "URP407",
+  "detail": "URP366 does not exist in this catalog",
+  "evidence": "URP 366",
+  "severity": "blocking",
+  "related": [
+   "URP366"
+  ]
+ },
+ {
+  "id": "F0048",
+  "check": "missing_course",
+  "course": "URP408",
+  "detail": "URP477 does not exist in this catalog",
+  "evidence": "URP 477",
+  "severity": "blocking",
+  "related": [
+   "URP477"
+  ]
+ },
+ {
+  "id": "F0049",
+  "check": "missing_course",
+  "course": "\u063a\u062a213",
+  "detail": "BIO130 does not exist in this catalog",
+  "evidence": "BIO130",
+  "severity": "blocking",
+  "related": [
+   "BIO130"
+  ]
+ },
+ {
+  "id": "F0050",
+  "check": "missing_course",
+  "course": "\u063a\u062a214",
+  "detail": "CHEM131 does not exist in this catalog",
+  "evidence": "CHEM131",
+  "severity": "blocking",
+  "related": [
+   "CHEM131"
+  ]
+ },
+ {
+  "id": "F0051",
+  "check": "missing_course",
+  "course": "\u063a\u062a326",
+  "detail": "BIO131 does not exist in this catalog",
+  "evidence": "FNU214 BIO131",
+  "severity": "blocking",
+  "related": [
+   "BIO131"
+  ]
+ },
+ {
+  "id": "F0052",
+  "check": "long_chain",
+  "course": "ChE499",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "ChE 334, ChE 454 (Co Req.)",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0053",
+  "check": "long_chain",
+  "course": "MSS420",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "MSS 310, MSS 323 MSS 412, MSS 413 Co-requisite: 421",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0054",
+  "check": "long_chain",
+  "course": "MSS422",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "MSS 411, MSS 414",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0055",
+  "check": "long_chain",
+  "course": "MSS424",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "MSS 411",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0056",
+  "check": "long_chain",
+  "course": "MSS425",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "MSS 411",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0057",
+  "check": "long_chain",
+  "course": "MSS490",
+  "detail": "needs at least 10 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "MSS 390, MSS 411, MSS 420",
+  "severity": "info",
+  "related": []
+ }
+]

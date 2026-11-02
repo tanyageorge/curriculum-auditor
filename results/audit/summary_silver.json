@@ -1,0 +1,80 @@
+{
+ "aub@2024-2025": {
+  "courses": 1742,
+  "blocking": 38,
+  "warning": 15,
+  "info": 6
+ },
+ "auk@202608": {
+  "courses": 737,
+  "blocking": 4,
+  "warning": 1,
+  "info": 0
+ },
+ "aus@2023-2024": {
+  "courses": 876,
+  "blocking": 14,
+  "warning": 20,
+  "info": 0
+ },
+ "fbsu@2025-2026": {
+  "courses": 570,
+  "blocking": 23,
+  "warning": 0,
+  "info": 6
+ },
+ "kau@2026": {
+  "courses": 3148,
+  "blocking": 48,
+  "warning": 3,
+  "info": 6
+ },
+ "kfupm@2025-2026": {
+  "courses": 2150,
+  "blocking": 5,
+  "warning": 21,
+  "info": 0
+ },
+ "khalifa@2025-2026": {
+  "courses": 816,
+  "blocking": 16,
+  "warning": 90,
+  "info": 0
+ },
+ "ksu-ccis@2025": {
+  "courses": 113,
+  "blocking": 9,
+  "warning": 86,
+  "info": 0
+ },
+ "ksu-cs@2025": {
+  "courses": 44,
+  "blocking": 0,
+  "warning": 86,
+  "info": 0
+ },
+ "ku@2026": {
+  "courses": 567,
+  "blocking": 3,
+  "warning": 6,
+  "info": 0
+ },
+ "qu@2024-2025": {
+  "courses": 1698,
+  "blocking": 15,
+  "warning": 210,
+  "info": 2
+ },
+ "uaeu@2025_2026": {
+  "courses": 2743,
+  "blocking": 43,
+  "warning": 2,
+  "info": 0
+ },
+ "uob@2025": {
+  "courses": 2033,
+  "blocking": 34,
+  "warning": 0,
+  "info": 7
+ }
+}

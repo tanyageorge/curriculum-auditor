@@ -1,0 +1,495 @@
+[
+ {
+  "id": "F0001",
+  "check": "renumbered",
+  "course": "FINC261",
+  "detail": "FINC240 is not in this edition; it last appeared in the 2021_2022 catalog",
+  "evidence": "FINC240",
+  "severity": "blocking",
+  "related": [
+   "FINC240"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "renumbered",
+  "course": "FINC344",
+  "detail": "FINC240 is not in this edition; it last appeared in the 2021_2022 catalog",
+  "evidence": "FINC240 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "FINC240"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "renumbered",
+  "course": "FINC377",
+  "detail": "FINC240 is not in this edition; it last appeared in the 2021_2022 catalog",
+  "evidence": "FINC240 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "FINC240"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "renumbered",
+  "course": "ACCT352",
+  "detail": "ACCT235 is not in this edition; it last appeared in the 2021_2022 catalog (now ACCT210)",
+  "evidence": "ACCT235 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "ACCT235"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "renumbered",
+  "course": "ACCT423",
+  "detail": "ACCT422 is not in this edition; it last appeared in the 2021_2022 catalog (now ACCT240)",
+  "evidence": "ACCT422 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "ACCT422"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "renumbered",
+  "course": "SCML200",
+  "detail": "MGMT200 is not in this edition; it last appeared in the 2021_2022 catalog",
+  "evidence": "MGMT200 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "MGMT200"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "self_reference",
+  "course": "CURR710",
+  "detail": "CURR710 lists itself as a prerequisite",
+  "evidence": "CURR710 with a minimum grade D",
+  "severity": "blocking",
+  "related": []
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "FOED666",
+  "detail": "FOED644 does not exist in this catalog",
+  "evidence": "FOED 644",
+  "severity": "blocking",
+  "related": [
+   "FOED644"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "renumbered",
+  "course": "ARCH900",
+  "detail": "ARCH810 is not in this edition; it last appeared in the 2024_2025 catalog",
+  "evidence": "ARCH810 with a minimum grade P",
+  "severity": "blocking",
+  "related": [
+   "ARCH810"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "renumbered",
+  "course": "PETE403",
+  "detail": "GEOL372 is not in this edition; it last appeared in the 2018_2019 catalog (now GEOL370)",
+  "evidence": "PETE305 with a minimum grade D, GEOL372 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "GEOL372"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "renumbered",
+  "course": "PETE424",
+  "detail": "MATH1120 is not in this edition; it last appeared in the 2021_2022 catalog (now MATH135)",
+  "evidence": "CHEM111 with a minimum grade D, CHEM175 with a minimum grade D, MATH1120 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "MATH1120"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "renumbered",
+  "course": "ELEC325",
+  "detail": "MATH1120 is not in this edition; it last appeared in the 2021_2022 catalog (now MATH135)",
+  "evidence": "MATH1120 with a minimum grade D; PHYS110 with a minimum grade D; PHYS140 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "MATH1120"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "renumbered",
+  "course": "ELEC649",
+  "detail": "ELEC230 is not in this edition; it last appeared in the 2019_2020 catalog (now GENG230)",
+  "evidence": "ELEC230 with a minimum grade C, ELEC451 with a minimum grade C",
+  "severity": "blocking",
+  "related": [
+   "ELEC230"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "renumbered",
+  "course": "AERO515",
+  "detail": "AERO200 is not in this edition; it last appeared in the 2022_2023 catalog (now AERO301)",
+  "evidence": "AERO200 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "AERO200"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "renumbered",
+  "course": "ARAG437",
+  "detail": "ARAG306 is not in this edition; it last appeared in the 2020_2021 catalog",
+  "evidence": "ARAG306 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "ARAG306"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "renumbered",
+  "course": "ARAG439",
+  "detail": "ARAG306 is not in this edition; it last appeared in the 2020_2021 catalog",
+  "evidence": "ARAG306 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "ARAG306"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "VMED255",
+  "detail": "VMED115 does not exist in this catalog",
+  "evidence": "VMED115",
+  "severity": "blocking",
+  "related": [
+   "VMED115"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "renumbered",
+  "course": "VMED260",
+  "detail": "VMED100 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "VMED100",
+  "severity": "blocking",
+  "related": [
+   "VMED100"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "renumbered",
+  "course": "VMED305",
+  "detail": "VMED230 is not in this edition; it last appeared in the 2024_2025 catalog",
+  "evidence": "VMED230",
+  "severity": "blocking",
+  "related": [
+   "VMED230"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "renumbered",
+  "course": "VMED311",
+  "detail": "VMED230 is not in this edition; it last appeared in the 2024_2025 catalog",
+  "evidence": "VMED244 with a minimum grade D, VMED235 with a minimum grade D, VMED230 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "VMED230"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "renumbered",
+  "course": "VMED333",
+  "detail": "VMED300 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "VMED300 with a minimum grade D, VMED311 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "VMED300"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "renumbered",
+  "course": "VMED385",
+  "detail": "VMED320 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "VMED320",
+  "severity": "blocking",
+  "related": [
+   "VMED320"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "renumbered",
+  "course": "VMED422",
+  "detail": "VMED110 is not in this edition; it last appeared in the 2023_2024 catalog (now VMED105)",
+  "evidence": "Pre/Co VMED110 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "VMED110"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "renumbered",
+  "course": "SWK250",
+  "detail": "SWK200 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "SWK200; SWK210 | Corequisite: SWK251",
+  "severity": "blocking",
+  "related": [
+   "SWK200"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "renumbered",
+  "course": "SWK251",
+  "detail": "SWK200 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "SWK200; SWK210 | Corequisite: SWK250",
+  "severity": "blocking",
+  "related": [
+   "SWK200"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "renumbered",
+  "course": "PSYC413",
+  "detail": "PSYC304 is not in this edition; it last appeared in the 2023_2024 catalog (now PSYC206)",
+  "evidence": "PSYC304PSYC401",
+  "severity": "blocking",
+  "related": [
+   "PSYC304"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "missing_course",
+  "course": "PSYC454",
+  "detail": "PSYC302 does not exist in this catalog",
+  "evidence": "PSYC302PSYC310",
+  "severity": "blocking",
+  "related": [
+   "PSYC302"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "renumbered",
+  "course": "TSL321",
+  "detail": "TSL100 is not in this edition; it last appeared in the 2020_2021 catalog",
+  "evidence": "TSL100 with a minimum grade D, TSL110 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "TSL100"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "renumbered",
+  "course": "ISEC416",
+  "detail": "ITBP370 is not in this edition; it last appeared in the 2023_2024 catalog (now ITBP270)",
+  "evidence": "ITBP301 with a minimum grade D; ITBP370 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "ITBP370"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "renumbered",
+  "course": "ISEC422",
+  "detail": "ITBP370 is not in this edition; it last appeared in the 2023_2024 catalog (now ITBP270)",
+  "evidence": "ITBP370 with a minimum grade D; ISEC421 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "ITBP370"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "renumbered",
+  "course": "PRVT201",
+  "detail": "PRVT210 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "PRVT210 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "PRVT210"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "renumbered",
+  "course": "PRVT211",
+  "detail": "PRVT210 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "PRVT210 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "PRVT210"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "renumbered",
+  "course": "PRVT606",
+  "detail": "PRVT605 is not in this edition; it last appeared in the 2022_2023 catalog",
+  "evidence": "PRVT605 with a minimum grade C",
+  "severity": "blocking",
+  "related": [
+   "PRVT605"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "renumbered",
+  "course": "PUBL306",
+  "detail": "PUBL209 is not in this edition; it last appeared in the 2023_2024 catalog",
+  "evidence": "PUBL209 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "PUBL209"
+  ]
+ },
+ {
+  "id": "F0035",
+  "check": "missing_course",
+  "course": "PUBL635",
+  "detail": "PUBL632 does not exist in this catalog",
+  "evidence": "PUBL630 with a minimum grade C, PUBL631 with a minimum grade C, PUBL632 with a minimum grade C",
+  "severity": "blocking",
+  "related": [
+   "PUBL632"
+  ]
+ },
+ {
+  "id": "F0036",
+  "check": "missing_course",
+  "course": "PUBL639",
+  "detail": "PUBL632 does not exist in this catalog",
+  "evidence": "PUBL630 with a minimum grade C, PUBL631 with a minimum grade C, PUBL632 with a minimum grade C",
+  "severity": "blocking",
+  "related": [
+   "PUBL632"
+  ]
+ },
+ {
+  "id": "F0037",
+  "check": "renumbered",
+  "course": "NUTR481",
+  "detail": "NUTR377 is not in this edition; it last appeared in the 2023_2024 catalog (now NUTR376)",
+  "evidence": "NUTR371; NUTR372; NUTR377; NUTR378; NUTR403; NUTR404",
+  "severity": "blocking",
+  "related": [
+   "NUTR377"
+  ]
+ },
+ {
+  "id": "F0038",
+  "check": "renumbered",
+  "course": "NUTR489",
+  "detail": "NUTR377 is not in this edition; it last appeared in the 2023_2024 catalog (now NUTR376)",
+  "evidence": "NUTR377; NUTR378 | Corequisite: NUTR488",
+  "severity": "blocking",
+  "related": [
+   "NUTR377"
+  ]
+ },
+ {
+  "id": "F0039",
+  "check": "renumbered",
+  "course": "PSY524",
+  "detail": "PSY303 is not in this edition; it last appeared in the 2021_2022 catalog (now PSYC303)",
+  "evidence": "PSY303 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "PSY303"
+  ]
+ },
+ {
+  "id": "F0040",
+  "check": "renumbered",
+  "course": "PSY527",
+  "detail": "PSY303 is not in this edition; it last appeared in the 2021_2022 catalog (now PSYC303)",
+  "evidence": "PSY303 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "PSY303"
+  ]
+ },
+ {
+  "id": "F0041",
+  "check": "renumbered",
+  "course": "BIOC275",
+  "detail": "BIOC214 (one of several alternatives) is not in this edition; it last appeared in the 2024_2025 catalog",
+  "evidence": "BIOC165 with a minimum grade D or BIOC214 with a minimum grade D | Corequisite: BIOC270",
+  "severity": "warning",
+  "related": [
+   "BIOC214"
+  ]
+ },
+ {
+  "id": "F0042",
+  "check": "renumbered",
+  "course": "BIOM489",
+  "detail": "BIOL270 (one of several alternatives) is not in this edition; it last appeared in the 2024_2025 catalog (now BION270)",
+  "evidence": "(BIOC290 or BIOL270); BIOC275 with a minimum grade D",
+  "severity": "warning",
+  "related": [
+   "BIOL270"
+  ]
+ },
+ {
+  "id": "F0043",
+  "check": "renumbered",
+  "course": "BCHM362",
+  "detail": "CHEM361 is not in this edition; it last appeared in the 2018_2019 catalog (now BCHM361)",
+  "evidence": "CHEM361",
+  "severity": "blocking",
+  "related": [
+   "CHEM361"
+  ]
+ },
+ {
+  "id": "F0044",
+  "check": "renumbered",
+  "course": "CHEM321",
+  "detail": "CHEM221 is not in this edition; it last appeared in the 2018_2019 catalog",
+  "evidence": "CHEM221 with a minimum grade D",
+  "severity": "blocking",
+  "related": [
+   "CHEM221"
+  ]
+ },
+ {
+  "id": "F0045",
+  "check": "renumbered",
+  "course": "PHYS475",
+  "detail": "PHYS231 is not in this edition; it last appeared in the 2023_2024 catalog (now PHYS233)",
+  "evidence": "PHYS231",
+  "severity": "blocking",
+  "related": [
+   "PHYS231"
+  ]
+ }
+]

@@ -1,0 +1,2493 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "ACCT110",
+  "detail": "MATH021 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 101 OR Mathematics Placement Test 180 OR ACT 21 OR SAT 500 OR MATH 021 OR MATH F014 OR MATH004 OR MATH 002 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH021"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "ACCT110",
+  "detail": "MATH004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 101 OR Mathematics Placement Test 180 OR ACT 21 OR SAT 500 OR MATH 021 OR MATH F014 OR MATH004 OR MATH 002 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH004"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "ACCT110",
+  "detail": "MATH002 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 101 OR Mathematics Placement Test 180 OR ACT 21 OR SAT 500 OR MATH 021 OR MATH F014 OR MATH004 OR MATH 002 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH002"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "ACCT111",
+  "detail": "ENGL198 does not exist in this catalog",
+  "evidence": "ENGL 198 AND MATH 119",
+  "severity": "blocking",
+  "related": [
+   "ENGL198"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "ACCT221",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ACCT 116 OR ACCT 112",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "ACCT331",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ACCT 116 OR ACCT 112",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "ACCT333",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ACCT 116 OR ACCT 112",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "ACCT411",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ACCT 116 OR ACCT 112",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "ACCT412",
+  "detail": "ACCT325 does not exist in this catalog",
+  "evidence": "ACCT 325",
+  "severity": "blocking",
+  "related": [
+   "ACCT325"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "ACCT415",
+  "detail": "ACCT325 does not exist in this catalog",
+  "evidence": "ACCT 325",
+  "severity": "blocking",
+  "related": [
+   "ACCT325"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "ACCT421",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ACCT 116 OR ACCT 112",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "missing_course",
+  "course": "ACCT428",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ACCT 116 OR ACCT 112",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "missing_course",
+  "course": "ARAB110",
+  "detail": "ARAB239 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ARAB 239 Concur. AND ARAB 106 Concur.) OR (ARAB 105 Concur. OR ARAB 100 Concur.) OR ARAB 109",
+  "severity": "warning",
+  "related": [
+   "ARAB239"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "ARAB110",
+  "detail": "ARAB105 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ARAB 239 Concur. AND ARAB 106 Concur.) OR (ARAB 105 Concur. OR ARAB 100 Concur.) OR ARAB 109",
+  "severity": "warning",
+  "related": [
+   "ARAB105"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "ARAB110",
+  "detail": "ARAB106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ARAB 239 Concur. AND ARAB 106 Concur.) OR (ARAB 105 Concur. OR ARAB 100 Concur.) OR ARAB 109",
+  "severity": "warning",
+  "related": [
+   "ARAB106"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "ARAB110",
+  "detail": "ARAB105 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ARAB 239 Concur. AND ARAB 106 Concur.) OR (ARAB 105 Concur. OR ARAB 100 Concur.) OR ARAB 109",
+  "severity": "warning",
+  "related": [
+   "ARAB105"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "ARAB200",
+  "detail": "ARAB105 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ARAB 100 OR (ARAB 105 AND ARAB 106)",
+  "severity": "warning",
+  "related": [
+   "ARAB105"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "ARAB200",
+  "detail": "ARAB106 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ARAB 100 OR (ARAB 105 AND ARAB 106)",
+  "severity": "warning",
+  "related": [
+   "ARAB106"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "missing_course",
+  "course": "ARAB201",
+  "detail": "ARAB043 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ARAB 107 OR ARAB 043",
+  "severity": "warning",
+  "related": [
+   "ARAB043"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "ARAB372",
+  "detail": "ARAB244 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ARAB 271 OR ARAB 244",
+  "severity": "warning",
+  "related": [
+   "ARAB244"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "BIOL101",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "missing_course",
+  "course": "BIOL110",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "missing_course",
+  "course": "BIOM346",
+  "detail": "BIOM201 does not exist in this catalog",
+  "evidence": "BIOM 201",
+  "severity": "blocking",
+  "related": [
+   "BIOM201"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "missing_course",
+  "course": "CMPE457",
+  "detail": "CMPE455 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPE 355 OR CMPE 455",
+  "severity": "warning",
+  "related": [
+   "CMPE455"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "missing_course",
+  "course": "CMPS303",
+  "detail": "CMPE265 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPS 251 OR CMPE 265",
+  "severity": "warning",
+  "related": [
+   "CMPE265"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "missing_course",
+  "course": "CMPS381",
+  "detail": "CMPS380 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPS 380 OR CMPS 385",
+  "severity": "warning",
+  "related": [
+   "CMPS380"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "missing_course",
+  "course": "CMPS481",
+  "detail": "CMPS380 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPS 385 OR CMPS 380",
+  "severity": "warning",
+  "related": [
+   "CMPS380"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "missing_course",
+  "course": "CMPS483",
+  "detail": "CMPS380 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPS 385 OR CMPS 380",
+  "severity": "warning",
+  "related": [
+   "CMPS380"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "missing_course",
+  "course": "CMPS485",
+  "detail": "CMPS380 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPE 355 AND (CMPS 380 OR CMPS 385)",
+  "severity": "warning",
+  "related": [
+   "CMPS380"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "missing_course",
+  "course": "CMPS489",
+  "detail": "CMPS380 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMPS 380 OR CMPS 385",
+  "severity": "warning",
+  "related": [
+   "CMPS380"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "missing_course",
+  "course": "CVEN212",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PHYS 191 AND PHYS 192 AND (CVEN 213 OR CVEN 211)",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "missing_course",
+  "course": "CVEN220",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CVEN 213 OR CVEN 211",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "missing_course",
+  "course": "CVEN230",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CVEN 213 OR CVEN 211",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "missing_course",
+  "course": "CVEN320",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CVEN 220 AND (CVEN 214 OR CVEN 211)",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0035",
+  "check": "missing_course",
+  "course": "CVEN330",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CVEN 230 AND (CVEN 214 OR CVEN 211)",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0036",
+  "check": "missing_course",
+  "course": "CVEN420",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CVEN 220 AND (CVEN 214 OR CVEN 211)",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0037",
+  "check": "missing_course",
+  "course": "CVEN431",
+  "detail": "CVEN211 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CVEN 230 AND (CVEN 214 OR CVEN 211)",
+  "severity": "warning",
+  "related": [
+   "CVEN211"
+  ]
+ },
+ {
+  "id": "F0038",
+  "check": "missing_course",
+  "course": "ECON101",
+  "detail": "ENGL2011 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ENGL 4 OR MATH 119) OR COMP F003 AND (COMP 2 OR ENGL 2011) OR ENGL F073",
+  "severity": "warning",
+  "related": [
+   "ENGL2011"
+  ]
+ },
+ {
+  "id": "F0039",
+  "check": "missing_course",
+  "course": "ECON111",
+  "detail": "MATH021 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21 OR SAT 500 OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH021"
+  ]
+ },
+ {
+  "id": "F0040",
+  "check": "missing_course",
+  "course": "ECON111",
+  "detail": "MATH004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21 OR SAT 500 OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH004"
+  ]
+ },
+ {
+  "id": "F0041",
+  "check": "missing_course",
+  "course": "ECON111",
+  "detail": "MATH002 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21 OR SAT 500 OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH002"
+  ]
+ },
+ {
+  "id": "F0042",
+  "check": "missing_course",
+  "course": "ECON112",
+  "detail": "MATH021 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21OR SAT 500OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH021"
+  ]
+ },
+ {
+  "id": "F0043",
+  "check": "missing_course",
+  "course": "ECON112",
+  "detail": "MATH004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21OR SAT 500OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH004"
+  ]
+ },
+ {
+  "id": "F0044",
+  "check": "missing_course",
+  "course": "ECON112",
+  "detail": "MATH002 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21OR SAT 500OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH002"
+  ]
+ },
+ {
+  "id": "F0045",
+  "check": "missing_course",
+  "course": "ECON201",
+  "detail": "MATH021 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21OR SAT 500 OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH021"
+  ]
+ },
+ {
+  "id": "F0046",
+  "check": "missing_course",
+  "course": "ECON201",
+  "detail": "MATH004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21OR SAT 500 OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH004"
+  ]
+ },
+ {
+  "id": "F0047",
+  "check": "missing_course",
+  "course": "ECON201",
+  "detail": "MATH002 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR Mathematics Placement Test 180 OR ACT 21OR SAT 500 OR MATH 021 OR MATH F014 OR MATH 004 OR MATH 002 OR MATH 101 OR MATH 119",
+  "severity": "warning",
+  "related": [
+   "MATH002"
+  ]
+ },
+ {
+  "id": "F0048",
+  "check": "missing_course",
+  "course": "ECON471",
+  "detail": "ACCT112 does not exist in this catalog",
+  "evidence": "ECON 211 AND ACCT 112 AND MAKT 115",
+  "severity": "blocking",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0049",
+  "check": "missing_course",
+  "course": "ECON471",
+  "detail": "MAKT115 does not exist in this catalog",
+  "evidence": "ECON 211 AND ACCT 112 AND MAKT 115",
+  "severity": "blocking",
+  "related": [
+   "MAKT115"
+  ]
+ },
+ {
+  "id": "F0050",
+  "check": "missing_course",
+  "course": "ECON483",
+  "detail": "MAGT203 does not exist in this catalog",
+  "evidence": "ECON 212 AND MAGT 203",
+  "severity": "blocking",
+  "related": [
+   "MAGT203"
+  ]
+ },
+ {
+  "id": "F0051",
+  "check": "self_reference",
+  "course": "EDPE390",
+  "detail": "EDPE390 lists itself as a prerequisite",
+  "evidence": "EDPE 390",
+  "severity": "blocking",
+  "related": []
+ },
+ {
+  "id": "F0052",
+  "check": "missing_course",
+  "course": "EDPR447",
+  "detail": "FIQH205 (one of several alternatives) does not exist in this catalog",
+  "evidence": "EDUC 310 AND EDUC 312 AND EDUC 315 AND ((ISLA 105 AND ISLA 106) OR (FIQH 205 AND QURS 203 AND QURS 200)",
+  "severity": "warning",
+  "related": [
+   "FIQH205"
+  ]
+ },
+ {
+  "id": "F0053",
+  "check": "missing_course",
+  "course": "EDPR447",
+  "detail": "FIQH205 (one of several alternatives) does not exist in this catalog",
+  "evidence": "EDUC 310 AND EDUC 312 AND EDUC 315 AND ((ISLA 105 AND ISLA 106) OR (FIQH 205 AND QURS 203 AND QURS 200)",
+  "severity": "warning",
+  "related": [
+   "FIQH205"
+  ]
+ },
+ {
+  "id": "F0054",
+  "check": "missing_course",
+  "course": "EDPR453",
+  "detail": "EDUC311 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(EDUC 311 OR EDUC 319) AND ENGL 157 AND ENGL 153",
+  "severity": "warning",
+  "related": [
+   "EDUC311"
+  ]
+ },
+ {
+  "id": "F0055",
+  "check": "missing_course",
+  "course": "EDPR481",
+  "detail": "EDUC311 (one of several alternatives) does not exist in this catalog",
+  "evidence": "EDUC 310 AND (EDUC 311 OR EDUC 319) AND EDUC 313 AND EDUC 314 AND EDUC 318 AND EDUC 317 AND EDUC 316 AND EDUC 312 AND EDUC 315",
+  "severity": "warning",
+  "related": [
+   "EDUC311"
+  ]
+ },
+ {
+  "id": "F0056",
+  "check": "missing_course",
+  "course": "ELEC213",
+  "detail": "ELEC202 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 202 with concurrency OR ELEC 212 with concurrency",
+  "severity": "warning",
+  "related": [
+   "ELEC202"
+  ]
+ },
+ {
+  "id": "F0057",
+  "check": "missing_course",
+  "course": "ELEC311",
+  "detail": "MATH385 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PHYS 193 AND MATH 285) OR (MATH 217 AND MATH 385 AND PHYS 193)",
+  "severity": "warning",
+  "related": [
+   "MATH385"
+  ]
+ },
+ {
+  "id": "F0058",
+  "check": "missing_course",
+  "course": "ELEC312",
+  "detail": "ELEC202 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 202 OR (ELEC 212 AND ELEC 213)",
+  "severity": "warning",
+  "related": [
+   "ELEC202"
+  ]
+ },
+ {
+  "id": "F0059",
+  "check": "missing_course",
+  "course": "ELEC312",
+  "detail": "ELEC202 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 202 OR (ELEC 212 AND ELEC 213)",
+  "severity": "warning",
+  "related": [
+   "ELEC202"
+  ]
+ },
+ {
+  "id": "F0060",
+  "check": "missing_course",
+  "course": "ELEC325",
+  "detail": "ELEC202 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 202 OR (ELEC 212 AND ELEC 213)",
+  "severity": "warning",
+  "related": [
+   "ELEC202"
+  ]
+ },
+ {
+  "id": "F0061",
+  "check": "missing_course",
+  "course": "ELEC325",
+  "detail": "ELEC202 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 202 OR (ELEC 212 AND ELEC 213)",
+  "severity": "warning",
+  "related": [
+   "ELEC202"
+  ]
+ },
+ {
+  "id": "F0062",
+  "check": "missing_course",
+  "course": "ELEC371",
+  "detail": "ELEC333 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 231 OR (ELEC 333 with concurrency)",
+  "severity": "warning",
+  "related": [
+   "ELEC333"
+  ]
+ },
+ {
+  "id": "F0063",
+  "check": "missing_course",
+  "course": "ELEC423",
+  "detail": "ELEC322 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 321 OR ELEC 322",
+  "severity": "warning",
+  "related": [
+   "ELEC322"
+  ]
+ },
+ {
+  "id": "F0064",
+  "check": "missing_course",
+  "course": "ELEC424",
+  "detail": "ELEC322 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 321 OR ELEC 322",
+  "severity": "warning",
+  "related": [
+   "ELEC322"
+  ]
+ },
+ {
+  "id": "F0065",
+  "check": "missing_course",
+  "course": "ELEC426",
+  "detail": "ELEC322 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 321 OR ELEC 322",
+  "severity": "warning",
+  "related": [
+   "ELEC322"
+  ]
+ },
+ {
+  "id": "F0066",
+  "check": "missing_course",
+  "course": "ELEC438",
+  "detail": "ELEC333 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ELEC 333 OR ELEC 371",
+  "severity": "warning",
+  "related": [
+   "ELEC333"
+  ]
+ },
+ {
+  "id": "F0067",
+  "check": "missing_course",
+  "course": "ENGL113",
+  "detail": "ENGL124 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 112 OR ENGL 124",
+  "severity": "warning",
+  "related": [
+   "ENGL124"
+  ]
+ },
+ {
+  "id": "F0068",
+  "check": "missing_course",
+  "course": "ENGL115",
+  "detail": "ENGL127 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 114 OR ENGL 127",
+  "severity": "warning",
+  "related": [
+   "ENGL127"
+  ]
+ },
+ {
+  "id": "F0069",
+  "check": "missing_course",
+  "course": "ENGL158",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 156 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0070",
+  "check": "missing_course",
+  "course": "ENGL202",
+  "detail": "ENGL004 does not exist in this catalog",
+  "evidence": "ENGL 004 OR ( (ENGL 040 OR ENGL C002 OR Total for Integrated Core 400 ) AND ( ENGL 041 OR ENGL R002 OR ESL Reading Skills 100 ) AND ( ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR TOEFL_Inst Testing Prog 500 OR Int Eng Lang Test Syst-IELTS 5.5 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR (Total for Integrated Core 400 AND ESL Language Use 100 AND ESL Reading Skills 100).",
+  "severity": "blocking",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0071",
+  "check": "missing_course",
+  "course": "ENGL208",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0072",
+  "check": "missing_course",
+  "course": "ENGL220",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0073",
+  "check": "missing_course",
+  "course": "ENGL302",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0074",
+  "check": "missing_course",
+  "course": "ENGL304",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0075",
+  "check": "missing_course",
+  "course": "ENGL306",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0076",
+  "check": "missing_course",
+  "course": "ENGL308",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0077",
+  "check": "missing_course",
+  "course": "ENGL314",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0078",
+  "check": "missing_course",
+  "course": "ENGL324",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0079",
+  "check": "missing_course",
+  "course": "ENGL326",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0080",
+  "check": "missing_course",
+  "course": "ENGL328",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0081",
+  "check": "missing_course",
+  "course": "ENGL332",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0082",
+  "check": "missing_course",
+  "course": "ENGL370",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 248 OR ENGL 156 OR ENGL 215",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0083",
+  "check": "missing_course",
+  "course": "ENGL370",
+  "detail": "ENGL215 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 248 OR ENGL 156 OR ENGL 215",
+  "severity": "warning",
+  "related": [
+   "ENGL215"
+  ]
+ },
+ {
+  "id": "F0084",
+  "check": "missing_course",
+  "course": "ENGL375",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 248 OR ENGL 156",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0085",
+  "check": "missing_course",
+  "course": "ENGL393",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0086",
+  "check": "missing_course",
+  "course": "ENGL400",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0087",
+  "check": "missing_course",
+  "course": "ENGL402",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0088",
+  "check": "missing_course",
+  "course": "ENGL404",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0089",
+  "check": "missing_course",
+  "course": "ENGL406",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0090",
+  "check": "missing_course",
+  "course": "ENGL408",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0091",
+  "check": "missing_course",
+  "course": "ENGL424",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0092",
+  "check": "missing_course",
+  "course": "ENGL426",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0093",
+  "check": "missing_course",
+  "course": "ENGL428",
+  "detail": "ENGL248 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 158 OR ENGL 248",
+  "severity": "warning",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0094",
+  "check": "missing_course",
+  "course": "ENGL441",
+  "detail": "ENGL310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 373 OR ENGL 310",
+  "severity": "warning",
+  "related": [
+   "ENGL310"
+  ]
+ },
+ {
+  "id": "F0095",
+  "check": "missing_course",
+  "course": "ENGL444",
+  "detail": "ENGL310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 373 OR ENGL 310",
+  "severity": "warning",
+  "related": [
+   "ENGL310"
+  ]
+ },
+ {
+  "id": "F0096",
+  "check": "missing_course",
+  "course": "ENGL445",
+  "detail": "ENGL310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 373 OR ENGL 310",
+  "severity": "warning",
+  "related": [
+   "ENGL310"
+  ]
+ },
+ {
+  "id": "F0097",
+  "check": "missing_course",
+  "course": "ENGL446",
+  "detail": "ENGL310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 373 OR ENGL 310",
+  "severity": "warning",
+  "related": [
+   "ENGL310"
+  ]
+ },
+ {
+  "id": "F0098",
+  "check": "missing_course",
+  "course": "ENGL449",
+  "detail": "ENGL318 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 375 OR ENGL 318",
+  "severity": "warning",
+  "related": [
+   "ENGL318"
+  ]
+ },
+ {
+  "id": "F0099",
+  "check": "missing_course",
+  "course": "ENGL451",
+  "detail": "ENGL377 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 377 OR ENGL 313",
+  "severity": "warning",
+  "related": [
+   "ENGL377"
+  ]
+ },
+ {
+  "id": "F0100",
+  "check": "missing_course",
+  "course": "ENGL451",
+  "detail": "ENGL313 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 377 OR ENGL 313",
+  "severity": "warning",
+  "related": [
+   "ENGL313"
+  ]
+ },
+ {
+  "id": "F0101",
+  "check": "missing_course",
+  "course": "ENGL490",
+  "detail": "ENGL248 does not exist in this catalog",
+  "evidence": "ENGL 248",
+  "severity": "blocking",
+  "related": [
+   "ENGL248"
+  ]
+ },
+ {
+  "id": "F0102",
+  "check": "missing_course",
+  "course": "FINA114",
+  "detail": "MAGT112 does not exist in this catalog",
+  "evidence": "MAGT 112 AND ACCT 111 AND STAT 222",
+  "severity": "blocking",
+  "related": [
+   "MAGT112"
+  ]
+ },
+ {
+  "id": "F0103",
+  "check": "missing_course",
+  "course": "FINA201",
+  "detail": "MAGT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MAGT 101 OR MAGT 112) AND ACCT 110",
+  "severity": "warning",
+  "related": [
+   "MAGT112"
+  ]
+ },
+ {
+  "id": "F0104",
+  "check": "missing_course",
+  "course": "FINA302",
+  "detail": "STAT155 (one of several alternatives) does not exist in this catalog",
+  "evidence": "FINA 201 AND (STAT 220 OR STAT 155)",
+  "severity": "warning",
+  "related": [
+   "STAT155"
+  ]
+ },
+ {
+  "id": "F0105",
+  "check": "missing_course",
+  "course": "FINA404",
+  "detail": "STAT155 (one of several alternatives) does not exist in this catalog",
+  "evidence": "FINA 201 AND (STAT 220 OR STAT 155)",
+  "severity": "warning",
+  "related": [
+   "STAT155"
+  ]
+ },
+ {
+  "id": "F0106",
+  "check": "missing_course",
+  "course": "FREN300",
+  "detail": "FREN111 (one of several alternatives) does not exist in this catalog",
+  "evidence": "FREN 111 OR FREN 220",
+  "severity": "warning",
+  "related": [
+   "FREN111"
+  ]
+ },
+ {
+  "id": "F0107",
+  "check": "missing_course",
+  "course": "FREN320",
+  "detail": "FREN111 (one of several alternatives) does not exist in this catalog",
+  "evidence": "FREN 210 AND (FREN 111 OR FREN 220)",
+  "severity": "warning",
+  "related": [
+   "FREN111"
+  ]
+ },
+ {
+  "id": "F0108",
+  "check": "missing_course",
+  "course": "FREN341",
+  "detail": "FREN111 (one of several alternatives) does not exist in this catalog",
+  "evidence": "FREN 221 AND (FREN 111 OR FREN 220)",
+  "severity": "warning",
+  "related": [
+   "FREN111"
+  ]
+ },
+ {
+  "id": "F0109",
+  "check": "missing_course",
+  "course": "FREN410",
+  "detail": "FREN111 (one of several alternatives) does not exist in this catalog",
+  "evidence": "FREN 111 OR FREN 220",
+  "severity": "warning",
+  "related": [
+   "FREN111"
+  ]
+ },
+ {
+  "id": "F0110",
+  "check": "missing_course",
+  "course": "GEOG343",
+  "detail": "GENG243 does not exist in this catalog",
+  "evidence": "GENG 243",
+  "severity": "blocking",
+  "related": [
+   "GENG243"
+  ]
+ },
+ {
+  "id": "F0111",
+  "check": "missing_course",
+  "course": "GEOL101",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225)) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0112",
+  "check": "missing_course",
+  "course": "GEOL101",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225)) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0113",
+  "check": "missing_course",
+  "course": "GEOL101",
+  "detail": "ENGL041 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225)) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL041"
+  ]
+ },
+ {
+  "id": "F0114",
+  "check": "missing_course",
+  "course": "GEOL101",
+  "detail": "ENGL042 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225)) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL042"
+  ]
+ },
+ {
+  "id": "F0115",
+  "check": "missing_course",
+  "course": "HIST212",
+  "detail": "HIST262 (one of several alternatives) does not exist in this catalog",
+  "evidence": "HIST 111 OR HIST 262",
+  "severity": "warning",
+  "related": [
+   "HIST262"
+  ]
+ },
+ {
+  "id": "F0116",
+  "check": "missing_course",
+  "course": "IENG357",
+  "detail": "IENG320 (one of several alternatives) does not exist in this catalog",
+  "evidence": "IENG 311 OR IENG 320",
+  "severity": "warning",
+  "related": [
+   "IENG320"
+  ]
+ },
+ {
+  "id": "F0117",
+  "check": "missing_course",
+  "course": "IENG454",
+  "detail": "IENG410 (one of several alternatives) does not exist in this catalog",
+  "evidence": "IENG 325 OR IENG 410",
+  "severity": "warning",
+  "related": [
+   "IENG410"
+  ]
+ },
+ {
+  "id": "F0118",
+  "check": "missing_course",
+  "course": "LAWC215",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 004 OR ENGL 202 OR CBT 173 OR IBT 061 OR IELT 5.5 OR T02 500 OR ENGL 111",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0119",
+  "check": "missing_course",
+  "course": "LAWC302",
+  "detail": "LAWC223 (one of several alternatives) does not exist in this catalog",
+  "evidence": "LAWC 223 OR LAWC 310",
+  "severity": "warning",
+  "related": [
+   "LAWC223"
+  ]
+ },
+ {
+  "id": "F0120",
+  "check": "missing_course",
+  "course": "LAWC302",
+  "detail": "LAWC310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "LAWC 223 OR LAWC 310",
+  "severity": "warning",
+  "related": [
+   "LAWC310"
+  ]
+ },
+ {
+  "id": "F0121",
+  "check": "missing_course",
+  "course": "LAWC460",
+  "detail": "LAWC200 (one of several alternatives) does not exist in this catalog",
+  "evidence": "LAWC 301 OR LAWC 200",
+  "severity": "warning",
+  "related": [
+   "LAWC200"
+  ]
+ },
+ {
+  "id": "F0122",
+  "check": "missing_course",
+  "course": "MAGT101",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 004 OR ENGL 202 OR ENGL F073 OR ENGL F022TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR Int Eng Lang Test Syst-IELTS 5.5 OR TOEFL Computer-based Test 173 OR OR ENGL 040",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0123",
+  "check": "missing_course",
+  "course": "MAGT101",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 004 OR ENGL 202 OR ENGL F073 OR ENGL F022TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR Int Eng Lang Test Syst-IELTS 5.5 OR TOEFL Computer-based Test 173 OR OR ENGL 040",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0124",
+  "check": "missing_course",
+  "course": "MAGT302",
+  "detail": "MAGT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MAGT 101 OR MAGT 112",
+  "severity": "warning",
+  "related": [
+   "MAGT112"
+  ]
+ },
+ {
+  "id": "F0125",
+  "check": "missing_course",
+  "course": "MAGT307",
+  "detail": "ACCT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MAGT 304 AND (ACCT 116 OR ACCT 112) AND (ENGL 251 OR ENGL 252 OR ENGL 202 OR ENGL 004 OR ENGL F073 OR ENGL F022 OR TOEFL IBT 061 OR TOEFL 500 OR IELTS 5.5 OR TOEFL CBT 173)",
+  "severity": "warning",
+  "related": [
+   "ACCT112"
+  ]
+ },
+ {
+  "id": "F0126",
+  "check": "missing_course",
+  "course": "MAGT307",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MAGT 304 AND (ACCT 116 OR ACCT 112) AND (ENGL 251 OR ENGL 252 OR ENGL 202 OR ENGL 004 OR ENGL F073 OR ENGL F022 OR TOEFL IBT 061 OR TOEFL 500 OR IELTS 5.5 OR TOEFL CBT 173)",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0127",
+  "check": "missing_course",
+  "course": "MAGT402",
+  "detail": "MAGT301 does not exist in this catalog",
+  "evidence": "MAGT 301",
+  "severity": "blocking",
+  "related": [
+   "MAGT301"
+  ]
+ },
+ {
+  "id": "F0128",
+  "check": "missing_course",
+  "course": "MAGT404",
+  "detail": "STAT155 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 220 OR STAT 153 OR STAT 155",
+  "severity": "warning",
+  "related": [
+   "STAT155"
+  ]
+ },
+ {
+  "id": "F0129",
+  "check": "missing_course",
+  "course": "MAKT101",
+  "detail": "MAGT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MAGT 101 OR MAGT 112",
+  "severity": "warning",
+  "related": [
+   "MAGT112"
+  ]
+ },
+ {
+  "id": "F0130",
+  "check": "missing_course",
+  "course": "MAKT305",
+  "detail": "MAKT401 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MAKT 300 OR MAKT 401) AND MAKT 301",
+  "severity": "warning",
+  "related": [
+   "MAKT401"
+  ]
+ },
+ {
+  "id": "F0131",
+  "check": "missing_course",
+  "course": "MAKT410",
+  "detail": "MAKT401 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MAKT 300 OR MAKT 401",
+  "severity": "warning",
+  "related": [
+   "MAKT401"
+  ]
+ },
+ {
+  "id": "F0132",
+  "check": "missing_course",
+  "course": "MATH101",
+  "detail": "MATH004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 004 or MATH P100 or Scholastic Aptitude Test-SAT 550 or Scholastic Aptitude SAT New 570 or American College Testing-ACT 24 OR QUPM 235 or (Elementary Algebra 082 and College Level Math 095) ) and ( ( (ENGL 040 or ENGL C002 or Total for Integrated Core 400) and (ENGL 041 or ENGL R002 or ESL Reading Skills 100) and (ENGL 042 or ENGL W002 or APL for Writing Workshop 225) ) or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 004 or ENGL 250 or ENGL 201 or ENGL 111 or ENGL 202)",
+  "severity": "warning",
+  "related": [
+   "MATH004"
+  ]
+ },
+ {
+  "id": "F0133",
+  "check": "missing_course",
+  "course": "MATH101",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 004 or MATH P100 or Scholastic Aptitude Test-SAT 550 or Scholastic Aptitude SAT New 570 or American College Testing-ACT 24 OR QUPM 235 or (Elementary Algebra 082 and College Level Math 095) ) and ( ( (ENGL 040 or ENGL C002 or Total for Integrated Core 400) and (ENGL 041 or ENGL R002 or ESL Reading Skills 100) and (ENGL 042 or ENGL W002 or APL for Writing Workshop 225) ) or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 004 or ENGL 250 or ENGL 201 or ENGL 111 or ENGL 202)",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0134",
+  "check": "missing_course",
+  "course": "MATH101",
+  "detail": "ENGL041 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 004 or MATH P100 or Scholastic Aptitude Test-SAT 550 or Scholastic Aptitude SAT New 570 or American College Testing-ACT 24 OR QUPM 235 or (Elementary Algebra 082 and College Level Math 095) ) and ( ( (ENGL 040 or ENGL C002 or Total for Integrated Core 400) and (ENGL 041 or ENGL R002 or ESL Reading Skills 100) and (ENGL 042 or ENGL W002 or APL for Writing Workshop 225) ) or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 004 or ENGL 250 or ENGL 201 or ENGL 111 or ENGL 202)",
+  "severity": "warning",
+  "related": [
+   "ENGL041"
+  ]
+ },
+ {
+  "id": "F0135",
+  "check": "missing_course",
+  "course": "MATH101",
+  "detail": "ENGL042 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 004 or MATH P100 or Scholastic Aptitude Test-SAT 550 or Scholastic Aptitude SAT New 570 or American College Testing-ACT 24 OR QUPM 235 or (Elementary Algebra 082 and College Level Math 095) ) and ( ( (ENGL 040 or ENGL C002 or Total for Integrated Core 400) and (ENGL 041 or ENGL R002 or ESL Reading Skills 100) and (ENGL 042 or ENGL W002 or APL for Writing Workshop 225) ) or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 004 or ENGL 250 or ENGL 201 or ENGL 111 or ENGL 202)",
+  "severity": "warning",
+  "related": [
+   "ENGL042"
+  ]
+ },
+ {
+  "id": "F0136",
+  "check": "missing_course",
+  "course": "MATH101",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 004 or MATH P100 or Scholastic Aptitude Test-SAT 550 or Scholastic Aptitude SAT New 570 or American College Testing-ACT 24 OR QUPM 235 or (Elementary Algebra 082 and College Level Math 095) ) and ( ( (ENGL 040 or ENGL C002 or Total for Integrated Core 400) and (ENGL 041 or ENGL R002 or ESL Reading Skills 100) and (ENGL 042 or ENGL W002 or APL for Writing Workshop 225) ) or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 004 or ENGL 250 or ENGL 201 or ENGL 111 or ENGL 202)",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0137",
+  "check": "missing_course",
+  "course": "MATH103",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 110 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0138",
+  "check": "missing_course",
+  "course": "MATH103",
+  "detail": "ENGL041 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 110 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL041"
+  ]
+ },
+ {
+  "id": "F0139",
+  "check": "missing_course",
+  "course": "MATH103",
+  "detail": "ENGL042 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 110 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL042"
+  ]
+ },
+ {
+  "id": "F0140",
+  "check": "missing_course",
+  "course": "MATH103",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 110 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0141",
+  "check": "missing_course",
+  "course": "MATH104",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(OR ENGL 202 OR ENGL 111 OR ENGL 201 OR ENGL 250 OR ENGL 004 OR IELT 5.5OR CBT 173OR IBT 061OR T02 500AND) APLU 100 AND APRS 100 OR ( APIC 400 ) OR )APWS 225OR ENGL W002 AND (ENGL 042 OR ) APRS 100 OR ENGL R002 AND (ENGL 041 OR",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0142",
+  "check": "missing_course",
+  "course": "MATH104",
+  "detail": "ENGL042 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(OR ENGL 202 OR ENGL 111 OR ENGL 201 OR ENGL 250 OR ENGL 004 OR IELT 5.5OR CBT 173OR IBT 061OR T02 500AND) APLU 100 AND APRS 100 OR ( APIC 400 ) OR )APWS 225OR ENGL W002 AND (ENGL 042 OR ) APRS 100 OR ENGL R002 AND (ENGL 041 OR",
+  "severity": "warning",
+  "related": [
+   "ENGL042"
+  ]
+ },
+ {
+  "id": "F0143",
+  "check": "missing_course",
+  "course": "MATH104",
+  "detail": "ENGL041 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(OR ENGL 202 OR ENGL 111 OR ENGL 201 OR ENGL 250 OR ENGL 004 OR IELT 5.5OR CBT 173OR IBT 061OR T02 500AND) APLU 100 AND APRS 100 OR ( APIC 400 ) OR )APWS 225OR ENGL W002 AND (ENGL 042 OR ) APRS 100 OR ENGL R002 AND (ENGL 041 OR",
+  "severity": "warning",
+  "related": [
+   "ENGL041"
+  ]
+ },
+ {
+  "id": "F0144",
+  "check": "missing_course",
+  "course": "MATH119",
+  "detail": "MATH002 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 002 OR MATH 004 OR MATH 021 OR MATH P100 OR American College Testing-ACT 21 OR Scholastic Aptitude Test-SAT 500 OR Elementary Algebra 082",
+  "severity": "warning",
+  "related": [
+   "MATH002"
+  ]
+ },
+ {
+  "id": "F0145",
+  "check": "missing_course",
+  "course": "MATH119",
+  "detail": "MATH004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 002 OR MATH 004 OR MATH 021 OR MATH P100 OR American College Testing-ACT 21 OR Scholastic Aptitude Test-SAT 500 OR Elementary Algebra 082",
+  "severity": "warning",
+  "related": [
+   "MATH004"
+  ]
+ },
+ {
+  "id": "F0146",
+  "check": "missing_course",
+  "course": "MATH119",
+  "detail": "MATH021 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 002 OR MATH 004 OR MATH 021 OR MATH P100 OR American College Testing-ACT 21 OR Scholastic Aptitude Test-SAT 500 OR Elementary Algebra 082",
+  "severity": "warning",
+  "related": [
+   "MATH021"
+  ]
+ },
+ {
+  "id": "F0147",
+  "check": "missing_course",
+  "course": "MATH119",
+  "detail": "MATH082 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 103 OR MATH 002 OR MATH 004 OR MATH 021 OR MATH P100 OR American College Testing-ACT 21 OR Scholastic Aptitude Test-SAT 500 OR Elementary Algebra 082",
+  "severity": "warning",
+  "related": [
+   "MATH082"
+  ]
+ },
+ {
+  "id": "F0148",
+  "check": "missing_course",
+  "course": "MATH221",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 119) AND) APLU 100AND APRS 100OR (APIC 400OR ENGL 040 OR IELT 5.5OR T02 500OR CBT 173OR IBT 061OR ENGL F073 OR ENGL 202 OR ENGL 111 AND (ENGL 004 OR MATH 101 ) (MATH 119 or MATH 101 ) and ( ENGL 004 or ENGL 111 or ENGL 202 or ENGL F073 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or TOEFL_Inst Testing Prog 500 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 040 or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) )",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0149",
+  "check": "missing_course",
+  "course": "MATH221",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 119) AND) APLU 100AND APRS 100OR (APIC 400OR ENGL 040 OR IELT 5.5OR T02 500OR CBT 173OR IBT 061OR ENGL F073 OR ENGL 202 OR ENGL 111 AND (ENGL 004 OR MATH 101 ) (MATH 119 or MATH 101 ) and ( ENGL 004 or ENGL 111 or ENGL 202 or ENGL F073 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or TOEFL_Inst Testing Prog 500 or Int Eng Lang Test Syst-IELTS 5.5 or ENGL 040 or ( Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100) )",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0150",
+  "check": "missing_course",
+  "course": "MATH341",
+  "detail": "MATH232 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MATH 231 OR MATH 232",
+  "severity": "warning",
+  "related": [
+   "MATH232"
+  ]
+ },
+ {
+  "id": "F0151",
+  "check": "missing_course",
+  "course": "MATH366",
+  "detail": "CMPS221 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(CMPS 221 AND MATH 102 OR CMPS 223) OR CMPS 251",
+  "severity": "warning",
+  "related": [
+   "CMPS221"
+  ]
+ },
+ {
+  "id": "F0152",
+  "check": "missing_course",
+  "course": "MATH366",
+  "detail": "CMPS223 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(CMPS 221 AND MATH 102 OR CMPS 223) OR CMPS 251",
+  "severity": "warning",
+  "related": [
+   "CMPS223"
+  ]
+ },
+ {
+  "id": "F0153",
+  "check": "missing_course",
+  "course": "MATH366",
+  "detail": "CMPS223 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(CMPS 221 AND MATH 102 OR CMPS 223) OR CMPS 251",
+  "severity": "warning",
+  "related": [
+   "CMPS223"
+  ]
+ },
+ {
+  "id": "F0154",
+  "check": "missing_course",
+  "course": "MATHP100",
+  "detail": "MATH021 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 021 or American College Testing-ACT 21 or Scholastic Aptitude Test-SAT 500 or Scholastic Aptitude SAT New 530 or Elementary Algebra 082 or MATH 003 OR QUPM 200) and ((ENGL 020 and ENGL 021) or (ENGL 020 and ESL Reading Skills 063) or (Total for Integrated Core 269 and ENGL 021) or (Total for Integrated Core 269 and ENGL R001) or (Total for Integrated Core 269 and ESL Reading Skills 063) or (ENGL C001 and ENGL R001 or (ENGL C001 and ESL Reading Skills 063) or ENGL 002 or ENGL 003 or ENGL 004 or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5)",
+  "severity": "warning",
+  "related": [
+   "MATH021"
+  ]
+ },
+ {
+  "id": "F0155",
+  "check": "missing_course",
+  "course": "MATHP100",
+  "detail": "MATH003 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 021 or American College Testing-ACT 21 or Scholastic Aptitude Test-SAT 500 or Scholastic Aptitude SAT New 530 or Elementary Algebra 082 or MATH 003 OR QUPM 200) and ((ENGL 020 and ENGL 021) or (ENGL 020 and ESL Reading Skills 063) or (Total for Integrated Core 269 and ENGL 021) or (Total for Integrated Core 269 and ENGL R001) or (Total for Integrated Core 269 and ESL Reading Skills 063) or (ENGL C001 and ENGL R001 or (ENGL C001 and ESL Reading Skills 063) or ENGL 002 or ENGL 003 or ENGL 004 or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5)",
+  "severity": "warning",
+  "related": [
+   "MATH003"
+  ]
+ },
+ {
+  "id": "F0156",
+  "check": "missing_course",
+  "course": "MATHP100",
+  "detail": "ENGL002 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 021 or American College Testing-ACT 21 or Scholastic Aptitude Test-SAT 500 or Scholastic Aptitude SAT New 530 or Elementary Algebra 082 or MATH 003 OR QUPM 200) and ((ENGL 020 and ENGL 021) or (ENGL 020 and ESL Reading Skills 063) or (Total for Integrated Core 269 and ENGL 021) or (Total for Integrated Core 269 and ENGL R001) or (Total for Integrated Core 269 and ESL Reading Skills 063) or (ENGL C001 and ENGL R001 or (ENGL C001 and ESL Reading Skills 063) or ENGL 002 or ENGL 003 or ENGL 004 or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5)",
+  "severity": "warning",
+  "related": [
+   "ENGL002"
+  ]
+ },
+ {
+  "id": "F0157",
+  "check": "missing_course",
+  "course": "MATHP100",
+  "detail": "ENGL003 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 021 or American College Testing-ACT 21 or Scholastic Aptitude Test-SAT 500 or Scholastic Aptitude SAT New 530 or Elementary Algebra 082 or MATH 003 OR QUPM 200) and ((ENGL 020 and ENGL 021) or (ENGL 020 and ESL Reading Skills 063) or (Total for Integrated Core 269 and ENGL 021) or (Total for Integrated Core 269 and ENGL R001) or (Total for Integrated Core 269 and ESL Reading Skills 063) or (ENGL C001 and ENGL R001 or (ENGL C001 and ESL Reading Skills 063) or ENGL 002 or ENGL 003 or ENGL 004 or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5)",
+  "severity": "warning",
+  "related": [
+   "ENGL003"
+  ]
+ },
+ {
+  "id": "F0158",
+  "check": "missing_course",
+  "course": "MATHP100",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MATH 021 or American College Testing-ACT 21 or Scholastic Aptitude Test-SAT 500 or Scholastic Aptitude SAT New 530 or Elementary Algebra 082 or MATH 003 OR QUPM 200) and ((ENGL 020 and ENGL 021) or (ENGL 020 and ESL Reading Skills 063) or (Total for Integrated Core 269 and ENGL 021) or (Total for Integrated Core 269 and ENGL R001) or (Total for Integrated Core 269 and ESL Reading Skills 063) or (ENGL C001 and ENGL R001 or (ENGL C001 and ESL Reading Skills 063) or ENGL 002 or ENGL 003 or ENGL 004 or TOEFL_Inst Testing Prog 500 or TOEFL Internet-based Test 061 or TOEFL Computer-based Test 173 or Int Eng Lang Test Syst-IELTS 5.5)",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0159",
+  "check": "missing_course",
+  "course": "MCOM212",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 103 OR MCOM 101",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0160",
+  "check": "missing_course",
+  "course": "MCOM222",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 103 OR MCOM 101",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0161",
+  "check": "missing_course",
+  "course": "MCOM223",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 103 OR MCOM 101",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0162",
+  "check": "missing_course",
+  "course": "MCOM226",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 103 OR MCOM 101",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0163",
+  "check": "missing_course",
+  "course": "MCOM303",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 103 OR MCOM 101",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0164",
+  "check": "missing_course",
+  "course": "MCOM381",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 222 OR MCOM 101 OR MCOM 103",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0165",
+  "check": "missing_course",
+  "course": "MCOM382",
+  "detail": "MCOM101 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 103 OR MCOM 101",
+  "severity": "warning",
+  "related": [
+   "MCOM101"
+  ]
+ },
+ {
+  "id": "F0166",
+  "check": "missing_course",
+  "course": "MCOM447",
+  "detail": "MCOM344 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 341 AND (MCOM 343 OR MCOM 342 OR MCOM 344)",
+  "severity": "warning",
+  "related": [
+   "MCOM344"
+  ]
+ },
+ {
+  "id": "F0167",
+  "check": "missing_course",
+  "course": "MCOM450",
+  "detail": "MCOM344 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 343 AND (MCOM 342 OR MCOM 344)",
+  "severity": "warning",
+  "related": [
+   "MCOM344"
+  ]
+ },
+ {
+  "id": "F0168",
+  "check": "missing_course",
+  "course": "MCOM467",
+  "detail": "MCOM362 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MCOM 364 OR MCOM 362 AND MCOM 361",
+  "severity": "warning",
+  "related": [
+   "MCOM362"
+  ]
+ },
+ {
+  "id": "F0169",
+  "check": "missing_course",
+  "course": "MCOM470",
+  "detail": "MCOM362 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MCOM 361 OR MCOM 362) AND MCOM 350",
+  "severity": "warning",
+  "related": [
+   "MCOM362"
+  ]
+ },
+ {
+  "id": "F0170",
+  "check": "missing_course",
+  "course": "MECH222",
+  "detail": "GENG221 (one of several alternatives) does not exist in this catalog",
+  "evidence": "GENG 221 OR MECH 221",
+  "severity": "warning",
+  "related": [
+   "GENG221"
+  ]
+ },
+ {
+  "id": "F0171",
+  "check": "missing_course",
+  "course": "MECH223",
+  "detail": "GENG221 (one of several alternatives) does not exist in this catalog",
+  "evidence": "GENG 221 OR MECH 221 OR MECH 210 OR GENG 210",
+  "severity": "warning",
+  "related": [
+   "GENG221"
+  ]
+ },
+ {
+  "id": "F0172",
+  "check": "missing_course",
+  "course": "MECH223",
+  "detail": "GENG210 (one of several alternatives) does not exist in this catalog",
+  "evidence": "GENG 221 OR MECH 221 OR MECH 210 OR GENG 210",
+  "severity": "warning",
+  "related": [
+   "GENG210"
+  ]
+ },
+ {
+  "id": "F0173",
+  "check": "missing_course",
+  "course": "MECH321",
+  "detail": "GENG222 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(GENG 222 OR MECH 222) AND GENG 111",
+  "severity": "warning",
+  "related": [
+   "GENG222"
+  ]
+ },
+ {
+  "id": "F0174",
+  "check": "missing_course",
+  "course": "MECH322",
+  "detail": "GENG222 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(GENG 222 OR MECH 222) AND MATH 217",
+  "severity": "warning",
+  "related": [
+   "GENG222"
+  ]
+ },
+ {
+  "id": "F0175",
+  "check": "missing_course",
+  "course": "MECH333",
+  "detail": "MECH217 does not exist in this catalog",
+  "evidence": "MECH 217 AND PHYS 193",
+  "severity": "blocking",
+  "related": [
+   "MECH217"
+  ]
+ },
+ {
+  "id": "F0176",
+  "check": "missing_course",
+  "course": "MECH426",
+  "detail": "MECH323 (one of several alternatives) does not exist in this catalog",
+  "evidence": "MECH 323 OR MECH 330",
+  "severity": "warning",
+  "related": [
+   "MECH323"
+  ]
+ },
+ {
+  "id": "F0177",
+  "check": "missing_course",
+  "course": "MECH487",
+  "detail": "MECH323 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(MECH 330 OR MECH 323) AND (GENG 360 with concurrency)",
+  "severity": "warning",
+  "related": [
+   "MECH323"
+  ]
+ },
+ {
+  "id": "F0178",
+  "check": "missing_course",
+  "course": "MIST201",
+  "detail": "MAGT112 (one of several alternatives) does not exist in this catalog",
+  "evidence": "((MAGT 101 or MAGT 112) and (ENGL 250 or ENGL 202 or ENGL 004 or ENGL 040 or ENGL F073 or ENGL F022 or TOEFL IBT 061 or TOEFL 500 or IELTS 5.5 or TOEFL CBT 173 or (Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100))",
+  "severity": "warning",
+  "related": [
+   "MAGT112"
+  ]
+ },
+ {
+  "id": "F0179",
+  "check": "missing_course",
+  "course": "MIST201",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "((MAGT 101 or MAGT 112) and (ENGL 250 or ENGL 202 or ENGL 004 or ENGL 040 or ENGL F073 or ENGL F022 or TOEFL IBT 061 or TOEFL 500 or IELTS 5.5 or TOEFL CBT 173 or (Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100))",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0180",
+  "check": "missing_course",
+  "course": "MIST201",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "((MAGT 101 or MAGT 112) and (ENGL 250 or ENGL 202 or ENGL 004 or ENGL 040 or ENGL F073 or ENGL F022 or TOEFL IBT 061 or TOEFL 500 or IELTS 5.5 or TOEFL CBT 173 or (Total for Integrated Core 400 and ESL Reading Skills 100 and ESL Language Use 100))",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0181",
+  "check": "missing_course",
+  "course": "NUTR454",
+  "detail": "NUTR433 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(NUTR 340 OR NUTR 433) AND NUTR 439",
+  "severity": "warning",
+  "related": [
+   "NUTR433"
+  ]
+ },
+ {
+  "id": "F0182",
+  "check": "missing_course",
+  "course": "NUTR491",
+  "detail": "NUTR351 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( NUTR 450 OR NUTR 351) AND NUTR 492",
+  "severity": "warning",
+  "related": [
+   "NUTR351"
+  ]
+ },
+ {
+  "id": "F0183",
+  "check": "missing_course",
+  "course": "PHIL114",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 202 OR CBT 173 OR IELT 5.5 OR T02 500 OR IBT 061 OR ENGL F073 OR ENGL 004",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0184",
+  "check": "missing_course",
+  "course": "PHYS183",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0185",
+  "check": "missing_course",
+  "course": "PHYS193",
+  "detail": "PHYS181 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PHYS 191 OR PHYS 103) AND (PHYS 192 OR PHYS 101) OR PHYS 181 OR PHYS 180",
+  "severity": "warning",
+  "related": [
+   "PHYS181"
+  ]
+ },
+ {
+  "id": "F0186",
+  "check": "missing_course",
+  "course": "PHYS193",
+  "detail": "PHYS180 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PHYS 191 OR PHYS 103) AND (PHYS 192 OR PHYS 101) OR PHYS 181 OR PHYS 180",
+  "severity": "warning",
+  "related": [
+   "PHYS180"
+  ]
+ },
+ {
+  "id": "F0187",
+  "check": "missing_course",
+  "course": "PHYS193",
+  "detail": "PHYS181 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PHYS 191 OR PHYS 103) AND (PHYS 192 OR PHYS 101) OR PHYS 181 OR PHYS 180",
+  "severity": "warning",
+  "related": [
+   "PHYS181"
+  ]
+ },
+ {
+  "id": "F0188",
+  "check": "missing_course",
+  "course": "PHYS193",
+  "detail": "PHYS180 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(PHYS 191 OR PHYS 103) AND (PHYS 192 OR PHYS 101) OR PHYS 181 OR PHYS 180",
+  "severity": "warning",
+  "related": [
+   "PHYS180"
+  ]
+ },
+ {
+  "id": "F0189",
+  "check": "missing_course",
+  "course": "SOCI366",
+  "detail": "SOCI247 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SOCI 120 OR SOCI 203 OR SOCI 247 OR SOCI 241 OR SOCI 121",
+  "severity": "warning",
+  "related": [
+   "SOCI247"
+  ]
+ },
+ {
+  "id": "F0190",
+  "check": "missing_course",
+  "course": "SOCI366",
+  "detail": "SOCI241 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SOCI 120 OR SOCI 203 OR SOCI 247 OR SOCI 241 OR SOCI 121",
+  "severity": "warning",
+  "related": [
+   "SOCI241"
+  ]
+ },
+ {
+  "id": "F0191",
+  "check": "missing_course",
+  "course": "SOCI367",
+  "detail": "SOCI247 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SOCI 120 OR SOCI 203 OR SOCI 247 OR SOCI 241 OR SOCI 121",
+  "severity": "warning",
+  "related": [
+   "SOCI247"
+  ]
+ },
+ {
+  "id": "F0192",
+  "check": "missing_course",
+  "course": "SOCI367",
+  "detail": "SOCI241 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SOCI 120 OR SOCI 203 OR SOCI 247 OR SOCI 241 OR SOCI 121",
+  "severity": "warning",
+  "related": [
+   "SOCI241"
+  ]
+ },
+ {
+  "id": "F0193",
+  "check": "missing_course",
+  "course": "SOCI368",
+  "detail": "SOCI247 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SOCI 120 OR SOCI 203 OR SOCI 247 OR SOCI 241 OR SOCI 121",
+  "severity": "warning",
+  "related": [
+   "SOCI247"
+  ]
+ },
+ {
+  "id": "F0194",
+  "check": "missing_course",
+  "course": "SOCI368",
+  "detail": "SOCI241 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SOCI 120 OR SOCI 203 OR SOCI 247 OR SOCI 241 OR SOCI 121",
+  "severity": "warning",
+  "related": [
+   "SOCI241"
+  ]
+ },
+ {
+  "id": "F0195",
+  "check": "missing_course",
+  "course": "SOCI469",
+  "detail": "SOCI460 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(SOCI 301 OR SOCI 460) AND (SOCI 300 OR SOCI 262) AND SOCI 261 AND SOCI 360",
+  "severity": "warning",
+  "related": [
+   "SOCI460"
+  ]
+ },
+ {
+  "id": "F0196",
+  "check": "missing_course",
+  "course": "SOCI469",
+  "detail": "SOCI262 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(SOCI 301 OR SOCI 460) AND (SOCI 300 OR SOCI 262) AND SOCI 261 AND SOCI 360",
+  "severity": "warning",
+  "related": [
+   "SOCI262"
+  ]
+ },
+ {
+  "id": "F0197",
+  "check": "missing_course",
+  "course": "SPAN215",
+  "detail": "SPAN110 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SPAN 110 OR SPAN 105",
+  "severity": "warning",
+  "related": [
+   "SPAN110"
+  ]
+ },
+ {
+  "id": "F0198",
+  "check": "missing_course",
+  "course": "SPAN223",
+  "detail": "SPAN100 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SPAN 115 OR SPAN 100",
+  "severity": "warning",
+  "related": [
+   "SPAN100"
+  ]
+ },
+ {
+  "id": "F0199",
+  "check": "missing_course",
+  "course": "SPAN310",
+  "detail": "SPAN100 does not exist in this catalog",
+  "evidence": "SPAN 100",
+  "severity": "blocking",
+  "related": [
+   "SPAN100"
+  ]
+ },
+ {
+  "id": "F0200",
+  "check": "missing_course",
+  "course": "SPAN320",
+  "detail": "SPAN210 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(SPAN 215 AND SPAN 220) OR SPAN 210",
+  "severity": "warning",
+  "related": [
+   "SPAN210"
+  ]
+ },
+ {
+  "id": "F0201",
+  "check": "missing_course",
+  "course": "SPAN320",
+  "detail": "SPAN210 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(SPAN 215 AND SPAN 220) OR SPAN 210",
+  "severity": "warning",
+  "related": [
+   "SPAN210"
+  ]
+ },
+ {
+  "id": "F0202",
+  "check": "missing_course",
+  "course": "SPAN341",
+  "detail": "SPAN221 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(SPAN 223 AND SPAN 220) OR SPAN 221",
+  "severity": "warning",
+  "related": [
+   "SPAN221"
+  ]
+ },
+ {
+  "id": "F0203",
+  "check": "missing_course",
+  "course": "SPAN341",
+  "detail": "SPAN221 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(SPAN 223 AND SPAN 220) OR SPAN 221",
+  "severity": "warning",
+  "related": [
+   "SPAN221"
+  ]
+ },
+ {
+  "id": "F0204",
+  "check": "missing_course",
+  "course": "SPAN410",
+  "detail": "SPAN110 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SPAN 220 OR SPAN 110",
+  "severity": "warning",
+  "related": [
+   "SPAN110"
+  ]
+ },
+ {
+  "id": "F0205",
+  "check": "missing_course",
+  "course": "SPAN440",
+  "detail": "SPAN111 (one of several alternatives) does not exist in this catalog",
+  "evidence": "SPAN 220 OR SPAN 111",
+  "severity": "warning",
+  "related": [
+   "SPAN111"
+  ]
+ },
+ {
+  "id": "F0206",
+  "check": "missing_course",
+  "course": "SPSC308",
+  "detail": "PSYC205 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PSYC 205 OR PSYC 206",
+  "severity": "warning",
+  "related": [
+   "PSYC205"
+  ]
+ },
+ {
+  "id": "F0207",
+  "check": "missing_course",
+  "course": "SPSC400",
+  "detail": "PSYC205 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PSYC 205 OR PSYC 206",
+  "severity": "warning",
+  "related": [
+   "PSYC205"
+  ]
+ },
+ {
+  "id": "F0208",
+  "check": "missing_course",
+  "course": "STAT101",
+  "detail": "ENGL040 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL040"
+  ]
+ },
+ {
+  "id": "F0209",
+  "check": "missing_course",
+  "course": "STAT101",
+  "detail": "ENGL041 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL041"
+  ]
+ },
+ {
+  "id": "F0210",
+  "check": "missing_course",
+  "course": "STAT101",
+  "detail": "ENGL042 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL042"
+  ]
+ },
+ {
+  "id": "F0211",
+  "check": "missing_course",
+  "course": "STAT101",
+  "detail": "ENGL004 (one of several alternatives) does not exist in this catalog",
+  "evidence": "( ( ENGL 040 OR ENGL C002 OR Total for Integrated Core 400) AND (ENGL 041 OR ENGL R002 OR ESL Reading Skills 100) AND (ENGL 042 OR ENGL W002 OR APL for Writing Workshop 225) ) OR ( Total for Integrated Core 400 AND ESL Reading Skills 100 AND ESL Language Use 100) OR TOEFL_Inst Testing Prog 500 OR TOEFL Internet-based Test 061 OR TOEFL Computer-based Test 173 OR Int Eng Lang Test Syst-IELTS 5.5 OR ENGL 004 OR ENGL 111 OR ENGL 250 OR ENGL 201 OR ENGL 202",
+  "severity": "warning",
+  "related": [
+   "ENGL004"
+  ]
+ },
+ {
+  "id": "F0212",
+  "check": "missing_course",
+  "course": "STAT221",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 211 AND MATH 251 OR STAT 251",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0213",
+  "check": "missing_course",
+  "course": "STAT222",
+  "detail": "STAT155 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 220 OR STAT 155",
+  "severity": "warning",
+  "related": [
+   "STAT155"
+  ]
+ },
+ {
+  "id": "F0214",
+  "check": "missing_course",
+  "course": "STAT231",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 102 OR STAT 251 AND STAT 211",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0215",
+  "check": "missing_course",
+  "course": "STAT312",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(STAT 211 OR STAT 251) AND MATH 251)",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0216",
+  "check": "missing_course",
+  "course": "STAT332",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 102 OR STAT 251 AND STAT 211",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0217",
+  "check": "missing_course",
+  "course": "STAT333",
+  "detail": "STAT258 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 231 OR STAT 258",
+  "severity": "warning",
+  "related": [
+   "STAT258"
+  ]
+ },
+ {
+  "id": "F0218",
+  "check": "missing_course",
+  "course": "STAT341",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 102 OR STAT 251 AND STAT 211",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0219",
+  "check": "missing_course",
+  "course": "STAT343",
+  "detail": "STAT258 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 102 OR STAT 258",
+  "severity": "warning",
+  "related": [
+   "STAT258"
+  ]
+ },
+ {
+  "id": "F0220",
+  "check": "missing_course",
+  "course": "STAT344",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 102 OR STAT 251 AND STAT 211",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0221",
+  "check": "missing_course",
+  "course": "STAT361",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 102 OR STAT 251 AND STAT 211",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0222",
+  "check": "missing_course",
+  "course": "STAT371",
+  "detail": "STAT258 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 231 OR STAT 258",
+  "severity": "warning",
+  "related": [
+   "STAT258"
+  ]
+ },
+ {
+  "id": "F0223",
+  "check": "missing_course",
+  "course": "STAT372",
+  "detail": "STAT251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "STAT 211 OR STAT 251",
+  "severity": "warning",
+  "related": [
+   "STAT251"
+  ]
+ },
+ {
+  "id": "F0224",
+  "check": "missing_course",
+  "course": "STAT464",
+  "detail": "STAT452 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(STAT 312 OR STAT 452) AND (STAT 361 OR STAT 357 )",
+  "severity": "warning",
+  "related": [
+   "STAT452"
+  ]
+ },
+ {
+  "id": "F0225",
+  "check": "missing_course",
+  "course": "STAT464",
+  "detail": "STAT357 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(STAT 312 OR STAT 452) AND (STAT 361 OR STAT 357 )",
+  "severity": "warning",
+  "related": [
+   "STAT357"
+  ]
+ },
+ {
+  "id": "F0226",
+  "check": "long_chain",
+  "course": "ARCT512",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "ARCT 511",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0227",
+  "check": "long_chain",
+  "course": "PHYS453",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "PHYS 452",
+  "severity": "info",
+  "related": []
+ }
+]

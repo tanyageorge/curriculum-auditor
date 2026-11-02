@@ -1,0 +1,439 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "ARCG413",
+  "detail": "ARCG320 does not exist in this catalog",
+  "evidence": "ARCG 320 YES",
+  "severity": "blocking",
+  "related": [
+   "ARCG320"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "CENG131",
+  "detail": "MATH101 does not exist in this catalog",
+  "evidence": "MATH 101",
+  "severity": "blocking",
+  "related": [
+   "MATH101"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "CENG211",
+  "detail": "MATH102 does not exist in this catalog",
+  "evidence": "MATH102 &",
+  "severity": "blocking",
+  "related": [
+   "MATH102"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "CENG231",
+  "detail": "MATH102 does not exist in this catalog",
+  "evidence": "MATH 102&",
+  "severity": "blocking",
+  "related": [
+   "MATH102"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "CHEMY333",
+  "detail": "CHEMY201 does not exist in this catalog",
+  "evidence": "CHEMY 201",
+  "severity": "blocking",
+  "related": [
+   "CHEMY201"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "CHENG423",
+  "detail": "CHENG422 does not exist in this catalog",
+  "evidence": "CHENG 422",
+  "severity": "blocking",
+  "related": [
+   "CHENG422"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "CHENG443",
+  "detail": "CHENG313 does not exist in this catalog",
+  "evidence": "CHENG 313",
+  "severity": "blocking",
+  "related": [
+   "CHENG313"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "CHENG447",
+  "detail": "CHENG212 does not exist in this catalog",
+  "evidence": "CHENG 212",
+  "severity": "blocking",
+  "related": [
+   "CHENG212"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "CHENG461",
+  "detail": "CHENG314 does not exist in this catalog",
+  "evidence": "CHENG 314",
+  "severity": "blocking",
+  "related": [
+   "CHENG314"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "CHENG463",
+  "detail": "CHENG313 does not exist in this catalog",
+  "evidence": "CHENG 313",
+  "severity": "blocking",
+  "related": [
+   "CHENG313"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "CHENG464",
+  "detail": "CHENG312 does not exist in this catalog",
+  "evidence": "CHENG 312",
+  "severity": "blocking",
+  "related": [
+   "CHENG312"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "missing_course",
+  "course": "ECON450",
+  "detail": "ECON332 does not exist in this catalog",
+  "evidence": "ECON332",
+  "severity": "blocking",
+  "related": [
+   "ECON332"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "missing_course",
+  "course": "ECON470",
+  "detail": "ECON332 does not exist in this catalog",
+  "evidence": "ECON332",
+  "severity": "blocking",
+  "related": [
+   "ECON332"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "GRD320",
+  "detail": "FAD221 does not exist in this catalog",
+  "evidence": "FAD 221",
+  "severity": "blocking",
+  "related": [
+   "FAD221"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "GRD411",
+  "detail": "FAD213 does not exist in this catalog",
+  "evidence": "FAD 213",
+  "severity": "blocking",
+  "related": [
+   "FAD213"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "ITCE484",
+  "detail": "MATH342 does not exist in this catalog",
+  "evidence": "MATH342",
+  "severity": "blocking",
+  "related": [
+   "MATH342"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "ITNE485",
+  "detail": "ITNE360 does not exist in this catalog",
+  "evidence": "ITNE 360",
+  "severity": "blocking",
+  "related": [
+   "ITNE360"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "LAW446",
+  "detail": "LAW386 does not exist in this catalog",
+  "evidence": "LAW 386 Yes Yes ENG",
+  "severity": "blocking",
+  "related": [
+   "LAW386"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "missing_course",
+  "course": "MEDCO334",
+  "detail": "MEDCO331 does not exist in this catalog",
+  "evidence": "MEDCO331",
+  "severity": "blocking",
+  "related": [
+   "MEDCO331"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "MEDCO432",
+  "detail": "MEDCO332 does not exist in this catalog",
+  "evidence": "MEDCO332",
+  "severity": "blocking",
+  "related": [
+   "MEDCO332"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "MEDCO433",
+  "detail": "MEDCO331 does not exist in this catalog",
+  "evidence": "MEDCO331",
+  "severity": "blocking",
+  "related": [
+   "MEDCO331"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "missing_course",
+  "course": "MENG163",
+  "detail": "PHYCS110 does not exist in this catalog",
+  "evidence": "PHYCS 110 YES",
+  "severity": "blocking",
+  "related": [
+   "PHYCS110"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "missing_course",
+  "course": "MENG212",
+  "detail": "MENG202 does not exist in this catalog",
+  "evidence": "MENG 202 YES",
+  "severity": "blocking",
+  "related": [
+   "MENG202"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "missing_course",
+  "course": "MENG371",
+  "detail": "MENG202 does not exist in this catalog",
+  "evidence": "MENG 202 YES",
+  "severity": "blocking",
+  "related": [
+   "MENG202"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "missing_course",
+  "course": "PICENG213",
+  "detail": "PICENG111 does not exist in this catalog",
+  "evidence": "PICENG 111",
+  "severity": "blocking",
+  "related": [
+   "PICENG111"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "missing_course",
+  "course": "PICENG422",
+  "detail": "PICENG433 does not exist in this catalog",
+  "evidence": "PICENG 433",
+  "severity": "blocking",
+  "related": [
+   "PICENG433"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "missing_course",
+  "course": "PICENG443",
+  "detail": "PICENG332 does not exist in this catalog",
+  "evidence": "PICENG 332",
+  "severity": "blocking",
+  "related": [
+   "PICENG332"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "missing_course",
+  "course": "PICENG450",
+  "detail": "PICENG332 does not exist in this catalog",
+  "evidence": "PICENG 332",
+  "severity": "blocking",
+  "related": [
+   "PICENG332"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "missing_course",
+  "course": "PICENG451",
+  "detail": "CHENG316 does not exist in this catalog",
+  "evidence": "CHENG 316",
+  "severity": "blocking",
+  "related": [
+   "CHENG316"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "missing_course",
+  "course": "PICENG456",
+  "detail": "PICENG433 does not exist in this catalog",
+  "evidence": "PICENG 433",
+  "severity": "blocking",
+  "related": [
+   "PICENG433"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "missing_course",
+  "course": "PICENG457",
+  "detail": "PICENG433 does not exist in this catalog",
+  "evidence": "PICENG 433",
+  "severity": "blocking",
+  "related": [
+   "PICENG433"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "missing_course",
+  "course": "PICENG464",
+  "detail": "PICENG321 does not exist in this catalog",
+  "evidence": "PICENG 321",
+  "severity": "blocking",
+  "related": [
+   "PICENG321"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "missing_course",
+  "course": "SPSC114",
+  "detail": "SPSC120 does not exist in this catalog",
+  "evidence": "SPSC120",
+  "severity": "blocking",
+  "related": [
+   "SPSC120"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "missing_course",
+  "course": "SPSC322",
+  "detail": "SPSC313 does not exist in this catalog",
+  "evidence": "SPSC313",
+  "severity": "blocking",
+  "related": [
+   "SPSC313"
+  ]
+ },
+ {
+  "id": "F0035",
+  "check": "long_chain",
+  "course": "ARC520",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "ARC 510",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0036",
+  "check": "long_chain",
+  "course": "INTA501",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "INTA 403",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0037",
+  "check": "long_chain",
+  "course": "INTA502",
+  "detail": "needs at least 10 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "INTA 501",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0038",
+  "check": "long_chain",
+  "course": "INTA511",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "INTA 421",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0039",
+  "check": "long_chain",
+  "course": "INTA512",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "INTA 403",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0040",
+  "check": "long_chain",
+  "course": "INTA521",
+  "detail": "needs at least 10 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "INTA 512",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0041",
+  "check": "long_chain",
+  "course": "PHAM428",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "PHAM 411 & Co-requisite PHAM 432",
+  "severity": "info",
+  "related": []
+ }
+]

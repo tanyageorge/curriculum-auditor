@@ -28,12 +28,16 @@ Updated as the build progresses. Only what is listed under "Done" exists.
 - Result caching, a regex baseline parser, and an eval runner with per-tier metrics, cost and
   latency (`src/auditor/baseline.py`, `src/auditor/metrics.py`, `scripts/run_eval.py`)
 - 150-course gold test set, hand-labeled with a terminal labeling tool (`scripts/label_gold.py`)
+- Audit engine in plain code (`src/auditor/audit.py`): prerequisite graph (networkx) and checks for
+  courses that require themselves, prerequisite loops, prerequisites missing from the catalog,
+  prerequisites renumbered or removed in a later edition, and very long chains; each finding has a
+  severity and cites the catalog text. Per-catalog reports in `results/audit/` (`scripts/run_audit.py`)
+- Planted-defect evaluation of the audit checks (`scripts/eval_audit.py`)
 - Second, independent parser on **Muse Spark Open** (open weights, served by Baseten); when the two
   parsers' structures differ, the course is flagged for human review (`src/auditor/ensemble.py`)
 
 **Planned**
-- Prerequisite graph and audit checks (missing courses, cycles, renumbered courses, path length)
-- Report agent, web app, and evaluation results
+- Audit on Muse Spark parses for a full catalog, web app, demo
 
 ## Evaluation design
 
@@ -47,7 +51,25 @@ Updated as the build progresses. Only what is listed under "Done" exists.
   with LLM assistance by the dataset authors, so agreement with them is reported as agreement,
   not accuracy.
 
-## Results so far (dev split, 300 courses, silver reference)
+## Headline results (gold test set, 150 hand-labeled courses, run once)
+
+Exact match of the AND/OR course structure against the hand labels.
+
+| Tier | Regex baseline | Muse Spark 1.3 (`minimal` reasoning) |
+|---|---|---|
+| Simple (25) | 100% | 100% |
+| Moderate (50) | 92.0% | 92.0% |
+| Hard (75) | 66.7% | **94.7%** |
+| **All (150)** | **80.7%** | **94.7%** |
+
+- On courses Muse Spark did **not** flag for review: 97.0% correct. It flagged 11% of courses,
+  including 4 of the 5 texts labeled genuinely ambiguous and 4 of its 8 errors.
+- On the 130 gold courses that also have a Mendeley parse: Muse Spark 96.9%, the dataset's own
+  published parses 90.8%.
+- Caltech (20 courses, no published parse, labeled from scratch): 16/20.
+- Cost $0.0025 per course, median latency 1.3 s. Run summaries: `results/*_gold_summary.json`.
+
+## Development results (dev split, 300 courses, silver reference)
 
 Agreement with the Mendeley parses, which contain known errors, so these numbers are a lower
 bound; gold-set accuracy will be reported once the test set is hand-labeled.
@@ -66,6 +88,16 @@ flagged, so the second opinion caught no new errors here, at about 4x the tokens
 Muse Spark Open is the open-weights release of the same model family, and the two largely fail on the
 same inputs; an independent check needs a verifier that fails differently. The deterministic
 guardrails remain the main safety net.
+
+**Audit checks, planted-defect evaluation** (5 real catalogs x 5 random seeds, 400 planted defects):
+courses requiring a non-existent course 100% found, a required course removed from the catalog 99%,
+prerequisite loops 100%, courses requiring themselves 100%; 0 false alarms. (Loops through a
+corequisite are correctly not reported: both courses can be taken together.)
+
+**Audit of 13 real catalogs** (Mendeley reference parses, 17,237 courses): see `results/audit/`.
+Examples: a UAEU course that lists itself as its own prerequisite (CURR710); an AUS lecture and lab
+that each require the other (CHM 101 / CHM 101L); UAEU courses still requiring codes renumbered
+after 2023-24 (NUTR377, now NUTR376). Findings on reference parses inherit that reference's errors.
 
 Summaries of every run are in `results/`.
 

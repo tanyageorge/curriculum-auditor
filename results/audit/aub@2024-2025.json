@@ -1,0 +1,637 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "AVSC277",
+  "detail": "AVSC243 (one of several alternatives) does not exist in this catalog",
+  "evidence": "AVSC 243 or BIOL 223.",
+  "severity": "warning",
+  "related": [
+   "AVSC243"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "ARAB202",
+  "detail": "ARAB205 does not exist in this catalog",
+  "evidence": "Prerequisites: ARAB 205 and ARAB 206, or placement by a placement examination.",
+  "severity": "blocking",
+  "related": [
+   "ARAB205"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "ARAB202",
+  "detail": "ARAB206 does not exist in this catalog",
+  "evidence": "Prerequisites: ARAB 205 and ARAB 206, or placement by a placement examination.",
+  "severity": "blocking",
+  "related": [
+   "ARAB206"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "ARAB209",
+  "detail": "ARAB207 (one of several alternatives) does not exist in this catalog",
+  "evidence": "Prerequisites: ARAB 207/208 or placement by a placement examination.",
+  "severity": "warning",
+  "related": [
+   "ARAB207"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "ARAB209",
+  "detail": "ARAB208 (one of several alternatives) does not exist in this catalog",
+  "evidence": "Prerequisites: ARAB 207/208 or placement by a placement examination.",
+  "severity": "warning",
+  "related": [
+   "ARAB208"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "ARAB210B",
+  "detail": "ARAB213 does not exist in this catalog",
+  "evidence": "Prerequisite for ARAB 214 is ARAB 213 or permission of instructor.",
+  "severity": "blocking",
+  "related": [
+   "ARAB213"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "BIOL252",
+  "detail": "LDEM209 (one of several alternatives) does not exist in this catalog",
+  "evidence": "BIOL 202 or LDEM 209",
+  "severity": "warning",
+  "related": [
+   "LDEM209"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "GEOL222",
+  "detail": "GEOL202 does not exist in this catalog",
+  "evidence": "Pre- or corequisites: GEOL 202 and GEOL 212, or consent of instructor.",
+  "severity": "blocking",
+  "related": [
+   "GEOL202"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "self_reference",
+  "course": "INFO200",
+  "detail": "INFO200 lists itself as a prerequisite",
+  "evidence": "INFO 200 and DCSN 200",
+  "severity": "blocking",
+  "related": []
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "CHEN310",
+  "detail": "CHEN214 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310, and CIVE 210",
+  "severity": "warning",
+  "related": [
+   "CHEN214"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "CHEN310",
+  "detail": "MECH310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310, and CIVE 210",
+  "severity": "warning",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "missing_course",
+  "course": "CHEN411",
+  "detail": "CHEN214 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310, and CHEN 311",
+  "severity": "warning",
+  "related": [
+   "CHEN214"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "missing_course",
+  "course": "CHEN411",
+  "detail": "MECH310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310, and CHEN 311",
+  "severity": "warning",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "CHEN411",
+  "detail": "CHEN311 does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310, and CHEN 311",
+  "severity": "blocking",
+  "related": [
+   "CHEN311"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "CHEN415",
+  "detail": "CHEN311 does not exist in this catalog",
+  "evidence": "CHEN 311 | Corequisite: pre or co-requisite: CHEN 312",
+  "severity": "blocking",
+  "related": [
+   "CHEN311"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "CHEN431",
+  "detail": "CHEN214 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310",
+  "severity": "warning",
+  "related": [
+   "CHEN214"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "CHEN431",
+  "detail": "MECH310 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CHEN 214 or MECH 310",
+  "severity": "warning",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "CHEN451",
+  "detail": "CHEN351 does not exist in this catalog",
+  "evidence": "CHEN 312 and CHEN 351",
+  "severity": "blocking",
+  "related": [
+   "CHEN351"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "missing_course",
+  "course": "CHEN691",
+  "detail": "CHEN490 does not exist in this catalog",
+  "evidence": "CHEN 490.",
+  "severity": "blocking",
+  "related": [
+   "CHEN490"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "PETR300",
+  "detail": "PETR200 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PETR 200 or CHEN 490.",
+  "severity": "warning",
+  "related": [
+   "PETR200"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "PETR300",
+  "detail": "CHEN490 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PETR 200 or CHEN 490.",
+  "severity": "warning",
+  "related": [
+   "CHEN490"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "missing_course",
+  "course": "EECE320",
+  "detail": "CMPS200 (one of several alternatives) does not exist in this catalog",
+  "evidence": "EECE 230 or EECE 231 or CMPS 200 or CMPS 201",
+  "severity": "warning",
+  "related": [
+   "CMPS200"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "missing_course",
+  "course": "EECE616",
+  "detail": "EECE412 (one of several alternatives) does not exist in this catalog",
+  "evidence": "EECE 412 or EECE 612",
+  "severity": "warning",
+  "related": [
+   "EECE412"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "missing_course",
+  "course": "EECE616",
+  "detail": "EECE612 (one of several alternatives) does not exist in this catalog",
+  "evidence": "EECE 412 or EECE 612",
+  "severity": "warning",
+  "related": [
+   "EECE612"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "missing_course",
+  "course": "EECE626",
+  "detail": "EECE490 does not exist in this catalog",
+  "evidence": "EECE 490 and EECE 420 or EECE 421",
+  "severity": "blocking",
+  "related": [
+   "EECE490"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "missing_course",
+  "course": "EECE640L",
+  "detail": "EECE640 does not exist in this catalog",
+  "evidence": "EECE 640.",
+  "severity": "blocking",
+  "related": [
+   "EECE640"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "missing_course",
+  "course": "EECE681",
+  "detail": "EECE680 does not exist in this catalog",
+  "evidence": "EECE 680.",
+  "severity": "blocking",
+  "related": [
+   "EECE680"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "missing_course",
+  "course": "MECH230",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "missing_course",
+  "course": "MECH410L",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 314.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "missing_course",
+  "course": "MECH410L",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 314.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "missing_course",
+  "course": "MECH412",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 314.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "missing_course",
+  "course": "MECH414",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "missing_course",
+  "course": "MECH511",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 314 and MECH 412.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "missing_course",
+  "course": "MECH514",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 314 and MECH 414.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0035",
+  "check": "missing_course",
+  "course": "MECH517",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 410L.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0036",
+  "check": "missing_course",
+  "course": "MECH519",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 314.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0037",
+  "check": "missing_course",
+  "course": "MECH519",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 314.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0038",
+  "check": "missing_course",
+  "course": "MECH533",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "EECE 210 and MECH 310.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0039",
+  "check": "missing_course",
+  "course": "MECH535",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 314 and MECH 436.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0040",
+  "check": "missing_course",
+  "course": "MECH550",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310 and CHEN 490.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0041",
+  "check": "missing_course",
+  "course": "MECH550",
+  "detail": "CHEN490 does not exist in this catalog",
+  "evidence": "MECH 310 and CHEN 490.",
+  "severity": "blocking",
+  "related": [
+   "CHEN490"
+  ]
+ },
+ {
+  "id": "F0042",
+  "check": "missing_course",
+  "course": "MECH602",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 412.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0043",
+  "check": "missing_course",
+  "course": "MECH606",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 314, MECH 412 and MECH 414; or consent of instructor.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0044",
+  "check": "missing_course",
+  "course": "MECH607",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310, MECH 314 and MECH 412; or equivalent.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0045",
+  "check": "missing_course",
+  "course": "MECH607",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 310, MECH 314 and MECH 412; or equivalent.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0046",
+  "check": "missing_course",
+  "course": "MECH608",
+  "detail": "MECH600 does not exist in this catalog",
+  "evidence": "MECH 600.",
+  "severity": "blocking",
+  "related": [
+   "MECH600"
+  ]
+ },
+ {
+  "id": "F0047",
+  "check": "missing_course",
+  "course": "MECH643",
+  "detail": "MECH530 does not exist in this catalog",
+  "evidence": "MECH 340 and MECH 530.",
+  "severity": "blocking",
+  "related": [
+   "MECH530"
+  ]
+ },
+ {
+  "id": "F0048",
+  "check": "missing_course",
+  "course": "MECH663",
+  "detail": "MECH314 does not exist in this catalog",
+  "evidence": "MECH 314 and MECH 412.",
+  "severity": "blocking",
+  "related": [
+   "MECH314"
+  ]
+ },
+ {
+  "id": "F0049",
+  "check": "missing_course",
+  "course": "MECH671",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310. Students cannot receive credit for both MECH 671 and EECE 675 or ENST 300.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0050",
+  "check": "missing_course",
+  "course": "MECH672",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0051",
+  "check": "missing_course",
+  "course": "MECH675",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310 and MECH 412.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0052",
+  "check": "missing_course",
+  "course": "MECH677",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "MECH 310.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0053",
+  "check": "missing_course",
+  "course": "MECH680",
+  "detail": "MECH310 does not exist in this catalog",
+  "evidence": "Advanced standing and MECH 310.",
+  "severity": "blocking",
+  "related": [
+   "MECH310"
+  ]
+ },
+ {
+  "id": "F0054",
+  "check": "long_chain",
+  "course": "ARCH407",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "ARCH 406.",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0055",
+  "check": "long_chain",
+  "course": "CHEN501",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "CHEN 470, CHEN 411, CHEN 480, and CHEN 500",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0056",
+  "check": "long_chain",
+  "course": "CHEN502",
+  "detail": "needs at least 10 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "CHEN 501",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0057",
+  "check": "long_chain",
+  "course": "CHEN670",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "CHEN 570.",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0058",
+  "check": "long_chain",
+  "course": "CHEN674",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "CHEN 451 and CHEN 570.",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0059",
+  "check": "long_chain",
+  "course": "ARCH572",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "ARCH406.",
+  "severity": "info",
+  "related": []
+ }
+]

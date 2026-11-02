@@ -1,0 +1,101 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "0610320",
+  "detail": "0610212 does not exist in this catalog",
+  "evidence": "0610212,0610213 EE 333 Electronics II",
+  "severity": "blocking",
+  "related": [
+   "0610212"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "0610430",
+  "detail": "0610230 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(0610230 or 0610233),0610234 EE 432 Analog Integrated Circuits",
+  "severity": "warning",
+  "related": [
+   "0610230"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "0610473",
+  "detail": "0610318 (one of several alternatives) does not exist in this catalog",
+  "evidence": "0610370,(0610318 or 0610385) | Corequisite: 0610374 EE 475 Industrial Control",
+  "severity": "warning",
+  "related": [
+   "0610318"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "0610480",
+  "detail": "0610318 (one of several alternatives) does not exist in this catalog",
+  "evidence": "0600304,0610381,(0610318 or 0610385) EE 482 Digital Communications",
+  "severity": "warning",
+  "related": [
+   "0610318"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "0610482",
+  "detail": "0610318 (one of several alternatives) does not exist in this catalog",
+  "evidence": "0610381,(0610318 or 0610385) EE 483 Digital Communication Laboratory",
+  "severity": "warning",
+  "related": [
+   "0610318"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "0630351",
+  "detail": "0630352 does not exist in this catalog",
+  "evidence": "0600201, 0600203, 0600204, 0630241, 0630241 , Formerly, 0630352 ME 353 Manufacturing Processes",
+  "severity": "blocking",
+  "related": [
+   "0630352"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "0630415",
+  "detail": "0630317 (one of several alternatives) does not exist in this catalog",
+  "evidence": "0600307,(0630318 or 0630317) ME 416 Noise and Vibration Control",
+  "severity": "warning",
+  "related": [
+   "0630317"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "0630474",
+  "detail": "0630372 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(0630373 or 0630372 | Corequisite: 0630415 ME 475 Thermal Science Lab. II",
+  "severity": "warning",
+  "related": [
+   "0630372"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "0650437",
+  "detail": "0650307 does not exist in this catalog",
+  "evidence": "0650307,0650324,0650333 PE 438 Advanced Well Completion",
+  "severity": "blocking",
+  "related": [
+   "0650307"
+  ]
+ }
+]

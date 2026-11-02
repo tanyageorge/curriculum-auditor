@@ -1,0 +1,57 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "COMM313",
+  "detail": "COMM201 (one of several alternatives) does not exist in this catalog",
+  "evidence": "COMM 201 or COMM 208",
+  "severity": "warning",
+  "related": [
+   "COMM201"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "ECON388",
+  "detail": "ECON209 does not exist in this catalog",
+  "evidence": "ECON 209",
+  "severity": "blocking",
+  "related": [
+   "ECON209"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "ECON452",
+  "detail": "ECON300 does not exist in this catalog",
+  "evidence": "ECON 300 and ECON 301",
+  "severity": "blocking",
+  "related": [
+   "ECON300"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "ECON452",
+  "detail": "ECON301 does not exist in this catalog",
+  "evidence": "ECON 300 and ECON 301",
+  "severity": "blocking",
+  "related": [
+   "ECON301"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "PLSC302",
+  "detail": "IR102 does not exist in this catalog",
+  "evidence": "IR 102 or Permission of Instructor",
+  "severity": "blocking",
+  "related": [
+   "IR102"
+  ]
+ }
+]

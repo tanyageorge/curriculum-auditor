@@ -1,0 +1,309 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "MATH205",
+  "detail": "MATH203 does not exist in this catalog",
+  "evidence": "MATH 203",
+  "severity": "blocking",
+  "related": [
+   "MATH203"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "MNGT420",
+  "detail": "MNGT120 does not exist in this catalog",
+  "evidence": "Senior standing, MNGT 120",
+  "severity": "blocking",
+  "related": [
+   "MNGT120"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "CIT130",
+  "detail": "CIT102 does not exist in this catalog",
+  "evidence": "CIT 102",
+  "severity": "blocking",
+  "related": [
+   "CIT102"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "CIT388",
+  "detail": "CIT387 does not exist in this catalog",
+  "evidence": "CIT 387",
+  "severity": "blocking",
+  "related": [
+   "CIT387"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "CIT482",
+  "detail": "CYS364 does not exist in this catalog",
+  "evidence": "CYS 364",
+  "severity": "blocking",
+  "related": [
+   "CYS364"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "CIT242",
+  "detail": "CSC235 does not exist in this catalog",
+  "evidence": "CSC 235",
+  "severity": "blocking",
+  "related": [
+   "CSC235"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "CYS340",
+  "detail": "CSC205 does not exist in this catalog",
+  "evidence": "CSC 205",
+  "severity": "blocking",
+  "related": [
+   "CSC205"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "CYS375",
+  "detail": "CSC205 does not exist in this catalog",
+  "evidence": "CSC 205",
+  "severity": "blocking",
+  "related": [
+   "CSC205"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "CYS380",
+  "detail": "CSC340 does not exist in this catalog",
+  "evidence": "CSC 340",
+  "severity": "blocking",
+  "related": [
+   "CSC340"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "CYS430L",
+  "detail": "CSC430 does not exist in this catalog",
+  "evidence": "CSC 430(co)",
+  "severity": "blocking",
+  "related": [
+   "CSC430"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "CYS450",
+  "detail": "CSC375 does not exist in this catalog",
+  "evidence": "CSC 375",
+  "severity": "blocking",
+  "related": [
+   "CSC375"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "missing_course",
+  "course": "CYS467",
+  "detail": "CSC430 does not exist in this catalog",
+  "evidence": "CSC 430",
+  "severity": "blocking",
+  "related": [
+   "CSC430"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "missing_course",
+  "course": "CEN430",
+  "detail": "CEN330 does not exist in this catalog",
+  "evidence": "CEN 330",
+  "severity": "blocking",
+  "related": [
+   "CEN330"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "ELEE220",
+  "detail": "CSC101 does not exist in this catalog",
+  "evidence": "CSC 101",
+  "severity": "blocking",
+  "related": [
+   "CSC101"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "ELEE230",
+  "detail": "CSC101 does not exist in this catalog",
+  "evidence": "CSC 101",
+  "severity": "blocking",
+  "related": [
+   "CSC101"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "ELEE485",
+  "detail": "ELEE380 does not exist in this catalog",
+  "evidence": "ELEE 380",
+  "severity": "blocking",
+  "related": [
+   "ELEE380"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "ELEE471",
+  "detail": "ELEE370 does not exist in this catalog",
+  "evidence": "ELEE 370",
+  "severity": "blocking",
+  "related": [
+   "ELEE370"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "REE310",
+  "detail": "REE242 does not exist in this catalog",
+  "evidence": "REE 242",
+  "severity": "blocking",
+  "related": [
+   "REE242"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "missing_course",
+  "course": "MECH310",
+  "detail": "MECH210 does not exist in this catalog",
+  "evidence": "MECH 210",
+  "severity": "blocking",
+  "related": [
+   "MECH210"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "MECH330",
+  "detail": "MECH201 does not exist in this catalog",
+  "evidence": "MECH 201 | Corequisite: MECH 231",
+  "severity": "blocking",
+  "related": [
+   "MECH201"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "MECH437",
+  "detail": "MECH210 does not exist in this catalog",
+  "evidence": "MECH 210, MECH 341",
+  "severity": "blocking",
+  "related": [
+   "MECH210"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "missing_course",
+  "course": "MECH433",
+  "detail": "MECH413 does not exist in this catalog",
+  "evidence": "MECH 413",
+  "severity": "blocking",
+  "related": [
+   "MECH413"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "missing_course",
+  "course": "SAFE340",
+  "detail": "MECH210 does not exist in this catalog",
+  "evidence": "MECH 210, MECH 352",
+  "severity": "blocking",
+  "related": [
+   "MECH210"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "long_chain",
+  "course": "CIVE423",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "CIVE 430",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0025",
+  "check": "long_chain",
+  "course": "REE487",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "REE 470",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0026",
+  "check": "long_chain",
+  "course": "SAFE442",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "SAFE 320",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0027",
+  "check": "long_chain",
+  "course": "SAFE450",
+  "detail": "needs at least 9 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "SAFE 446, SAFE 448, SAFE 449",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0028",
+  "check": "long_chain",
+  "course": "SAFE484",
+  "detail": "needs at least 10 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "SAFE 450",
+  "severity": "info",
+  "related": []
+ },
+ {
+  "id": "F0029",
+  "check": "long_chain",
+  "course": "SAFE488",
+  "detail": "needs at least 10 terms of prerequisites before it can be taken (limit 8)",
+  "evidence": "SAFE 450",
+  "severity": "info",
+  "related": []
+ }
+]

@@ -1,0 +1,26 @@
+{
+  "catalogs": [
+    "aus@2023-2024",
+    "uaeu@2025_2026",
+    "qu@2024-2025",
+    "khalifa@2025-2026",
+    "kfupm@2025-2026"
+  ],
+  "seeds": 5,
+  "defects_per_type_per_run": 4,
+  "recall": {
+    "missing_course": 1.0,
+    "removed": 0.99,
+    "cycle": 1.0,
+    "self_reference": 1.0
+  },
+  "planted": {
+    "missing_course": 100,
+    "removed": 100,
+    "cycle": 100,
+    "self_reference": 100
+  },
+  "false_alarms": 0,
+  "downstream_long_chain_notices": 57,
+  "baseline_findings_total": 423
+}

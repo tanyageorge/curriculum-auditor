@@ -1,0 +1,288 @@
+[
+ {
+  "id": "F0001",
+  "check": "missing_course",
+  "course": "ARC221",
+  "detail": "PHYS132 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PHYS 101 Or PHYS 132 Or PHYS 133",
+  "severity": "warning",
+  "related": [
+   "PHYS132"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "missing_course",
+  "course": "ARE320",
+  "detail": "PHYS132 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PHYS 102 Or PHYS 132",
+  "severity": "warning",
+  "related": [
+   "PHYS132"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "missing_course",
+  "course": "ARE325",
+  "detail": "PHYS132 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PHYS 102 Or PHYS 132",
+  "severity": "warning",
+  "related": [
+   "PHYS132"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "missing_course",
+  "course": "CHE486",
+  "detail": "CHE448 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ME 448 Or CHE 448) And PHYS 423",
+  "severity": "warning",
+  "related": [
+   "CHE448"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "missing_course",
+  "course": "CIE463",
+  "detail": "CIE314 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CIE 314 Or CISE 314",
+  "severity": "warning",
+  "related": [
+   "CIE314"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "missing_course",
+  "course": "CIE463",
+  "detail": "CISE314 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CIE 314 Or CISE 314",
+  "severity": "warning",
+  "related": [
+   "CISE314"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "missing_course",
+  "course": "CISE398",
+  "detail": "CISE314 does not exist in this catalog",
+  "evidence": "Completing a minimum of 85 credit hours. Attainment of an overall GPA of 2.0 and major GPA of 2.0. The departmental requirements include ENGL214, CISE 312, CISE390 and at least two of CISE316, CISE314 and CISE418.",
+  "severity": "blocking",
+  "related": [
+   "CISE314"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "missing_course",
+  "course": "CISE434",
+  "detail": "CISE401 does not exist in this catalog",
+  "evidence": "Senior Standing , CISE 401",
+  "severity": "blocking",
+  "related": [
+   "CISE401"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "missing_course",
+  "course": "CISE463",
+  "detail": "CISE314 does not exist in this catalog",
+  "evidence": "CISE 314 or Approval of the department",
+  "severity": "blocking",
+  "related": [
+   "CISE314"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "missing_course",
+  "course": "COE403",
+  "detail": "CIE414 (one of several alternatives) does not exist in this catalog",
+  "evidence": "COE 301 Or COE 233 Or EE 390 Or CISE 414 Or CIE 414",
+  "severity": "warning",
+  "related": [
+   "CIE414"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "missing_course",
+  "course": "COE420",
+  "detail": "CIE414 (one of several alternatives) does not exist in this catalog",
+  "evidence": "COE 301 Or COE 233 Or EE 390 Or CISE 414 Or CIE 414",
+  "severity": "warning",
+  "related": [
+   "CIE414"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "missing_course",
+  "course": "COE422",
+  "detail": "CIE414 (one of several alternatives) does not exist in this catalog",
+  "evidence": "COE 306 Or EE 390 Or CISE 414 Or CIE 414",
+  "severity": "warning",
+  "related": [
+   "CIE414"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "missing_course",
+  "course": "ICS254",
+  "detail": "ICS252 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ICS 253 Or ICS 252",
+  "severity": "warning",
+  "related": [
+   "ICS252"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "ICS350",
+  "detail": "ICS334 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 214 And (SWE 311 Or ICS 413) And (ICS 324 Or ICS 334)",
+  "severity": "warning",
+  "related": [
+   "ICS334"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "ICS351",
+  "detail": "ICS334 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ENGL 214 And (ICS 413 Or SWE 311) And (ICS 324 Or ICS 334)",
+  "severity": "warning",
+  "related": [
+   "ICS334"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "ICS426",
+  "detail": "ICS334 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ICS 324 Or ICS 334",
+  "severity": "warning",
+  "related": [
+   "ICS334"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "ICS431",
+  "detail": "ICS232 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ICS 233 Or COE 205 Or ICS 232 Or COE 301",
+  "severity": "warning",
+  "related": [
+   "ICS232"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "ICS454",
+  "detail": "ICS251 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ICS 353 And (ICS 254 Or ICS 251 Or ICS 252)",
+  "severity": "warning",
+  "related": [
+   "ICS251"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "missing_course",
+  "course": "ICS454",
+  "detail": "ICS252 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ICS 353 And (ICS 254 Or ICS 251 Or ICS 252)",
+  "severity": "warning",
+  "related": [
+   "ICS252"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "missing_course",
+  "course": "ME454",
+  "detail": "CHE448 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ME 448 Or CHE 448) And (ME 216 Or MSE 201 Or ME 205 Or ME 207) And PHYS 423 *",
+  "severity": "warning",
+  "related": [
+   "CHE448"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "missing_course",
+  "course": "MINE481",
+  "detail": "MINE302 does not exist in this catalog",
+  "evidence": "GEOL 314 And MINE 302",
+  "severity": "blocking",
+  "related": [
+   "MINE302"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "missing_course",
+  "course": "MINE482",
+  "detail": "MINE302 does not exist in this catalog",
+  "evidence": "MINE 302 And MINE 348 And MINE 353",
+  "severity": "blocking",
+  "related": [
+   "MINE302"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "missing_course",
+  "course": "PETE461",
+  "detail": "PETE330 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PETE 301 Or PETE 330",
+  "severity": "warning",
+  "related": [
+   "PETE330"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "missing_course",
+  "course": "PETE471",
+  "detail": "PETE330 (one of several alternatives) does not exist in this catalog",
+  "evidence": "PETE 301 Or PETE 330",
+  "severity": "warning",
+  "related": [
+   "PETE330"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "missing_course",
+  "course": "SWE415",
+  "detail": "ICS252 (one of several alternatives) does not exist in this catalog",
+  "evidence": "(ICS 252 Or ICS 253) And SWE 316 And (STAT 319 Or STAT 201)",
+  "severity": "warning",
+  "related": [
+   "ICS252"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "missing_course",
+  "course": "SWE421",
+  "detail": "ICS334 (one of several alternatives) does not exist in this catalog",
+  "evidence": "ICS 334 Or ICS 324",
+  "severity": "warning",
+  "related": [
+   "ICS334"
+  ]
+ }
+]

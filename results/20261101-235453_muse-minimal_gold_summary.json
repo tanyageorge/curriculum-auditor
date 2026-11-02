@@ -1,0 +1,57 @@
+{
+  "run": "20261101-235453_muse-minimal_gold",
+  "parser": "muse-minimal",
+  "split": "gold",
+  "reference": "gold (hand-labeled)",
+  "n": 150,
+  "wall_s": 33.8,
+  "scores": {
+    "all": {
+      "n": 150,
+      "structure_exact": 0.9467,
+      "full_exact": 0.9267,
+      "course_precision": 0.9717,
+      "course_recall": 0.9821,
+      "flag_rate": 0.1133,
+      "structure_exact_unflagged": 0.9699
+    },
+    "moderate": {
+      "n": 50,
+      "structure_exact": 0.92,
+      "full_exact": 0.92,
+      "course_precision": 0.9494,
+      "course_recall": 0.974,
+      "flag_rate": 0.16,
+      "structure_exact_unflagged": 0.9762
+    },
+    "hard": {
+      "n": 75,
+      "structure_exact": 0.9467,
+      "full_exact": 0.9067,
+      "course_precision": 0.9777,
+      "course_recall": 0.9831,
+      "flag_rate": 0.12,
+      "structure_exact_unflagged": 0.9545
+    },
+    "simple": {
+      "n": 25,
+      "structure_exact": 1.0,
+      "full_exact": 1.0,
+      "course_precision": 1.0,
+      "course_recall": 1.0,
+      "flag_rate": 0.0,
+      "structure_exact_unflagged": 1.0
+    }
+  },
+  "cost": {
+    "usd_per_course": 0.00248,
+    "usd_this_run": 0.3574,
+    "reasoning_share_of_output": 0.696,
+    "median_latency_s": 1.335,
+    "retried": 0,
+    "guardrail_failures": 0,
+    "api_errors": 0,
+    "cached": 7,
+    "note": null
+  }
+}

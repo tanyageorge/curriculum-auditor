@@ -1,0 +1,377 @@
+[
+ {
+  "id": "F0001",
+  "check": "renumbered",
+  "course": "DES200",
+  "detail": "MCM100 (one of several alternatives) is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "DES 131 or MCM 100 or NGN 110 or BIS 101 or STA 201 or STA 202",
+  "severity": "warning",
+  "related": [
+   "MCM100"
+  ]
+ },
+ {
+  "id": "F0002",
+  "check": "renumbered",
+  "course": "DES370",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "ARC 201 or DES 230 or DES 270 or IDE 201 or MUM 201 or VIS 201, or DES 101 and MCE 236L.",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0003",
+  "check": "renumbered",
+  "course": "DES370",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "ARC 201 or DES 230 or DES 270 or IDE 201 or MUM 201 or VIS 201, or DES 101 and MCE 236L.",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0004",
+  "check": "renumbered",
+  "course": "FLM310",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "FLM 210 or MUM 201 or MCM 277.",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0005",
+  "check": "renumbered",
+  "course": "FLM310",
+  "detail": "MCM277 (one of several alternatives) is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "FLM 210 or MUM 201 or MCM 277.",
+  "severity": "warning",
+  "related": [
+   "MCM277"
+  ]
+ },
+ {
+  "id": "F0006",
+  "check": "renumbered",
+  "course": "FLM332",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "DES 230 or FLM 100 or MUM 201 or VIS 201.",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0007",
+  "check": "renumbered",
+  "course": "MUM202",
+  "detail": "MUM201 is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "MUM 201.",
+  "severity": "blocking",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0008",
+  "check": "renumbered",
+  "course": "MUM221",
+  "detail": "MUM201 is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "MUM 201.",
+  "severity": "blocking",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0009",
+  "check": "renumbered",
+  "course": "MUM311",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "ARC 201 or DES 230 or IDE 201 or MUM 201 or VIS 201 or MCM 200.",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0010",
+  "check": "renumbered",
+  "course": "MUM311",
+  "detail": "MCM200 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "ARC 201 or DES 230 or IDE 201 or MUM 201 or VIS 201 or MCM 200.",
+  "severity": "warning",
+  "related": [
+   "MCM200"
+  ]
+ },
+ {
+  "id": "F0011",
+  "check": "renumbered",
+  "course": "MUM331",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "MUM 201 or MUM 311.",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0012",
+  "check": "renumbered",
+  "course": "VIS231",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "ARC 201 or DES 230 or IDE 201 or MUM 201 or VIS 201",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0013",
+  "check": "renumbered",
+  "course": "VIS320",
+  "detail": "MUM201 (one of several alternatives) is not in this edition; it last appeared in the 2015-2016 catalog",
+  "evidence": "VIS 201 or ARC 201 or ART 211 or DES 200 or IDE 201 or MUM 201",
+  "severity": "warning",
+  "related": [
+   "MUM201"
+  ]
+ },
+ {
+  "id": "F0014",
+  "check": "missing_course",
+  "course": "VIS328",
+  "detail": "DES202 (one of several alternatives) does not exist in this catalog",
+  "evidence": "VIS 202 or ARC 202 or IDE 202 or DES 202 or MUM 202",
+  "severity": "warning",
+  "related": [
+   "DES202"
+  ]
+ },
+ {
+  "id": "F0015",
+  "check": "missing_course",
+  "course": "THE321",
+  "detail": "THE150 (one of several alternatives) does not exist in this catalog",
+  "evidence": "THE 101 or THE 102 or THE 141 or THE 150 or THE 242 or THE 250 or MGT 201 or permission of the instructor",
+  "severity": "warning",
+  "related": [
+   "THE150"
+  ]
+ },
+ {
+  "id": "F0016",
+  "check": "missing_course",
+  "course": "THE321",
+  "detail": "THE250 (one of several alternatives) does not exist in this catalog",
+  "evidence": "THE 101 or THE 102 or THE 141 or THE 150 or THE 242 or THE 250 or MGT 201 or permission of the instructor",
+  "severity": "warning",
+  "related": [
+   "THE250"
+  ]
+ },
+ {
+  "id": "F0017",
+  "check": "missing_course",
+  "course": "CMP354",
+  "detail": "CMP257 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMP 257 or COE 312.",
+  "severity": "warning",
+  "related": [
+   "CMP257"
+  ]
+ },
+ {
+  "id": "F0018",
+  "check": "missing_course",
+  "course": "COE420",
+  "detail": "CMP257 (one of several alternatives) does not exist in this catalog",
+  "evidence": "CMP 305, and CMP 257 or COE 312.",
+  "severity": "warning",
+  "related": [
+   "CMP257"
+  ]
+ },
+ {
+  "id": "F0019",
+  "check": "renumbered",
+  "course": "CVE312",
+  "detail": "CVE301 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 301",
+  "severity": "blocking",
+  "related": [
+   "CVE301"
+  ]
+ },
+ {
+  "id": "F0020",
+  "check": "renumbered",
+  "course": "CVE313",
+  "detail": "CVE301 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 224 and CVE 301",
+  "severity": "blocking",
+  "related": [
+   "CVE301"
+  ]
+ },
+ {
+  "id": "F0021",
+  "check": "renumbered",
+  "course": "CVE363",
+  "detail": "CVE263 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 263",
+  "severity": "blocking",
+  "related": [
+   "CVE263"
+  ]
+ },
+ {
+  "id": "F0022",
+  "check": "renumbered",
+  "course": "CVE367",
+  "detail": "CVE267 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 267",
+  "severity": "blocking",
+  "related": [
+   "CVE267"
+  ]
+ },
+ {
+  "id": "F0023",
+  "check": "renumbered",
+  "course": "CVE410",
+  "detail": "CVE301 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 301, and MTH 221 or MTH 225",
+  "severity": "blocking",
+  "related": [
+   "CVE301"
+  ]
+ },
+ {
+  "id": "F0024",
+  "check": "renumbered",
+  "course": "CVE456",
+  "detail": "CVE263 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 263.",
+  "severity": "blocking",
+  "related": [
+   "CVE263"
+  ]
+ },
+ {
+  "id": "F0025",
+  "check": "renumbered",
+  "course": "CVE457",
+  "detail": "CVE263 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 263.",
+  "severity": "blocking",
+  "related": [
+   "CVE263"
+  ]
+ },
+ {
+  "id": "F0026",
+  "check": "renumbered",
+  "course": "CVE460",
+  "detail": "CVE263 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 263.",
+  "severity": "blocking",
+  "related": [
+   "CVE263"
+  ]
+ },
+ {
+  "id": "F0027",
+  "check": "renumbered",
+  "course": "CVE461",
+  "detail": "CVE263 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 263.",
+  "severity": "blocking",
+  "related": [
+   "CVE263"
+  ]
+ },
+ {
+  "id": "F0028",
+  "check": "renumbered",
+  "course": "CVE467",
+  "detail": "CVE267 is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "CVE 111 and CVE 267.",
+  "severity": "blocking",
+  "related": [
+   "CVE267"
+  ]
+ },
+ {
+  "id": "F0029",
+  "check": "missing_course",
+  "course": "MCE438",
+  "detail": "MCM331 does not exist in this catalog",
+  "evidence": "MCE 313 and MCM 331",
+  "severity": "blocking",
+  "related": [
+   "MCM331"
+  ]
+ },
+ {
+  "id": "F0030",
+  "check": "renumbered",
+  "course": "MGT300",
+  "detail": "UPL201 (one of several alternatives) is not in this edition; it last appeared in the 2017-2018 catalog",
+  "evidence": "MGT 201 or UPL 201 | Corequisite: ENG 203 or ENG 204",
+  "severity": "warning",
+  "related": [
+   "UPL201"
+  ]
+ },
+ {
+  "id": "F0031",
+  "check": "renumbered",
+  "course": "MGT315",
+  "detail": "CHE332 (one of several alternatives) is not in this edition; it last appeared in the 2017-2018 catalog (now EGM364)",
+  "evidence": "MGT 201, ACC 201 and ISA 201, or CHE 332 or EGM 361 or EGM 364 or INE 332",
+  "severity": "warning",
+  "related": [
+   "CHE332"
+  ]
+ },
+ {
+  "id": "F0032",
+  "check": "renumbered",
+  "course": "MGT315",
+  "detail": "CHE332 (one of several alternatives) is not in this edition; it last appeared in the 2017-2018 catalog (now EGM364)",
+  "evidence": "MGT 201, ACC 201 and ISA 201, or CHE 332 or EGM 361 or EGM 364 or INE 332",
+  "severity": "warning",
+  "related": [
+   "CHE332"
+  ]
+ },
+ {
+  "id": "F0033",
+  "check": "renumbered",
+  "course": "MGT315",
+  "detail": "CHE332 (one of several alternatives) is not in this edition; it last appeared in the 2017-2018 catalog (now EGM364)",
+  "evidence": "MGT 201, ACC 201 and ISA 201, or CHE 332 or EGM 361 or EGM 364 or INE 332",
+  "severity": "warning",
+  "related": [
+   "CHE332"
+  ]
+ },
+ {
+  "id": "F0034",
+  "check": "cycle",
+  "course": "CHM101",
+  "detail": "mandatory prerequisite loop: CHM101 -> CHM101L -> CHM101",
+  "evidence": "CHM 101L.",
+  "severity": "blocking",
+  "related": [
+   "CHM101",
+   "CHM101L"
+  ]
+ }
+]
