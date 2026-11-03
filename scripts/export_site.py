@@ -6,6 +6,7 @@ Mendeley catalogs use the dataset's reference parses (CC BY 4.0); UIUC uses Muse
 from scripts/parse_uiuc.py (UIUC data CC BY-SA 4.0). The site needs no server and no API key.
 """
 import glob
+import html
 import json
 import sys
 from dataclasses import asdict
@@ -20,6 +21,11 @@ from auditor.notation import to_text  # noqa: E402
 from auditor.schema import PrereqParse, norm_code  # noqa: E402
 
 OUT = ROOT / "site" / "data"
+TIMING_CODE = {"before": "", "concurrent": "c", "before_or_concurrent": "p"}
+
+
+def clean(s) -> str:
+    return html.unescape(s) if isinstance(s, str) else ""
 
 
 def course_rows(courses):
@@ -27,16 +33,16 @@ def course_rows(courses):
     for c in courses:
         p = c.parse
         rows.append({
-            "k": norm_code(c.code), "c": c.code, "t": c.title, "r": c.raw,
+            "k": norm_code(c.code), "c": c.code, "t": clean(c.title), "r": clean(c.raw),
             "p": to_text(p) if (p.groups or p.conditions) else "",
-            "g": [[[norm_code(o.course), o.timing.value[0]] for o in g.options] for g in p.groups],
+            "g": [[[norm_code(o.course), TIMING_CODE[o.timing.value]] for o in g.options] for g in p.groups],
             "nr": p.review_reason if p.needs_review else None,
         })
     return rows
 
 
-def write_catalog(ds, name, source, courses, findings):
-    payload = {"id": ds, "name": name, "source": source, "courses": course_rows(courses),
+def write_catalog(ds, name, source, courses, findings, complete=True):
+    payload = {"id": ds, "name": name, "source": source, "complete": complete, "courses": course_rows(courses),
                "findings": [asdict(f) for f in findings]}
     (OUT / f"{ds.replace('@', '_')}.json").write_text(json.dumps(payload, separators=(",", ":")))
     sev = {s: sum(f.severity == s for f in findings) for s in ("blocking", "warning", "info")}
@@ -57,8 +63,8 @@ def main():
         courses = [Course(code=x["code"], title=x["title"], raw=x["raw"], parse=PrereqParse.model_validate(x["parse"]))
                    for x in json.loads(uiuc.read_text())]
         index.append(write_catalog("uiuc@2026-spring", "University of Illinois Urbana-Champaign, Spring 2026",
-                                   "Parsed by Muse Spark (this project). This file lists one term's offerings, not the full "
-                                   "catalog, so missing-course checks are off", courses, audit(courses, complete_catalog=False)))
+                                   "Prerequisites parsed by Muse Spark (this project)", courses,
+                                   audit(courses, complete_catalog=False), complete=False))
     else:
         print("note: results/uiuc_parsed.json not found; run scripts/parse_uiuc.py to include UIUC")
 
@@ -67,7 +73,7 @@ def main():
     for ds in latest_editions(all_courses):
         courses, earlier = load_catalog(ds, all_courses, refs=refs)
         inst = all_courses.loc[all_courses.dataset == ds, "institution"].iloc[0]
-        index.append(write_catalog(ds, f"{inst}, {ds.split('@')[1]}", "Mendeley dataset reference parses",
+        index.append(write_catalog(ds, f"{inst}, {ds.split('@')[1]}", "Prerequisite parses from the Mendeley research dataset",
                                    courses, audit(courses, earlier)))
         print(f"  {ds}: {len(courses)} courses")
 

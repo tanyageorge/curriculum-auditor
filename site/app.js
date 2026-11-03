@@ -11,11 +11,29 @@ const state = { index: null, cat: null, byKey: new Map(), requiredBy: new Map(),
                 check: "all", query: "", limit: 150, selected: null };
 
 // ------------------------------------------------------------------ tabs + hash state
-document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+const FEATURED = { "uiuc@2026-spring": "CS374", "uaeu@2025_2026": "NUTR481" };
+document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
+  if (b.dataset.tab === "audit" && !state.cat) return openCatalog(state.index.catalogs[0].id);
+  showTab(b.dataset.tab);
+}));
+$("#home-link").addEventListener("click", (e) => { e.preventDefault(); history.pushState(null, "", location.pathname); showTab("home"); });
 function showTab(t) {
   document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === t));
   document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === "tab-" + t));
+  window.scrollTo({ top: 0 });
 }
+async function openCatalog(id, course) {
+  showTab("audit");
+  if (state.cat?.id === id) { if (course && state.byKey.has(course)) selectCourse(course); return; }
+  $("#catalog").value = id;
+  await loadCatalog(id, course);
+}
+async function route() {   // the URL decides the view: #catalog=...&course=... opens the app
+  const h = readHash();
+  const meta = state.index.catalogs.find((c) => c.id === h.catalog);
+  if (meta) await openCatalog(meta.id, h.course); else showTab("home");
+}
+window.addEventListener("hashchange", route);
 function readHash() { return Object.fromEntries(new URLSearchParams(location.hash.slice(1))); }
 function writeHash() {
   const h = new URLSearchParams({ catalog: state.cat?.id || "" });
@@ -28,13 +46,10 @@ async function init() {
   state.index = await (await fetch("data/index.json")).json();
   const sel = $("#catalog");
   sel.innerHTML = state.index.catalogs.map((c) => `<option value="${esc(c.id)}">${esc(c.name)} · ${c.courses.toLocaleString()} courses</option>`).join("");
-  const h = readHash();
-  const start = state.index.catalogs.find((c) => c.id === h.catalog) || state.index.catalogs[0];
-  sel.value = start.id;
   sel.addEventListener("change", () => loadCatalog(sel.value));
   $("#search").addEventListener("input", (e) => { state.query = e.target.value.trim(); state.limit = 150; onSearch(); });
   renderEval();
-  await loadCatalog(start.id, h.course);
+  await route();
 }
 
 async function loadCatalog(id, course) {
@@ -55,14 +70,26 @@ async function loadCatalog(id, course) {
     if (!state.findingsByCourse.has(k)) state.findingsByCourse.set(k, []);
     state.findingsByCourse.get(k).push(f);
   }
-  $("#source").textContent = `Parses: ${cat.source}.`;
+  $("#source").textContent = `${cat.source}.`;
   renderTiles(meta); renderChips(); renderFindings();
-  if (course && state.byKey.has(course)) selectCourse(course);
+  renderHint(cat);
+  const first = course && state.byKey.has(course) ? course
+    : FEATURED[id] && state.byKey.has(FEATURED[id]) ? FEATURED[id]
+    : cat.findings.length ? norm(cat.findings[0].course) : null;
+  if (first) selectCourse(first);
   else $("#detail").innerHTML = `<div class="empty">Select a finding or search for a course to see its prerequisites and graph.</div>`;
   writeHash();
 }
 
 // ------------------------------------------------------------------ audit view
+function renderHint(cat) {
+  const el = $("#hint");
+  if (cat.id.startsWith("uiuc")) {
+    el.innerHTML = `This file lists one term's offerings, so only structural checks run here; it shows Muse Spark's parsing best. Search any course (try <a href="#catalog=uiuc@2026-spring&course=CS225">CS 225</a> or <a href="#catalog=uiuc@2026-spring&course=ECE391">ECE 391</a>), or <a href="#catalog=uaeu@2025_2026&course=NUTR481">open a catalog with more problems →</a>`;
+    el.style.display = "block";
+  } else { el.innerHTML = ""; el.style.display = "none"; }
+}
+
 function renderTiles(m) {
   $("#tiles").innerHTML = [
     ["", m.courses.toLocaleString(), "courses checked"],
@@ -114,8 +141,9 @@ function logicHTML(c) {
   if (!c.g.length) return `<span class="op">No course requirement${c.p ? " (conditions only)" : ""}</span>`;
   return c.g.map((g) => `<span class="grp">${g.map(([k, t]) => {
     const known = state.byKey.get(k);
-    const tag = t === "c" ? " · co" : t === "b" ? " · pre/co" : "";
-    return `<span class="opt ${known ? "" : "missing"}" data-k="${esc(k)}" title="${known ? esc(known.t) : "not in this catalog"}">${esc(known ? known.c : k)}${tag}</span>`;
+    const tag = t === "c" ? " · concurrent" : t === "p" ? " · prior or concurrent" : "";
+    const flag = !known && state.cat.complete !== false;   // absent from a partial file proves nothing
+    return `<span class="opt ${flag ? "missing" : known ? "" : "absent"}" data-k="${esc(k)}" title="${known ? esc(known.t) : flag ? "not in this catalog" : "not in this term's file"}">${esc(known ? known.c : k)}${tag}</span>`;
   }).join(`<span class="op">OR</span>`)}</span>`).join(`<span class="op">AND</span>`);
 }
 
@@ -135,7 +163,9 @@ function selectCourse(k) {
     ${conds ? `<div class="legend">Conditions: ${esc(conds)}</div>` : ""}
     ${c.nr ? `<div class="review">Flagged for review: ${esc(c.nr)}</div>` : ""}
     <div class="label">Prerequisite graph</div><div class="graph">${graphSVG(k)}</div>
-    <div class="legend">Arrows point toward the course they unlock. Dashed = one of several alternatives. Red = a problem or a course missing from the catalog.</div>
+    <div class="legend">Arrows point toward the course they unlock. Dashed arrow = one of several alternatives. ${state.cat.complete === false
+      ? "Dashed box = not in this term's file (not a problem: the file lists one term's offerings)."
+      : "Red = a problem, or a course missing from the catalog."}</div>
     ${deps.length ? `<div class="label">Required by (${deps.length})</div><div class="logic">${deps.slice(0, 30).map((d) => `<span class="opt" data-k="${esc(d.k)}">${esc(d.c)}</span>`).join("")}${deps.length > 30 ? `<span class="op">+${deps.length - 30} more</span>` : ""}</div>` : ""}`;
   $("#detail").querySelectorAll("[data-k]").forEach((e) => e.addEventListener("click", () => selectCourse(e.dataset.k)));
   const gr = $("#detail .graph"); if (gr) gr.scrollLeft = gr.scrollWidth;   // keep the selected course in view
@@ -167,7 +197,8 @@ function graphSVG(root) {
     const y = 10 + i * (H + GY) + ((rows - col.length) * (H + GY)) / 2;
     pos.set(k, [x, y]);
   }));
-  const bad = (k) => !state.byKey.has(k) || (state.findingsByCourse.get(k) || []).some((f) => f.severity !== "info");
+  const partial = state.cat.complete === false;
+  const bad = (k) => (!state.byKey.has(k) && !partial) || (state.findingsByCourse.get(k) || []).some((f) => f.severity !== "info");
   const seen = new Set();
   const paths = edges.filter(([a, b]) => {   // only draw edges that flow left-to-right, once each
     const ok = pos.has(a) && pos.has(b) && level.get(a) > level.get(b) && !seen.has(a + ">" + b);
