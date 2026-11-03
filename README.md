@@ -8,6 +8,8 @@ into structured AND/OR logic, then audits the whole catalog for defects: prerequ
 point to courses that no longer exist, prerequisite loops, and degree paths too long to
 finish on time. Every finding cites the catalog text it came from.
 
+**Live site: https://curriculum-auditor-seven.vercel.app**
+
 Built solo by Tanya George for the **Meta Global AI Developer Hackathon** (Oct 27 – Nov 4, 2026).
 All code in this repository was written during the hackathon.
 
@@ -44,8 +46,10 @@ Updated as the build progresses. Only what is listed under "Done" exists.
   labels, not scored). The file lists one term's offerings rather than the full catalog, so only the
   structural checks run on it (self-reference, loops, chains); missing-course checks would be false alarms
 
+- Deployed on Vercel (static, from `site/`; redeploy with `cd site && npx vercel --prod`)
+
 **Planned**
-- Deployment and demo video
+- Demo video
 
 ## Evaluation design
 
