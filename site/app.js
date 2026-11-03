@@ -20,6 +20,8 @@ $("#home-link").addEventListener("click", (e) => { e.preventDefault(); history.p
 function showTab(t) {
   document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === t));
   document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === "tab-" + t));
+  document.body.classList.toggle("on-home", t === "home");
+  if (window.net) (t === "home" ? window.net.start() : window.net.stop());
   window.scrollTo({ top: 0 });
 }
 async function openCatalog(id, course) {
