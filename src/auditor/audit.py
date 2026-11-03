@@ -110,9 +110,11 @@ def min_terms(courses: dict[str, Course]) -> dict[str, int]:
 
 
 def audit(courses: Iterable[Course], earlier_codes: Optional[dict[str, str]] = None,
-          max_terms: int = 8) -> list[Finding]:
+          max_terms: int = 8, complete_catalog: bool = True) -> list[Finding]:
     """Run every check. `earlier_codes` maps normalized codes from earlier editions to the
-    edition they last appeared in (enables the renumbered check)."""
+    edition they last appeared in (enables the renumbered check). Set complete_catalog=False when
+    the course list is a subset (e.g. one term's offerings): absent courses then prove nothing, so
+    the missing/renumbered checks are skipped."""
     cat = {norm_code(c.code): c for c in courses}
     subjects = {subject(k) for k in cat}
     findings: list[Finding] = []
@@ -130,7 +132,7 @@ def audit(courses: Iterable[Course], earlier_codes: Optional[dict[str, str]] = N
                 if p == key:
                     add("self_reference", key, f"{c.code} lists itself as a prerequisite",
                         severity="blocking" if sole else "warning")
-                elif p not in cat and subject(p) in subjects:
+                elif complete_catalog and p not in cat and subject(p) in subjects:
                     sev = "blocking" if sole else "warning"
                     alt = "" if sole else " (one of several alternatives)"
                     if earlier_codes and p in earlier_codes:

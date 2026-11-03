@@ -33,11 +33,19 @@ Updated as the build progresses. Only what is listed under "Done" exists.
   prerequisites renumbered or removed in a later edition, and very long chains; each finding has a
   severity and cites the catalog text. Per-catalog reports in `results/audit/` (`scripts/run_audit.py`)
 - Planted-defect evaluation of the audit checks (`scripts/eval_audit.py`)
+- Static website (`site/`): pick a catalog, browse findings by type and severity, open any course to
+  see its catalog text, parsed AND/OR logic, review flags and an upstream prerequisite graph; plus the
+  evaluation results. Precomputed by `scripts/export_site.py`, so it needs no server or API key
 - Second, independent parser on **Muse Spark Open** (open weights, served by Baseten); when the two
   parsers' structures differ, the course is flagged for human review (`src/auditor/ensemble.py`)
 
+- Full UIUC Spring 2026 file (4,502 courses, 2,732 prerequisite texts) parsed by Muse Spark as an
+  out-of-sample demo: 0 API errors, 98 courses flagged for review, ~$7 (`scripts/parse_uiuc.py`; no
+  labels, not scored). The file lists one term's offerings rather than the full catalog, so only the
+  structural checks run on it (self-reference, loops, chains); missing-course checks would be false alarms
+
 **Planned**
-- Audit on Muse Spark parses for a full catalog, web app, demo
+- Deployment and demo video
 
 ## Evaluation design
 
@@ -126,3 +134,7 @@ python scripts/smoke_test_api.py
 ```
 
 `scripts/make_splits.py` has already been run; its outputs are committed in `evals/`.
+
+Website locally: `python scripts/export_site.py && python -m http.server -d site 8000`, then open
+http://localhost:8000. Data files in `site/data/` are derived from the datasets above under their
+licenses (Mendeley CC BY 4.0; UIUC CC BY-SA 4.0).

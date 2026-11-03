@@ -13,3 +13,4 @@ __pycache__/
 
 # Raw model outputs from eval runs (summaries are committed)
 results/raw/
+_to_delete/

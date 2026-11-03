@@ -59,3 +59,8 @@ def test_numeric_codes_use_department_prefix():
     # 0612xxx = one department; a missing 0600xxx course from another department is not flagged
     f = audit(cat(**{"0612371": "0612999 AND 0600207"}))
     assert [(x.check, x.related) for x in f] == [("missing_course", ["0612999"])]
+
+
+def test_incomplete_catalog_skips_missing_checks_but_keeps_structural_ones():
+    f = audit(cat(**{"CS 2": "CS 1", "CS 3": "CS 3"}), complete_catalog=False)
+    assert [x.check for x in f] == ["self_reference"]

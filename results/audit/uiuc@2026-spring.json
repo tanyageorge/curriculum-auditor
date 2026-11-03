@@ -1,0 +1,11 @@
+[
+ {
+  "id": "F0001",
+  "check": "self_reference",
+  "course": "IS 530",
+  "detail": "IS 530 lists itself as a prerequisite",
+  "evidence": "IS 505 - Information, Organization and Access (formerly IS 501 prior to FA 20), or concurrent enrollment in IS 505 and IS 530.",
+  "severity": "warning",
+  "related": []
+ }
+]

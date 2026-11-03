@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curriculum Auditor</title>
+<meta name="description" content="Parses university catalog prerequisites with Meta's Muse Spark and audits catalogs for defects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="5" cy="6" r="3"/><circle cx="5" cy="20" r="3"/><circle cx="21" cy="13" r="3"/><path d="M8 7l10 5M8 19l10-5" stroke-width="2" fill="none"/></svg>
+      <span>Curriculum Auditor</span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="audit">Audit</button>
+      <button class="tab" data-tab="eval">Evaluation</button>
+      <button class="tab" data-tab="how">How it works</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="tab-audit" class="panel active">
+    <div class="hero">
+      <h1>Find the broken prerequisites hiding in a course catalog.</h1>
+      <p>Catalog prerequisites are written as prose. Muse Spark turns each one into AND/OR logic, then plain code checks the whole catalog: courses that require themselves, prerequisite loops, required courses that don't exist, and courses renumbered out from under their dependents.</p>
+    </div>
+    <div class="controls">
+      <label class="field"><span>Catalog</span><select id="catalog"></select></label>
+      <label class="field grow"><span>Find a course</span><input id="search" type="search" placeholder="e.g. CS 225" autocomplete="off"></label>
+    </div>
+    <p id="source" class="source"></p>
+    <div id="tiles" class="tiles"></div>
+    <div id="chips" class="chips"></div>
+    <div class="split">
+      <div id="findings" class="findings"></div>
+      <aside id="detail" class="detail"><div class="empty">Select a finding or search for a course to see its prerequisites and graph.</div></aside>
+    </div>
+  </section>
+
+  <section id="tab-eval" class="panel">
+    <div class="hero"><h1>Measured, not demoed.</h1>
+      <p>Every number below comes from a run committed to the repository. Headline accuracy is on 150 courses hand-labeled for this project and scored once.</p></div>
+    <div id="eval"></div>
+  </section>
+
+  <section id="tab-how" class="panel">
+    <div class="hero"><h1>How it works</h1><p>The model reads; code verifies. Anything that must be exact is done in code.</p></div>
+    <ol class="pipeline">
+      <li><b>Catalog text</b><span>Prerequisite and corequisite text exactly as printed.</span></li>
+      <li><b>Parse: Muse Spark 1.3</b><span>Meta Model API, strict JSON schema: AND/OR groups, timing, grades, conditions. Ambiguous text is flagged, not guessed.</span></li>
+      <li><b>Guardrails in code</b><span>Every course in the output must appear in the input text. On failure the model gets the exact problem back for one retry, then the course is flagged for review.</span></li>
+      <li><b>Second opinion: Muse Spark Open</b><span>Open weights on Baseten, compared against Muse Spark. Measured: same-family models fail together, so it adds little; reported honestly.</span></li>
+      <li><b>Audit in code</b><span>Prerequisite graph with networkx; checks for self-reference, loops through required courses, missing and renumbered courses, long chains. Severity: blocking, warning, info.</span></li>
+      <li><b>Report</b><span>Generated from the findings, not by a model, so every line cites a finding ID and the catalog text behind it.</span></li>
+    </ol>
+    <div class="cards">
+      <div class="card"><h3>Meta models used</h3><ul>
+        <li><b>Muse Spark 1.3</b> via the Meta Model API: the primary parser</li>
+        <li><b>Muse Spark Open</b> (open weights) via Baseten: the independent second parser</li></ul></div>
+      <div class="card"><h3>Data</h3><ul>
+        <li>Turaev et al., <i>A Confound-Annotated Multi-Institution Curriculum Dataset with Parsed Prerequisite Logic</i>, Mendeley Data, CC BY 4.0: 13 catalogs, shown with that dataset's published parses</li>
+        <li>UIUC Course Catalog, Spring 2026 (Kaggle; Wade Fagen-Ulmschneider's UIUC data), CC BY-SA 4.0: parsed by Muse Spark here; derived data shared under CC BY-SA 4.0</li></ul></div>
+      <div class="card"><h3>Built</h3><p>Solo by Tanya George for the Meta Global AI Developer Hackathon, Oct 27 – Nov 4, 2026. Source, eval runs and labels: <a href="https://github.com/tanyageorge/curriculum-auditor">github.com/tanyageorge/curriculum-auditor</a>.</p></div>
+    </div>
+  </section>
+</main>
+<footer class="wrap foot">Curriculum Auditor · Findings on Mendeley catalogs use that dataset's published parses and inherit their errors. Not affiliated with any university listed.</footer>
+<script src="app.js"></script>
+</body>
+</html>
