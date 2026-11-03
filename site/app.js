@@ -320,27 +320,27 @@ function renderEval() {
   <div class="evalgrid">
     <div class="card" style="grid-column:1/-1">
       <h3>How accurately Muse Spark reads prerequisites</h3>
-      <p class="sub">I hand-labeled 150 courses from 13 universities, with extra hard ones, and kept them out of all my testing until the end. A course only counts as correct if every course and every AND/OR matches my label.</p>
+      <p class="sub">150 courses from 13 universities were hand-labeled, oversampling hard cases, and held out from all development until the final run. A course counts as correct only if every course and every AND/OR matches the label.</p>
       <div class="kpis">
         <div><div class="big">${pct(tier(gm, "all"))}</div><div class="l">Muse Spark 1.3</div></div>
         <div><div class="big" style="color:var(--muted)">${pct(tier(gb, "all"))}</div><div class="l">a rule-based parser (no AI)</div></div>
-        <div><div class="big">${pct(gm?.all?.structure_exact_unflagged)}</div><div class="l">on the courses it didn't flag for review (it flagged ${pct(gm?.all?.flag_rate)})</div></div>
+        <div><div class="big">${pct(gm?.all?.structure_exact_unflagged)}</div><div class="l">on courses not flagged for review (flagged: ${pct(gm?.all?.flag_rate)})</div></div>
       </div>
       <table style="margin-top:14px"><thead><tr><th>Difficulty</th><th class="num">Courses</th><th class="num">Rule-based parser</th><th class="num">Muse Spark</th></tr></thead>
       <tbody>${row("simple", "Easy: a single course")}${row("moderate", "Medium: lists, grades, conditions")}${row("hard", "Hard: alternatives, nesting, timing")}${row("all", "<b>All</b>")}</tbody></table>
-      ${cost ? `<p class="sub" style="margin-top:10px">It costs about $${cost.usd_per_course.toFixed(4)} per course and takes about ${cost.median_latency_s.toFixed(1)} seconds. ${cost.guardrail_failures === 0 ? "No final answers failed my code checks" : `${cost.guardrail_failures} final answers failed my code checks`}, and there ${cost.api_errors === 0 ? "were no API errors" : `were ${cost.api_errors} API errors`}.</p>` : ""}
+      ${cost ? `<p class="sub" style="margin-top:10px">Cost: about $${cost.usd_per_course.toFixed(4)} per course, about ${cost.median_latency_s.toFixed(1)} seconds each. ${cost.guardrail_failures === 0 ? "No final answers failed the code checks" : `${cost.guardrail_failures} final answers failed the code checks`}, and there ${cost.api_errors === 0 ? "were no API errors" : `were ${cost.api_errors} API errors`}.</p>` : ""}
     </div>
     <div class="card"><h3>Do the audit checks catch real problems?</h3>
-      <p class="sub">${pl ? `I took ${pl.catalogs.length} real catalogs, planted ${planted} problems I knew about, and checked whether the audit found them. It raised <b>${pl.false_alarms}</b> false alarms.` : ""}</p>
-      <table><thead><tr><th>Problem I planted</th><th class="num">Planted</th><th class="num">Found</th></tr></thead><tbody>${recallRows}</tbody></table></div>
+      <p class="sub">${pl ? `${planted} known defects were planted in ${pl.catalogs.length} real catalogs to measure whether the audit finds them. False alarms: <b>${pl.false_alarms}</b>.` : ""}</p>
+      <table><thead><tr><th>Planted defect</th><th class="num">Planted</th><th class="num">Found</th></tr></thead><tbody>${recallRows}</tbody></table></div>
     <div class="card"><h3>Does a second model help?</h3>
-      <p class="sub">I ran Muse Spark Open, the open-weights version, on Baseten over 150 practice courses and compared its answers with Muse Spark's.</p>
+      <p class="sub">Muse Spark Open, the open-weights version, was run on Baseten over 150 development courses and compared against Muse Spark.</p>
       ${ens ? `<div class="kpis"><div><div class="big">${pct(ens.disagreement_rate)}</div><div class="l">of courses where the two models disagreed</div></div></div>
-      <p>The two models are closely related, so they tend to make the same mistakes, and their disagreements didn't catch any new errors. A useful second check needs something that fails in different ways, so my code checks stay the main safety net.</p>` : "<p>Not run.</p>"}</div>
-    <div class="card" style="grid-column:1/-1"><h3>What I learned about the dataset</h3>
-      <ul><li>The research dataset's own parsed prerequisites were exactly right for 110 of the 130 test courses I could check (85%). On those same courses, Muse Spark got the AND/OR structure right 96.9% of the time, and the dataset 90.8%.</li>
+      <p>The two models are closely related and tend to make the same mistakes, so their disagreements caught no new errors. An effective second check needs a verifier that fails in different ways; the code checks remain the primary safeguard.</p>` : "<p>Not run.</p>"}</div>
+    <div class="card" style="grid-column:1/-1"><h3>Findings about the reference dataset</h3>
+      <ul><li>The research dataset's own parsed prerequisites were fully correct for 110 of the 130 test courses that have one (85%). On those same courses, Muse Spark got the AND/OR structure right 96.9% of the time, and the dataset 90.8%.</li>
       <li>When Muse Spark and the dataset disagreed, the dataset was often the one that was wrong. It leaves out corequisites, flattens AND/OR for one university, and sometimes counts the next course's heading as a prerequisite.</li>
-      <li>The lowest reasoning setting, <code>minimal</code>, gave the same answer as <code>low</code> on 299 of 300 practice courses and cost 28% less, so that's the one I use.</li></ul></div>
+      <li>The lowest reasoning setting, <code>minimal</code>, matched <code>low</code> on 299 of 300 development courses at 28% lower cost, so it is used throughout.</li></ul></div>
   </div>`;
 }
 
