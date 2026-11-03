@@ -8,7 +8,7 @@ const CHECKS = {
   renumbered: "Renumbered / removed", long_chain: "Long chain",
 };
 const state = { index: null, cat: null, byKey: new Map(), requiredBy: new Map(), findingsByCourse: new Map(),
-                check: "all", query: "", limit: 24, selected: null };
+                check: "all", query: "", limit: 24, selected: null, trail: [] };
 
 // ------------------------------------------------------------------ tabs + hash state
 const FEATURED = { "uiuc@2026-spring": "CS374", "uaeu@2025_2026": "NUTR481" };
@@ -54,7 +54,8 @@ async function init() {
   await route();
 }
 
-async function loadCatalog(id, course) {
+async function loadCatalog(id, course, goingBack = false) {
+  if (!goingBack) remember();   // keep history across catalogs
   const meta = state.index.catalogs.find((c) => c.id === id);
   $("#findings").innerHTML = `<div class="more">Loading…</div>`;
   const cat = await (await fetch("data/" + meta.file)).json();
@@ -221,15 +222,37 @@ function logicHTML(c) {
   }).join(`<span class="op">OR</span>`)}</span>`).join(`<span class="op">AND</span>`);
 }
 
-function selectCourse(k, scroll = false) {
+function remember() {
+  if (!state.cat || !state.selected) return;
+  const last = state.trail[state.trail.length - 1];
+  if (last && last.cat === state.cat.id && last.k === state.selected) return;
+  state.trail.push({ cat: state.cat.id, k: state.selected, label: state.byKey.get(state.selected)?.c || state.selected });
+  if (state.trail.length > 50) state.trail.shift();
+}
+function backButton() {
+  const last = state.trail[state.trail.length - 1];
+  if (!last) return "";
+  const where = last.cat === state.cat.id ? "" : ` (${esc(state.index.catalogs.find((c) => c.id === last.cat)?.name.split(",")[0] || last.cat)})`;
+  return `<button class="back" id="back">← Back to ${esc(last.label)}${where}</button>`;
+}
+async function goBack() {
+  const prev = state.trail.pop();
+  if (!prev) return;
+  if (prev.cat === state.cat.id) return selectCourse(prev.k, true, true);
+  $("#catalog").value = prev.cat;
+  await loadCatalog(prev.cat, prev.k, true);
+}
+function selectCourse(k, scroll = false, goingBack = false) {
   const c = state.byKey.get(k);
   if (!c) return;
+  if (!goingBack && state.selected && state.selected !== k) remember();   // remember where we came from
   state.selected = k;
   document.querySelectorAll(".f").forEach((b) => b.classList.toggle("sel", b.dataset.k === k));
   const fs = state.findingsByCourse.get(k) || [];
   const conds = c.p.includes("COND:") ? c.p.split("COND:")[1].trim() : "";
   const deps = [...(state.requiredBy.get(k) || [])].map((x) => state.byKey.get(x)).filter(Boolean);
   $("#detail").innerHTML = `
+    ${backButton()}
     <div class="d-head"><h2>${esc(c.c)}</h2><div class="title">${esc(c.t)}</div>
       ${fs.map((f) => `<div class="d-find"><span class="sev ${f.severity}">${f.severity}</span> <span>${esc(f.detail)}</span></div>`).join("")}</div>
     <div class="d-body">
@@ -248,6 +271,7 @@ function selectCourse(k, scroll = false) {
       </div>
     </div>`;
   $("#detail").querySelectorAll("[data-k]").forEach((e) => e.addEventListener("click", () => selectCourse(e.dataset.k, true)));
+  $("#back")?.addEventListener("click", goBack);
   const gr = $("#detail .graph"); if (gr) gr.scrollLeft = gr.scrollWidth;   // keep the selected course in view
   writeHash();
   if (scroll) {   // bring the course panel into view when it was picked from further down
