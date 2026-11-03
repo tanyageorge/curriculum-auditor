@@ -8,7 +8,7 @@ const CHECKS = {
   renumbered: "Renumbered / removed", long_chain: "Long chain",
 };
 const state = { index: null, cat: null, byKey: new Map(), requiredBy: new Map(), findingsByCourse: new Map(),
-                check: "all", query: "", limit: 150, selected: null };
+                check: "all", query: "", limit: 24, selected: null };
 
 // ------------------------------------------------------------------ tabs + hash state
 const FEATURED = { "uiuc@2026-spring": "CS374", "uaeu@2025_2026": "NUTR481" };
@@ -49,7 +49,7 @@ async function init() {
   const sel = $("#catalog");
   sel.innerHTML = state.index.catalogs.map((c) => `<option value="${esc(c.id)}">${esc(c.name)} · ${c.courses.toLocaleString()} courses</option>`).join("");
   sel.addEventListener("change", () => loadCatalog(sel.value));
-  $("#search").addEventListener("input", (e) => { state.query = e.target.value.trim(); state.limit = 150; onSearch(); });
+  $("#search").addEventListener("input", (e) => { state.query = e.target.value.trim(); state.limit = 24; onSearch(); });
   renderEval();
   await route();
 }
@@ -58,7 +58,7 @@ async function loadCatalog(id, course) {
   const meta = state.index.catalogs.find((c) => c.id === id);
   $("#findings").innerHTML = `<div class="more">Loading…</div>`;
   const cat = await (await fetch("data/" + meta.file)).json();
-  state.cat = cat; state.check = "all"; state.query = ""; state.selected = null; state.limit = 150;
+  state.cat = cat; state.check = "all"; state.query = ""; state.selected = null; state.limit = 24;
   $("#search").value = "";
   state.byKey = new Map(cat.courses.map((c) => [c.k, c]));
   state.requiredBy = new Map();
@@ -106,7 +106,7 @@ function renderChips() {
   for (const f of state.cat.findings) counts[f.check] = (counts[f.check] || 0) + 1;
   const items = [["all", "All findings", state.cat.findings.length], ...Object.entries(CHECKS).filter(([k]) => counts[k]).map(([k, l]) => [k, l, counts[k]])];
   $("#chips").innerHTML = items.map(([k, l, n]) => `<button class="chip ${state.check === k ? "on" : ""}" data-k="${k}">${esc(l)}<span class="c">${n}</span></button>`).join("");
-  $("#chips").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => { state.check = b.dataset.k; state.limit = 150; renderChips(); renderFindings(); }));
+  $("#chips").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => { state.check = b.dataset.k; state.limit = 24; renderChips(); renderFindings(); }));
 }
 
 const SEV = { blocking: 0, warning: 1, info: 2 };
@@ -128,8 +128,8 @@ function renderFindings() {
       <div class="d">${esc(f.detail)}</div>
       <q>“${esc(f.evidence)}”</q>
     </button>`).join("") + (list.length > state.limit ? `<button class="chip" id="more">Show more (${list.length - state.limit} left)</button>` : "");
-  el.querySelectorAll(".f").forEach((b) => b.addEventListener("click", () => selectCourse(b.dataset.k)));
-  $("#more")?.addEventListener("click", () => { state.limit += 300; renderFindings(); });
+  el.querySelectorAll(".f").forEach((b) => b.addEventListener("click", () => selectCourse(b.dataset.k, true)));
+  $("#more")?.addEventListener("click", () => { state.limit += 48; renderFindings(); });
 }
 
 function onSearch() {
@@ -149,7 +149,7 @@ function logicHTML(c) {
   }).join(`<span class="op">OR</span>`)}</span>`).join(`<span class="op">AND</span>`);
 }
 
-function selectCourse(k) {
+function selectCourse(k, scroll = false) {
   const c = state.byKey.get(k);
   if (!c) return;
   state.selected = k;
@@ -158,21 +158,30 @@ function selectCourse(k) {
   const conds = c.p.includes("COND:") ? c.p.split("COND:")[1].trim() : "";
   const deps = [...(state.requiredBy.get(k) || [])].map((x) => state.byKey.get(x)).filter(Boolean);
   $("#detail").innerHTML = `
-    <h2>${esc(c.c)}</h2><div class="title">${esc(c.t)}</div>
-    ${fs.map((f) => `<div class="row" style="margin:4px 0"><span class="sev ${f.severity}">${f.severity}</span> <span>${esc(f.detail)}</span></div>`).join("")}
-    <div class="label">Catalog text</div><div class="raw">${esc(c.r || "No prerequisite listed.")}</div>
-    <div class="label">Parsed requirement</div><div class="logic">${logicHTML(c)}</div>
-    ${conds ? `<div class="legend">Conditions: ${esc(conds)}</div>` : ""}
-    ${c.nr ? `<div class="review">Flagged for review: ${esc(c.nr)}</div>` : ""}
-    <div class="label">Prerequisite graph</div><div class="graph">${graphSVG(k)}</div>
-    <div class="legend">Arrows point toward the course they unlock. Dashed arrow = one of several alternatives. ${state.cat.complete === false
-      ? "Dashed box = not in this term's file (not a problem: the file lists one term's offerings)."
-      : "Red = a problem, or a course missing from the catalog."}</div>
-    ${deps.length ? `<div class="label">Required by (${deps.length})</div><div class="logic">${deps.slice(0, 30).map((d) => `<span class="opt" data-k="${esc(d.k)}">${esc(d.c)}</span>`).join("")}${deps.length > 30 ? `<span class="op">+${deps.length - 30} more</span>` : ""}</div>` : ""}`;
-  $("#detail").querySelectorAll("[data-k]").forEach((e) => e.addEventListener("click", () => selectCourse(e.dataset.k)));
+    <div class="d-head"><h2>${esc(c.c)}</h2><div class="title">${esc(c.t)}</div>
+      ${fs.map((f) => `<div class="d-find"><span class="sev ${f.severity}">${f.severity}</span> <span>${esc(f.detail)}</span></div>`).join("")}</div>
+    <div class="d-body">
+      <div class="d-left">
+        <div class="label">Catalog text</div><div class="raw">${esc(c.r || "No prerequisite listed.")}</div>
+        <div class="label">Parsed requirement</div><div class="logic">${logicHTML(c)}</div>
+        ${conds ? `<div class="legend">Conditions: ${esc(conds)}</div>` : ""}
+        ${c.nr ? `<div class="review">Flagged for review: ${esc(c.nr)}</div>` : ""}
+        ${deps.length ? `<div class="label">Required by (${deps.length})</div><div class="logic">${deps.slice(0, 30).map((d) => `<span class="opt" data-k="${esc(d.k)}">${esc(d.c)}</span>`).join("")}${deps.length > 30 ? `<span class="op">+${deps.length - 30} more</span>` : ""}</div>` : ""}
+      </div>
+      <div class="d-right">
+        <div class="label">Prerequisite graph</div><div class="graph">${graphSVG(k)}</div>
+        <div class="legend">Arrows point toward the course they unlock. Dashed arrow = one of several alternatives. ${state.cat.complete === false
+          ? "Dashed box = not in this term's file (not a problem: the file lists one term's offerings)."
+          : "Red = a problem, or a course missing from the catalog."}</div>
+      </div>
+    </div>`;
+  $("#detail").querySelectorAll("[data-k]").forEach((e) => e.addEventListener("click", () => selectCourse(e.dataset.k, true)));
   const gr = $("#detail .graph"); if (gr) gr.scrollLeft = gr.scrollWidth;   // keep the selected course in view
   writeHash();
-  if (window.innerWidth < 860) $("#detail").scrollIntoView({ behavior: "smooth" });
+  if (scroll) {   // bring the course panel into view when it was picked from further down
+    const r = $("#detail").getBoundingClientRect();
+    if (r.top < 64 || r.top > window.innerHeight * 0.5) window.scrollTo({ top: window.scrollY + r.top - 76, behavior: "smooth" });
+  }
 }
 
 // Upstream prerequisite graph, laid out in columns by depth (root on the right).

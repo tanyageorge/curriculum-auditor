@@ -144,3 +144,14 @@ body.on-home .foot{display:none}
   .hbtn{flex:1;text-align:center}
   .tabs .tab[data-tab=home]{display:none}
 }
+
+/* ---------- audit layout: course panel on top, findings grid below ---------- */
+.detail{position:static;min-height:0;margin-bottom:28px;padding:22px 24px}
+.d-head{margin-bottom:4px}
+.d-find{display:flex;gap:8px;align-items:baseline;margin:4px 0;font-size:14px}
+.d-body{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start}
+.d-left .label:first-child,.d-right .label:first-child{margin-top:12px}
+.list-title{font-size:18px;margin:0 0 10px}
+.findings{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px;max-height:none;overflow:visible;padding:0}
+.findings>.chip,.findings>.more{grid-column:1/-1;justify-self:center}
+@media (max-width:860px){.d-body{grid-template-columns:minmax(0,1fr);gap:4px}.detail{padding:18px}}
