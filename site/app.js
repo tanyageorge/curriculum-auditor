@@ -49,7 +49,7 @@ async function init() {
   const sel = $("#catalog");
   sel.innerHTML = state.index.catalogs.map((c) => `<option value="${esc(c.id)}">${esc(c.name)} · ${c.courses.toLocaleString()} courses</option>`).join("");
   sel.addEventListener("change", () => loadCatalog(sel.value));
-  $("#search").addEventListener("input", (e) => { state.query = e.target.value.trim(); state.limit = 24; onSearch(); });
+  setupCoursePicker();
   renderEval();
   await route();
 }
@@ -61,6 +61,9 @@ async function loadCatalog(id, course) {
   state.cat = cat; state.check = "all"; state.query = ""; state.selected = null; state.limit = 24;
   $("#search").value = "";
   state.byKey = new Map(cat.courses.map((c) => [c.k, c]));
+  state.sorted = cat.courses.slice().sort((a, b) => a.c.localeCompare(b.c, undefined, { numeric: true }));
+  $("#search-label").textContent = `Find a course (${cat.courses.length.toLocaleString()} in this catalog)`;
+  closeList();
   state.requiredBy = new Map();
   for (const c of cat.courses) for (const g of c.g) for (const [k] of g) {
     if (!state.requiredBy.has(k)) state.requiredBy.set(k, new Set());
@@ -132,10 +135,79 @@ function renderFindings() {
   $("#more")?.addEventListener("click", () => { state.limit += 48; renderFindings(); });
 }
 
-function onSearch() {
-  renderFindings();
-  const q = norm(state.query);
-  if (q && state.byKey.has(q)) selectCourse(q);
+// ------------------------------------------------------------------ course picker (combobox)
+const picker = { items: [], active: -1, label: "" };
+function courseMatches(q) {
+  q = q.trim();
+  if (!q) return state.sorted;
+  const nq = norm(q), lq = q.toLowerCase(), starts = [], codeHas = [], titleHas = [];
+  for (const c of state.sorted) {
+    if (nq && c.k.startsWith(nq)) starts.push(c);
+    else if (nq && c.k.includes(nq)) codeHas.push(c);
+    else if (c.t && c.t.toLowerCase().includes(lq)) titleHas.push(c);
+  }
+  return starts.concat(codeHas, titleHas);
+}
+function renderList(q) {
+  const ul = $("#course-list"), all = courseMatches(q), MAX = 80;
+  picker.items = all.slice(0, MAX); picker.active = picker.items.length ? 0 : -1;
+  if (!picker.items.length) {
+    ul.innerHTML = `<li class="note">No course matches “${esc(q)}”. Try a code like CS 225 or a word from the name.</li>`;
+  } else {
+    ul.innerHTML = picker.items.map((c, i) => {
+      const fs = state.findingsByCourse.get(c.k) || [];
+      const sev = fs.find((f) => f.severity === "blocking") ? "blocking" : fs.find((f) => f.severity === "warning") ? "warning" : "";
+      return `<li role="option" id="copt-${i}" data-i="${i}" class="${i === 0 ? "active" : ""}" aria-selected="${i === 0}">
+        <b>${esc(c.c)}</b><span>${esc(c.t || "No title listed")}</span>${sev ? `<i class="dot ${sev}" title="has a ${sev} finding"></i>` : ""}</li>`;
+    }).join("") + (all.length > MAX ? `<li class="note">${(all.length - MAX).toLocaleString()} more. Keep typing to narrow the list.</li>` : "");
+  }
+  ul.classList.add("open"); $("#search").setAttribute("aria-expanded", "true");
+  $("#search").setAttribute("aria-activedescendant", picker.active >= 0 ? "copt-0" : "");
+}
+function closeList() {
+  $("#course-list")?.classList.remove("open");
+  $("#search")?.setAttribute("aria-expanded", "false");
+}
+function setActive(i) {
+  const lis = [...$("#course-list").querySelectorAll("li[data-i]")];
+  if (!lis.length) return;
+  picker.active = (i + lis.length) % lis.length;
+  lis.forEach((li, j) => { li.classList.toggle("active", j === picker.active); li.setAttribute("aria-selected", j === picker.active); });
+  lis[picker.active].scrollIntoView({ block: "nearest" });
+  $("#search").setAttribute("aria-activedescendant", "copt-" + picker.active);
+}
+function pickCourse(c) {
+  closeList();
+  picker.label = `${c.c} · ${c.t || ""}`.trim();
+  $("#search").value = picker.label;
+  $("#search").blur();
+  state.query = ""; state.limit = 24; renderFindings();
+  selectCourse(c.k, true);
+}
+function setupCoursePicker() {
+  const input = $("#search"), ul = $("#course-list");
+  const current = () => (input.value === picker.label ? "" : input.value);
+  input.addEventListener("focus", () => { input.select(); renderList(current()); });
+  input.addEventListener("click", () => {
+    if (input.value === picker.label) input.select();   // typing replaces the picked course's name
+    if (!ul.classList.contains("open")) renderList(current());
+  });
+  input.addEventListener("input", () => {
+    picker.label = "";
+    state.query = input.value.trim(); state.limit = 24; renderFindings();   // also narrows the findings below
+    renderList(input.value);
+  });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") { e.preventDefault(); if (!ul.classList.contains("open")) renderList(current()); else setActive(picker.active + 1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setActive(picker.active - 1); }
+    else if (e.key === "Enter") { e.preventDefault(); const c = picker.items[picker.active]; if (c) pickCourse(c); }
+    else if (e.key === "Escape") { closeList(); }
+  });
+  ul.addEventListener("mousedown", (e) => {   // mousedown fires before the input loses focus
+    const li = e.target.closest("li[data-i]"); if (!li) return;
+    e.preventDefault(); pickCourse(picker.items[+li.dataset.i]);
+  });
+  input.addEventListener("blur", () => setTimeout(closeList, 120));
 }
 
 // ------------------------------------------------------------------ course detail

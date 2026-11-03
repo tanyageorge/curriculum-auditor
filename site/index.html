@@ -51,7 +51,12 @@
   <section id="tab-audit" class="panel">
     <div class="controls">
       <label class="field"><span>Catalog</span><select id="catalog"></select></label>
-      <label class="field grow"><span>Find a course</span><input id="search" type="search" placeholder="e.g. CS 225" autocomplete="off"></label>
+      <div class="field grow combo">
+        <label for="search" id="search-label">Find a course</label>
+        <input id="search" type="text" placeholder="Browse, or type a code or name" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="course-list" aria-autocomplete="list">
+        <ul id="course-list" class="clist" role="listbox" aria-labelledby="search-label"></ul>
+      </div>
     </div>
     <p id="source" class="source"></p>
     <p id="hint" class="hint"></p>

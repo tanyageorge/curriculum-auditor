@@ -156,3 +156,19 @@ body.on-home .foot{display:none}
 .findings{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px;max-height:none;overflow:visible;padding:0}
 .findings>.chip,.findings>.more{grid-column:1/-1;justify-self:center}
 @media (max-width:860px){.d-body{grid-template-columns:minmax(0,1fr);gap:4px}.detail{padding:18px}}
+
+/* ---------- course picker ---------- */
+.combo{position:relative}
+.combo label{font-size:12px;color:var(--muted);font-weight:500}
+.clist{display:none;position:absolute;top:100%;left:0;right:0;z-index:20;list-style:none;margin:6px 0 0;padding:6px;
+  max-height:min(420px,60vh);overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 16px 40px -16px rgba(0,0,0,.35)}
+.clist.open{display:block}
+.clist li{display:flex;align-items:center;gap:12px;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:14px;color:var(--ink)}
+.clist li b{font:600 13px var(--mono);flex:0 0 auto;min-width:92px}
+.clist li span{flex:1;min-width:0;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.clist li.active{background:var(--accent-soft)}
+.clist li.active span{color:var(--ink)}
+.clist li.note{cursor:default;color:var(--muted);font-size:13px}
+.clist .dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+.clist .dot.blocking{background:var(--block)}.clist .dot.warning{background:var(--warn)}
