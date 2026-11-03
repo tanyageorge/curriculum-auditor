@@ -312,32 +312,35 @@ function renderEval() {
     return `<tr><td>${label}</td><td class="num">${gm?.[t]?.n ?? ""}</td><td class="num">${pct(b)}</td><td class="num ${m > b ? "win" : ""}">${pct(m)}</td></tr>`;
   };
   const pl = e.audit_planted, ens = e.ensemble?.ensemble, cost = e.gold_muse?.cost;
-  const recallRows = pl ? Object.entries(pl.recall).map(([k, v]) => `<tr><td>${esc({ missing_course: "Requires a non-existent course", removed: "Required course removed", cycle: "Prerequisite loop", self_reference: "Requires itself" }[k] || k)}</td><td class="num">${pl.planted[k]}</td><td class="num win">${pct(v)}</td></tr>`).join("") : "";
+  const names = { missing_course: "Requires a course that doesn't exist", removed: "A required course was removed",
+                  cycle: "Prerequisite loop", self_reference: "Course requires itself" };
+  const recallRows = pl ? Object.entries(pl.recall).map(([k, v]) => `<tr><td>${esc(names[k] || k)}</td><td class="num">${pl.planted[k]}</td><td class="num win">${pct(v)}</td></tr>`).join("") : "";
+  const planted = pl ? Object.values(pl.planted).reduce((a, b) => a + b, 0) : 0;
   $("#eval").innerHTML = `
   <div class="evalgrid">
     <div class="card" style="grid-column:1/-1">
-      <h3>Parsing accuracy on the hand-labeled test set</h3>
-      <p class="sub">150 held-out courses from 13 universities, oversampling hard cases, labeled by hand and scored once. Metric: exact match of the AND/OR course structure.</p>
+      <h3>How accurately Muse Spark reads prerequisites</h3>
+      <p class="sub">I hand-labeled 150 courses from 13 universities, with extra hard ones, and kept them out of all my testing until the end. A course only counts as correct if every course and every AND/OR matches my label.</p>
       <div class="kpis">
         <div><div class="big">${pct(tier(gm, "all"))}</div><div class="l">Muse Spark 1.3</div></div>
-        <div><div class="big" style="color:var(--muted)">${pct(tier(gb, "all"))}</div><div class="l">regex baseline</div></div>
-        <div><div class="big">${pct(gm?.all?.structure_exact_unflagged)}</div><div class="l">on courses it did not flag (${pct(gm?.all?.flag_rate)} flagged)</div></div>
+        <div><div class="big" style="color:var(--muted)">${pct(tier(gb, "all"))}</div><div class="l">a rule-based parser (no AI)</div></div>
+        <div><div class="big">${pct(gm?.all?.structure_exact_unflagged)}</div><div class="l">on the courses it didn't flag for review (it flagged ${pct(gm?.all?.flag_rate)})</div></div>
       </div>
-      <table style="margin-top:14px"><thead><tr><th>Difficulty</th><th class="num">Courses</th><th class="num">Regex baseline</th><th class="num">Muse Spark</th></tr></thead>
-      <tbody>${row("simple", "Simple (one course)")}${row("moderate", "Moderate (lists, grades, conditions)")}${row("hard", "Hard (alternatives, nesting, timing)")}${row("all", "<b>All</b>")}</tbody></table>
-      ${cost ? `<p class="sub" style="margin-top:10px">Cost $${cost.usd_per_course.toFixed(4)} per course; median latency ${cost.median_latency_s.toFixed(1)} s; ${cost.guardrail_failures} guardrail failures; ${cost.api_errors} API errors.</p>` : ""}
+      <table style="margin-top:14px"><thead><tr><th>Difficulty</th><th class="num">Courses</th><th class="num">Rule-based parser</th><th class="num">Muse Spark</th></tr></thead>
+      <tbody>${row("simple", "Easy: a single course")}${row("moderate", "Medium: lists, grades, conditions")}${row("hard", "Hard: alternatives, nesting, timing")}${row("all", "<b>All</b>")}</tbody></table>
+      ${cost ? `<p class="sub" style="margin-top:10px">It costs about $${cost.usd_per_course.toFixed(4)} per course and takes about ${cost.median_latency_s.toFixed(1)} seconds. ${cost.guardrail_failures === 0 ? "No final answers failed my code checks" : `${cost.guardrail_failures} final answers failed my code checks`}, and there ${cost.api_errors === 0 ? "were no API errors" : `were ${cost.api_errors} API errors`}.</p>` : ""}
     </div>
-    <div class="card"><h3>Audit checks: planted defects</h3>
-      <p class="sub">${pl ? `${Object.values(pl.planted).reduce((a, b) => a + b, 0)} defects planted in ${pl.catalogs.length} real catalogs × ${pl.seeds} seeds. False alarms: <b>${pl.false_alarms}</b>.` : ""}</p>
-      <table><thead><tr><th>Defect</th><th class="num">Planted</th><th class="num">Found</th></tr></thead><tbody>${recallRows}</tbody></table></div>
-    <div class="card"><h3>Second opinion: Muse Spark Open</h3>
-      <p class="sub">Open-weights Muse Spark on Baseten, parsing the same 150 dev courses independently.</p>
-      ${ens ? `<div class="kpis"><div><div class="big">${pct(ens.disagreement_rate)}</div><div class="l">of courses where the two disagreed</div></div></div>
-      <p>The two models are from the same family and almost always fail on the same inputs, so disagreement caught no new errors here. An independent check needs a verifier that fails differently; the code guardrails remain the main safety net.</p>` : "<p>Not run.</p>"}</div>
-    <div class="card" style="grid-column:1/-1"><h3>What the evaluation found about the reference data</h3>
-      <ul><li>Of 130 gold courses with a published parse in the Mendeley dataset, that parse was fully correct for 110 (85%). Muse Spark matched the gold structure on 96.9% of them, the published parses on 90.8%.</li>
-      <li>Most disagreements on the development set traced to the reference: it omits corequisites, flattens explicit AND/OR for one institution, and in some catalogs counts the next course's heading (extracted onto the end of the prerequisite) as a prerequisite.</li>
-      <li>Muse Spark at <code>minimal</code> reasoning matched <code>low</code> on 299 of 300 dev courses at 28% lower cost.</li></ul></div>
+    <div class="card"><h3>Do the audit checks catch real problems?</h3>
+      <p class="sub">${pl ? `I took ${pl.catalogs.length} real catalogs, planted ${planted} problems I knew about, and checked whether the audit found them. It raised <b>${pl.false_alarms}</b> false alarms.` : ""}</p>
+      <table><thead><tr><th>Problem I planted</th><th class="num">Planted</th><th class="num">Found</th></tr></thead><tbody>${recallRows}</tbody></table></div>
+    <div class="card"><h3>Does a second model help?</h3>
+      <p class="sub">I ran Muse Spark Open, the open-weights version, on Baseten over 150 practice courses and compared its answers with Muse Spark's.</p>
+      ${ens ? `<div class="kpis"><div><div class="big">${pct(ens.disagreement_rate)}</div><div class="l">of courses where the two models disagreed</div></div></div>
+      <p>The two models are closely related, so they tend to make the same mistakes, and their disagreements didn't catch any new errors. A useful second check needs something that fails in different ways, so my code checks stay the main safety net.</p>` : "<p>Not run.</p>"}</div>
+    <div class="card" style="grid-column:1/-1"><h3>What I learned about the dataset</h3>
+      <ul><li>The research dataset's own parsed prerequisites were exactly right for 110 of the 130 test courses I could check (85%). On those same courses, Muse Spark got the AND/OR structure right 96.9% of the time, and the dataset 90.8%.</li>
+      <li>When Muse Spark and the dataset disagreed, the dataset was often the one that was wrong. It leaves out corequisites, flattens AND/OR for one university, and sometimes counts the next course's heading as a prerequisite.</li>
+      <li>The lowest reasoning setting, <code>minimal</code>, gave the same answer as <code>low</code> on 299 of 300 practice courses and cost 28% less, so that's the one I use.</li></ul></div>
   </div>`;
 }
 

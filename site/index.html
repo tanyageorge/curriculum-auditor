@@ -68,33 +68,33 @@
   </section>
 
   <section id="tab-eval" class="panel">
-    <div class="hero"><h1>Measured, not demoed.</h1>
-      <p>Every number below comes from a run committed to the repository. Headline accuracy is on 150 courses hand-labeled for this project and scored once.</p></div>
+    <div class="hero"><h1>How well it works</h1>
+      <p>Every number on this page comes from a test run saved in the repository. The main accuracy number uses 150 courses I labeled by hand and scored only once, at the end.</p></div>
     <div id="eval"></div>
   </section>
 
   <section id="tab-how" class="panel">
-    <div class="hero"><h1>How it works</h1><p>The model reads; code verifies. Anything that must be exact is done in code.</p></div>
+    <div class="hero"><h1>How it works</h1><p>The model reads the catalog, and my code checks the results. Anything that has to be exact, I do in code.</p></div>
     <ol class="pipeline">
-      <li><b>Catalog text</b><span>Prerequisite and corequisite text exactly as printed.</span></li>
-      <li><b>Parse: Muse Spark 1.3</b><span>Meta Model API, strict JSON schema: AND/OR groups, timing, grades, conditions. Ambiguous text is flagged, not guessed.</span></li>
-      <li><b>Guardrails in code</b><span>Every course in the output must appear in the input text. On failure the model gets the exact problem back for one retry, then the course is flagged for review.</span></li>
-      <li><b>Second opinion: Muse Spark Open</b><span>Open weights on Baseten, compared against Muse Spark. Measured: same-family models fail together, so it adds little; reported honestly.</span></li>
-      <li><b>Audit in code</b><span>Prerequisite graph with networkx; checks for self-reference, loops through required courses, missing and renumbered courses, long chains. Severity: blocking, warning, info.</span></li>
-      <li><b>Report</b><span>Generated from the findings, not by a model, so every line cites a finding ID and the catalog text behind it.</span></li>
+      <li><b>Start with the catalog text</b><span>I take each course's prerequisite text exactly as the university printed it.</span></li>
+      <li><b>Muse Spark reads it</b><span>Muse Spark 1.3 turns each sentence into AND/OR logic in a fixed JSON format: which courses, which ones are alternatives, which can be taken at the same time, and any minimum grade. If a sentence is unclear, it flags it instead of guessing.</span></li>
+      <li><b>My code double-checks it</b><span>Every course Muse Spark lists has to actually appear in the text. If one doesn't, I send back the exact problem for one retry. If it still fails, the course is flagged for a person to review.</span></li>
+      <li><b>A second opinion</b><span>I also tried Muse Spark Open, the open-weights version, on Baseten to see if a second model would catch mistakes. It mostly made the same mistakes, so it didn't add much. I kept the result because it's worth knowing.</span></li>
+      <li><b>Build the graph and check it</b><span>My code connects every course to its prerequisites and looks for problems: courses that require themselves, loops, required courses that don't exist, and courses that were renumbered.</span></li>
+      <li><b>Write up the findings</b><span>Each finding is written by code, not by the model, so it always points to the exact catalog text it came from.</span></li>
     </ol>
     <div class="cards">
-      <div class="card"><h3>Meta models used</h3><ul>
-        <li><b>Muse Spark 1.3</b> via the Meta Model API: the primary parser</li>
-        <li><b>Muse Spark Open</b> (open weights) via Baseten: the independent second parser</li></ul></div>
-      <div class="card"><h3>Data</h3><ul>
-        <li>Turaev et al., <i>A Confound-Annotated Multi-Institution Curriculum Dataset with Parsed Prerequisite Logic</i>, Mendeley Data, CC BY 4.0: 13 catalogs, shown with that dataset's published parses</li>
-        <li>UIUC Course Catalog, Spring 2026 (Kaggle; Wade Fagen-Ulmschneider's UIUC data), CC BY-SA 4.0: parsed by Muse Spark here; derived data shared under CC BY-SA 4.0</li></ul></div>
-      <div class="card"><h3>Built</h3><p>Solo by Tanya George for the Meta Global AI Developer Hackathon, Oct 27 – Nov 4, 2026. Source, eval runs and labels: <a href="https://github.com/tanyageorge/curriculum-auditor">github.com/tanyageorge/curriculum-auditor</a>.</p></div>
+      <div class="card"><h3>Meta models I used</h3><ul>
+        <li><b>Muse Spark 1.3</b> on the Meta Model API reads every prerequisite.</li>
+        <li><b>Muse Spark Open</b> (open weights, on Baseten) was my second-opinion test.</li></ul></div>
+      <div class="card"><h3>Where the data comes from</h3><ul>
+        <li>13 catalogs come from a public research dataset: Turaev et al., <i>A Confound-Annotated Multi-Institution Curriculum Dataset with Parsed Prerequisite Logic</i> (Mendeley Data, CC BY 4.0). For these I used the dataset's own parsed prerequisites, so any mistakes in it carry over.</li>
+        <li>The UIUC Spring 2026 catalog (Kaggle, from Wade Fagen-Ulmschneider's UIUC data, CC BY-SA 4.0) was parsed by Muse Spark for this project.</li></ul></div>
+      <div class="card"><h3>Who built it</h3><p>I'm Tanya George, and I built this on my own for the Meta Global AI Developer Hackathon, Oct 27 – Nov 4, 2026. All the code, my hand labels and every test run are on <a href="https://github.com/tanyageorge/curriculum-auditor">GitHub</a>.</p></div>
     </div>
   </section>
 </main>
-<footer class="wrap foot">Curriculum Auditor · Findings on Mendeley catalogs use that dataset's published parses and inherit their errors. Not affiliated with any university listed.</footer>
+<footer class="wrap foot">Curriculum Auditor. The 13 research-dataset catalogs use that dataset's own parsed prerequisites, so its mistakes can show up here. Not affiliated with any university listed.</footer>
 <script src="net.js"></script>
 <script src="app.js"></script>
 </body>
