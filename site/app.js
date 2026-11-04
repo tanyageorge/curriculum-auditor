@@ -51,6 +51,9 @@ async function init() {
   sel.addEventListener("change", () => loadCatalog(sel.value));
   setupCoursePicker();
   renderEval();
+  // A refresh always returns to the landing page; a first visit through a shared link still opens it.
+  const nav = performance.getEntriesByType("navigation")[0];
+  if (nav && nav.type === "reload") history.replaceState(null, "", location.pathname);
   await route();
 }
 
